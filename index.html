@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarkar PSI Academy | Design Templates Showcase & Client Review Hub</title>
+  <meta name="description" content="Official Design Showcase for Sarkar PSI Academy (www.sarkarpsiacademy.com) - Prof. Ravindra Sarkar. 3 Aesthetic Dark Mode Templates for Dadar (Mumbai) & Nashik Centers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #07090e;
+      --bg-surface: #0e121a;
+      --bg-card: #131924;
+      --border-line: rgba(255, 255, 255, 0.1);
+      --gold-primary: #d4af37;
+      --gold-bright: #f5c842;
+      --amber-accent: #ff7800;
+      --emerald-accent: #10b981;
+      --text-light: #f8fafc;
+      --text-muted: #94a3b8;
+      --font-heading: 'Plus Jakarta Sans', 'Noto Sans Devanagari', sans-serif;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      font-family: var(--font-heading);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header Masthead */
+    .showcase-header {
+      background: linear-gradient(180deg, #111726 0%, #07090e 100%);
+      border-bottom: 1px solid var(--border-line);
+      padding: 50px 0 40px;
+      position: relative;
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      color: var(--gold-bright);
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .main-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .main-title span {
+      background: linear-gradient(135deg, #f5c842 0%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 850px;
+      margin-bottom: 24px;
+    }
+
+    .client-data-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.85rem;
+    }
+
+    .data-chip {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 6px 14px;
+      border-radius: 999px;
+      color: #cbd5e1;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .data-chip strong {
+      color: var(--gold-bright);
+    }
+
+    /* Template Cards Section */
+    .templates-section {
+      padding: 60px 0;
+    }
+
+    .section-headline {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-headline h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .section-headline p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .template-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-bottom: 60px;
+    }
+
+    .template-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-line);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .template-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .template-card.active-preview {
+      border-color: var(--gold-bright);
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+    }
+
+    .card-preview-thumb {
+      height: 220px;
+      position: relative;
+      background: #090e1a;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .thumb-v1 {
+      background: radial-gradient(circle at 50% 30%, #1e293b 0%, #070b14 100%);
+      border-bottom: 3px solid var(--gold-primary);
+    }
+
+    .thumb-v2 {
+      background: radial-gradient(circle at 50% 30%, #131b27 0%, #070a0e 100%);
+      border-bottom: 3px solid var(--emerald-accent);
+    }
+
+    .thumb-v3 {
+      background: radial-gradient(circle at 50% 30%, #1e1b2e 0%, #090c12 100%);
+      border-bottom: 3px solid var(--amber-accent);
+    }
+
+    .thumb-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+
+    .thumb-logo-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+
+    .card-body {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .template-num {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .template-title {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .template-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .template-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      border-top: 1px solid var(--border-line);
+      padding-top: 16px;
+      margin-bottom: 24px;
+    }
+
+    .template-features li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .template-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .btn-action-primary {
+      background: var(--gold-primary);
+      color: #07090e;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action-primary:hover {
+      background: var(--gold-bright);
+    }
+
+    .btn-action-preview {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-line);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action-preview:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    /* Live Device Preview Frame */
+    .preview-workbench {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 60px;
+    }
+
+    .workbench-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-line);
+      padding-bottom: 16px;
+    }
+
+    .workbench-title h4 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .workbench-title span {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .viewport-controls {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .viewport-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-line);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .viewport-btn.active {
+      background: var(--gold-primary);
+      color: #000;
+      border-color: var(--gold-primary);
+      font-weight: 700;
+    }
+
+    .frame-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: #000;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    }
+
+    #previewFrame {
+      width: 100%;
+      height: 750px;
+      border: none;
+      transition: width 0.3s ease;
+      background: #000;
+    }
+
+    /* Client Asset & Go-Live Guide */
+    .guide-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      margin-bottom: 60px;
+    }
+
+    .guide-box h4 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--gold-bright);
+      margin-bottom: 14px;
+    }
+
+    .guide-checklist {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .guide-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-line);
+      padding: 20px;
+      border-radius: var(--radius-sm);
+    }
+
+    .guide-item h5 {
+      font-size: 1rem;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .guide-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .showcase-footer {
+      border-top: 1px solid var(--border-line);
+      padding: 40px 0;
+      text-align: center;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 1024px) {
+      .template-grid {
+        grid-template-columns: 1fr;
+      }
+      .guide-checklist {
+        grid-template-columns: 1fr;
+      }
+      .main-title {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Masthead Header -->
+  <header class="showcase-header">
+    <div class="container">
+      <div class="header-badge">
+        <span>★ CLIENT REVIEW HUB · 3 PRODUCTION-READY TEMPLATES</span>
+      </div>
+
+      <h1 class="main-title">
+        सरकार PSI अकॅडमी <span>(Sarkar PSI Academy)</span>
+      </h1>
+
+      <p class="subtitle">
+        प्रा. रविंद्र सरकार (२५+ वर्षे अनुभव, ७,५००+ यशस्वी अधिकारी) यांच्या नाशिक व मुंबई (दादर) केंद्रांसाठी ३ उत्कृष्ट, डार्क मोड, सौंदर्यपूर्ण आणि अत्याधुनिक वेबसाइट डिझाईन पर्यायांचे पुनरावलोकन.
+      </p>
+
+      <div class="client-data-chips">
+        <div class="data-chip">
+          🌐 अधिकृत डोमेन: <strong>www.sarkarpsiacademy.com</strong>
+        </div>
+        <div class="data-chip">
+          📍 मुख्य केंद्र: <strong>नाशिक (अशोक स्तंभ / शालिमार)</strong>
+        </div>
+        <div class="data-chip">
+          🏙️ नवीन केंद्र: <strong>मुंबई (दादर - प्रभादेवी मंदिर जवळ)</strong>
+        </div>
+        <div class="data-chip">
+          📞 संचालक हेल्पलाइन: <strong>+91 88056 67100</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Template Options Section -->
+  <main class="templates-section">
+    <div class="container">
+      <div class="section-headline">
+        <h3>३ वैशिष्ट्यपूर्ण डिझाईन पर्याय (3 Aesthetic Variations)</h3>
+        <p>खालीलपैकी कोणत्याही टेम्प्लेटवर क्लिक करून थेट लाइव्ह अनुभव घ्या किंवा खाली दिलेल्या प्रिव्ह्यूअरमध्ये पाहा.</p>
+      </div>
+
+      <div class="template-grid">
+        <!-- Template 1 -->
+        <div class="template-card" id="card-v1">
+          <div class="card-preview-thumb thumb-v1">
+            <span class="thumb-badge">प्रशासकीय खाकी थीम</span>
+            <div class="thumb-logo-icon">👮</div>
+          </div>
+          <div class="card-body">
+            <span class="template-num" style="color:var(--gold-bright);">पर्याय क्र. १ (Option 1)</span>
+            <h4 class="template-title">Cadet Dark (Tactical Navy & Gold)</h4>
+            <p class="template-desc">
+              महाराष्ट्र पोलीस व डिफेन्स ॲकॅडमीची शिस्तबद्ध व प्रभावी ओळख देणारे डिझाईन. पोलीस उपनिरीक्षक (PSI) भरती, ग्राउंड टेस्ट निकष, दादर होम ट्युशन्स आणि शारीरिक पात्रता कॅल्क्युलेटरवर विशेष भर.
+            </p>
+            <ul class="template-features">
+              <li>✓ नेव्ही ब्लू आणि पोलीस गोल्ड कलर पॅलेट</li>
+              <li>✓ परस्परसंवादी PSI शारीरिक पात्रता तपासणी</li>
+              <li>✓ दादर (मुंबई) प्रभादेवी केंद्राची विशेष ठळक मांडणी</li>
+              <li>✓ प्रा. सरकार यांच्या ठोकळा पुस्तकांची गॅलरी</li>
+            </ul>
+            <div class="template-actions">
+              <a href="v1-cadet-dark/index.html" target="_blank" class="btn-action-primary">फुल स्क्रीन उघडा ↗</a>
+              <button class="btn-action-preview" onclick="loadFrame('v1-cadet-dark/index.html', 'card-v1')">येथे प्रिव्ह्यू पाहा</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Template 2 -->
+        <div class="template-card" id="card-v2">
+          <div class="card-preview-thumb thumb-v2">
+            <span class="thumb-badge" style="border-color:rgba(16,185,129,0.4); color:#a7f3d0;">अकादमिक प्रतिष्ठा</span>
+            <div class="thumb-logo-icon" style="color:var(--emerald-accent);">🏛️</div>
+          </div>
+          <div class="card-body">
+            <span class="template-num" style="color:var(--emerald-accent);">पर्याय क्र. २ (Option 2)</span>
+            <h4 class="template-title">Prestige Editorial (Obsidian & Bronze)</h4>
+            <p class="template-desc">
+              उच्च प्रशासकीय संस्था (MPSC राज्यसेवा, क्लास १/२ अधिकारी) यांच्या तोडीचे प्रतिष्ठित, क्लासिक आणि अभ्यासपूर्ण रूप. २५ वर्षांचा अखंड वारसा आणि ७-टप्प्यांची शैक्षणिक चौकट.
+            </p>
+            <ul class="template-features">
+              <li>✓ ऑक्सफर्ड / हेरिटेज सेरिफ फॉन्ट मांडणी</li>
+              <li>✓ ७-टप्प्यांचा अभ्यासक्रम रोडमॅप (Pedagogy)</li>
+              <li>✓ लेखक प्रा. रविंद्र सरकार यांची ग्रंथसंपदा लेजर</li>
+              <li>✓ प्रशासकीय क्लास १ व २ पदांचे सखोल विश्लेषण</li>
+            </ul>
+            <div class="template-actions">
+              <a href="v2-prestige-editorial/index.html" target="_blank" class="btn-action-primary" style="background:var(--emerald-accent); color:#000;">फुल स्क्रीन उघडा ↗</a>
+              <button class="btn-action-preview" onclick="loadFrame('v2-prestige-editorial/index.html', 'card-v2')">येथे प्रिव्ह्यू पाहा</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Template 3 -->
+        <div class="template-card" id="card-v3">
+          <div class="card-preview-thumb thumb-v3">
+            <span class="thumb-badge" style="border-color:rgba(255,120,0,0.4); color:#fed7aa;">नेक्स्ट-जेन EdTech</span>
+            <div class="thumb-logo-icon" style="color:var(--amber-accent);">⚡</div>
+          </div>
+          <div class="card-body">
+            <span class="template-num" style="color:var(--amber-bright);">पर्याय क्र. ३ (Option 3)</span>
+            <h4 class="template-title">Metro Bento (Cyber Slate & Amber)</h4>
+            <p class="template-desc">
+              आधुनिक युवा पिढीसाठी बेन्टो-ग्रीड (Bento Layout) आधारित हाय-टेक रचना. लाइव्ह काऊंटर, परस्परसंवादी परीक्षा फिल्टर (PSI / MPSC / Police Bharti / Saral Seva) आणि त्वरित WhatsApp ॲडमिशन.
+            </p>
+            <ul class="template-features">
+              <li>✓ ॲपल व लिनिअर स्टाईल मॉड्यूलर बेन्टो कार्ड्स</li>
+              <li>✓ क्लिकवर बदलणारे परस्परसंवादी परीक्षा फिल्टर्स</li>
+              <li>✓ ७५००+ निकाल टेलिमेट्री काऊंटर कार्ड्स</li>
+              <li>✓ सुपरफास्ट मोबाईल-फर्स्ट स्पीड</li>
+            </ul>
+            <div class="template-actions">
+              <a href="v3-modern-bento/index.html" target="_blank" class="btn-action-primary" style="background:var(--amber-accent); color:#000;">फुल स्क्रीन उघडा ↗</a>
+              <button class="btn-action-preview" onclick="loadFrame('v3-modern-bento/index.html', 'card-v3')">येथे प्रिव्ह्यू पाहा</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Interactive Viewport Workbench -->
+      <div class="preview-workbench">
+        <div class="workbench-header">
+          <div class="workbench-title">
+            <h4 id="currentPreviewTitle">लाइव्ह प्रिव्ह्यू: V1 Cadet Dark (Tactical Navy & Gold)</h4>
+            <span>कोणत्याही डिव्हाइस आकारात वेबसाइट कशी दिसते ते तपासा:</span>
+          </div>
+
+          <div class="viewport-controls">
+            <button class="viewport-btn active" onclick="setViewport('100%', this)">🖥️ Desktop</button>
+            <button class="viewport-btn" onclick="setViewport('768px', this)">📱 Tablet</button>
+            <button class="viewport-btn" onclick="setViewport('390px', this)">📲 Mobile</button>
+          </div>
+        </div>
+
+        <div class="frame-wrapper">
+          <iframe id="previewFrame" src="v1-cadet-dark/index.html"></iframe>
+        </div>
+      </div>
+
+      <!-- Client Implementation & Production Guide -->
+      <div class="guide-box">
+        <h4>🚀 अंतिम उत्पादन (Production Deployment) मार्गदर्शक</h4>
+        <p style="color:#cbd5e1; font-size:0.95rem;">
+          क्लायंटने वरील ३ पैकी कोणताही एक पर्याय निवडल्यानंतर खालीलप्रमाणे थेट <strong>www.sarkarpsiacademy.com</strong> वर लागू केला जाईल:
+        </p>
+
+        <div class="guide-checklist">
+          <div class="guide-item">
+            <h5>१. डोमेन व DNS जोडणी</h5>
+            <p>
+              www.sarkarpsiacademy.com हे कस्टम डोमेन गिटहब पेजेस (GitHub Pages) किंवा Vercel / Cloudflare वर CNAME रेकॉर्डद्वारे १ क्लिकमध्ये लाइव्ह करता येईल.
+            </p>
+          </div>
+          <div class="guide-item">
+            <h5>२. अधिकृत संपर्क व WhatsApp</h5>
+            <p>
+              सर्व फॉर्म्स थेट <strong>+91 88056 67100</strong> या अधिकृत व्हॉट्सॲप नंबरवर विद्यार्थ्‍याचे नाव, मोबाईल, परीक्षा व केंद्र या माहितीसह ऑटो-फॉरवर्ड होतात.
+            </p>
+          </div>
+          <div class="guide-item">
+            <h5>३. दादर व नाशिक केंद्रे</h5>
+            <p>
+              प्रभादेवी मंदिर दादर, मिरा रोड ठाणे आणि नाशिक (अशोक स्तंभ / शालिमार) या सर्व शाखांचे अचूक पत्ते, फोन आणि गुगल मॅप्स समन्वित आहेत.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="showcase-footer">
+    <div class="container">
+      <p>© 2026 Sarkar PSI Academy · Career Academy. सर्व हक्क सुरक्षित.</p>
+      <p style="font-size:0.8rem; margin-top:6px; color:#64748b;">
+        Repository: snehanathani/sarkar-psi-academy · Domain: sarkarpsiacademy.com
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function loadFrame(url, cardId) {
+      document.getElementById('previewFrame').src = url;
+      document.querySelectorAll('.template-card').forEach(c => c.classList.remove('active-preview'));
+      if (cardId) document.getElementById(cardId).classList.add('active-preview');
+
+      let title = "V1 Cadet Dark";
+      if (url.includes('v2')) title = "V2 Prestige Editorial";
+      if (url.includes('v3')) title = "V3 Metro Bento";
+      document.getElementById('currentPreviewTitle').innerText = "लाइव्ह प्रिव्ह्यू: " + title;
+      document.querySelector('.preview-workbench').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function setViewport(width, btn) {
+      document.getElementById('previewFrame').style.width = width;
+      document.querySelectorAll('.viewport-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

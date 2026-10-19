@@ -1,0 +1,8 @@
+# Temporary and archive files
+*.zip
+*.traineddata
+ocr_results.txt
+scraped_routes.txt
+zip_contents/
+__pycache__/
+*.py
