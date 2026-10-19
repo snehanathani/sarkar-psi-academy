@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarkar PSI Academy | Design Templates Showcase & Client Review Hub</title>
-  <meta name="description" content="Official Design Showcase for Sarkar PSI Academy (www.sarkarpsiacademy.com) - Prof. Ravindra Sarkar. 3 Aesthetic Dark Mode Templates for Dadar (Mumbai) & Nashik Centers.">
+  <title>Sarkar PSI Academy | Design Templates Showcase (Marathi & English) - Mumbai & Nashik</title>
+  <meta name="description" content="Official Design Showcase for Sarkar PSI Academy (www.sarkarpsiacademy.com) - Prof. Ravindra Sarkar. 3 Aesthetic Dark Mode Templates in Marathi & English for Dadar (Mumbai) & Nashik Centers.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -55,8 +55,17 @@
     .showcase-header {
       background: linear-gradient(180deg, #111726 0%, #07090e 100%);
       border-bottom: 1px solid var(--border-line);
-      padding: 50px 0 40px;
+      padding: 44px 0 36px;
       position: relative;
+    }
+
+    .header-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 16px;
     }
 
     .header-badge {
@@ -72,7 +81,32 @@
       font-weight: 700;
       letter-spacing: 1px;
       text-transform: uppercase;
-      margin-bottom: 16px;
+    }
+
+    .global-lang-switch {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 4px;
+      border-radius: 999px;
+    }
+
+    .global-lang-btn {
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      transition: all 0.2s ease;
+    }
+
+    .global-lang-btn.active {
+      background: var(--gold-primary);
+      color: #07090e;
     }
 
     .main-title {
@@ -169,7 +203,7 @@
     }
 
     .card-preview-thumb {
-      height: 220px;
+      height: 200px;
       position: relative;
       background: #090e1a;
       overflow: hidden;
@@ -220,7 +254,7 @@
     }
 
     .card-body {
-      padding: 28px;
+      padding: 26px;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
@@ -236,7 +270,7 @@
     }
 
     .template-title {
-      font-size: 1.4rem;
+      font-size: 1.35rem;
       font-weight: 800;
       color: #ffffff;
       margin-bottom: 10px;
@@ -259,43 +293,59 @@
       color: #cbd5e1;
       border-top: 1px solid var(--border-line);
       padding-top: 16px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
-    .template-features li {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .template-actions {
+    .lang-launch-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      gap: 8px;
+      margin-bottom: 12px;
     }
 
-    .btn-action-primary {
-      background: var(--gold-primary);
-      color: #07090e;
-      font-weight: 700;
-      font-size: 0.9rem;
-      padding: 12px;
+    .btn-lang-launch {
+      padding: 10px 8px;
       border-radius: var(--radius-sm);
       text-align: center;
+      font-size: 0.82rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
       transition: all 0.2s ease;
     }
 
-    .btn-action-primary:hover {
-      background: var(--gold-bright);
+    .btn-mr {
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      color: var(--gold-bright);
+    }
+
+    .btn-mr:hover {
+      background: var(--gold-primary);
+      color: #07090e;
+    }
+
+    .btn-en {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+    }
+
+    .btn-en:hover {
+      background: #ffffff;
+      color: #07090e;
     }
 
     .btn-action-preview {
-      background: rgba(255, 255, 255, 0.06);
+      width: 100%;
+      background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--border-line);
-      color: #ffffff;
+      color: var(--text-muted);
       font-weight: 600;
-      font-size: 0.9rem;
-      padding: 12px;
+      font-size: 0.85rem;
+      padding: 10px;
       border-radius: var(--radius-sm);
       text-align: center;
       cursor: pointer;
@@ -303,7 +353,8 @@
     }
 
     .btn-action-preview:hover {
-      background: rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
     }
 
     /* Live Device Preview Frame */
@@ -337,9 +388,16 @@
       color: var(--text-muted);
     }
 
+    .workbench-controls-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
     .viewport-controls {
       display: flex;
-      gap: 8px;
+      gap: 6px;
       align-items: center;
     }
 
@@ -451,30 +509,37 @@
   <!-- Masthead Header -->
   <header class="showcase-header">
     <div class="container">
-      <div class="header-badge">
-        <span>★ CLIENT REVIEW HUB · 3 PRODUCTION-READY TEMPLATES</span>
+      <div class="header-top-row">
+        <div class="header-badge">
+          <span>★ CLIENT REVIEW HUB · 3 PRODUCTION-READY TEMPLATES (BILINGUAL)</span>
+        </div>
+
+        <div class="global-lang-switch">
+          <button class="global-lang-btn active" id="btnHubMr" onclick="switchHubLang('mr')">मराठी (Marathi)</button>
+          <button class="global-lang-btn" id="btnHubEn" onclick="switchHubLang('en')">English</button>
+        </div>
       </div>
 
       <h1 class="main-title">
         सरकार PSI अकॅडमी <span>(Sarkar PSI Academy)</span>
       </h1>
 
-      <p class="subtitle">
-        प्रा. रविंद्र सरकार (२५+ वर्षे अनुभव, ७,५००+ यशस्वी अधिकारी) यांच्या नाशिक व मुंबई (दादर) केंद्रांसाठी ३ उत्कृष्ट, डार्क मोड, सौंदर्यपूर्ण आणि अत्याधुनिक वेबसाइट डिझाईन पर्यायांचे पुनरावलोकन.
+      <p class="subtitle" id="hubSubtitle">
+        प्रा. रविंद्र सरकार (२५+ वर्षे अनुभव, ७,५००+ यशस्वी अधिकारी) यांच्या नाशिक व मुंबई (दादर) केंद्रांसाठी ३ उत्कृष्ट, डार्क मोड, सौंदर्यपूर्ण आणि अत्याधुनिक वेबसाइट डिझाईन पर्यायांचे पुनरावलोकन (मराठी आणि इंग्रजी दोन्ही माध्यमांमध्ये उपलब्ध).
       </p>
 
       <div class="client-data-chips">
         <div class="data-chip">
-          🌐 अधिकृत डोमेन: <strong>www.sarkarpsiacademy.com</strong>
+          🌐 <span id="chipDomain">अधिकृत डोमेन:</span> <strong>www.sarkarpsiacademy.com</strong>
         </div>
         <div class="data-chip">
-          📍 मुख्य केंद्र: <strong>नाशिक (अशोक स्तंभ / शालिमार)</strong>
+          📍 <span id="chipNashik">मुख्य केंद्र:</span> <strong>नाशिक (अशोक स्तंभ / शालिमार)</strong>
         </div>
         <div class="data-chip">
-          🏙️ नवीन केंद्र: <strong>मुंबई (दादर - प्रभादेवी मंदिर जवळ)</strong>
+          🏙️ <span id="chipDadar">नवीन केंद्र:</span> <strong>मुंबई (दादर - प्रभादेवी मंदिर जवळ)</strong>
         </div>
         <div class="data-chip">
-          📞 संचालक हेल्पलाइन: <strong>+91 88056 67100</strong>
+          📞 <span id="chipPhone">संचालक हेल्पलाइन:</span> <strong>+91 88056 67100</strong>
         </div>
       </div>
     </div>
@@ -484,8 +549,8 @@
   <main class="templates-section">
     <div class="container">
       <div class="section-headline">
-        <h3>३ वैशिष्ट्यपूर्ण डिझाईन पर्याय (3 Aesthetic Variations)</h3>
-        <p>खालीलपैकी कोणत्याही टेम्प्लेटवर क्लिक करून थेट लाइव्ह अनुभव घ्या किंवा खाली दिलेल्या प्रिव्ह्यूअरमध्ये पाहा.</p>
+        <h3 id="sectionTitle">३ वैशिष्ट्यपूर्ण डिझाईन पर्याय · मराठी व English</h3>
+        <p id="sectionDesc">खालीलपैकी कोणत्याही टेम्प्लेटचे मराठी किंवा इंग्रजी व्हर्जन थेट उघडा अथवा खालील लाइव्ह प्रिव्ह्यूअरमध्ये पाहा.</p>
       </div>
 
       <div class="template-grid">
@@ -507,10 +572,18 @@
               <li>✓ दादर (मुंबई) प्रभादेवी केंद्राची विशेष ठळक मांडणी</li>
               <li>✓ प्रा. सरकार यांच्या ठोकळा पुस्तकांची गॅलरी</li>
             </ul>
-            <div class="template-actions">
-              <a href="v1-cadet-dark/index.html" target="_blank" class="btn-action-primary">फुल स्क्रीन उघडा ↗</a>
-              <button class="btn-action-preview" onclick="loadFrame('v1-cadet-dark/index.html', 'card-v1')">येथे प्रिव्ह्यू पाहा</button>
+
+            <div class="lang-launch-row">
+              <a href="v1-cadet-dark/index.html" target="_blank" class="btn-lang-launch btn-mr">
+                🇮🇳 मराठी व्हर्जन ↗
+              </a>
+              <a href="v1-cadet-dark/index-en.html" target="_blank" class="btn-lang-launch btn-en">
+                🇬🇧 English Version ↗
+              </a>
             </div>
+            <button class="btn-action-preview" onclick="loadFrame('v1-cadet-dark/index.html', 'card-v1', 'V1 Cadet Dark (Marathi)')">
+              येथे लाइव्ह प्रिव्ह्यू पाहा
+            </button>
           </div>
         </div>
 
@@ -532,10 +605,18 @@
               <li>✓ लेखक प्रा. रविंद्र सरकार यांची ग्रंथसंपदा लेजर</li>
               <li>✓ प्रशासकीय क्लास १ व २ पदांचे सखोल विश्लेषण</li>
             </ul>
-            <div class="template-actions">
-              <a href="v2-prestige-editorial/index.html" target="_blank" class="btn-action-primary" style="background:var(--emerald-accent); color:#000;">फुल स्क्रीन उघडा ↗</a>
-              <button class="btn-action-preview" onclick="loadFrame('v2-prestige-editorial/index.html', 'card-v2')">येथे प्रिव्ह्यू पाहा</button>
+
+            <div class="lang-launch-row">
+              <a href="v2-prestige-editorial/index.html" target="_blank" class="btn-lang-launch btn-mr" style="border-color:rgba(16,185,129,0.4); color:#6ee7b7;">
+                🇮🇳 मराठी व्हर्जन ↗
+              </a>
+              <a href="v2-prestige-editorial/index-en.html" target="_blank" class="btn-lang-launch btn-en">
+                🇬🇧 English Version ↗
+              </a>
             </div>
+            <button class="btn-action-preview" onclick="loadFrame('v2-prestige-editorial/index.html', 'card-v2', 'V2 Prestige Editorial (Marathi)')">
+              येथे लाइव्ह प्रिव्ह्यू पाहा
+            </button>
           </div>
         </div>
 
@@ -557,10 +638,18 @@
               <li>✓ ७५००+ निकाल टेलिमेट्री काऊंटर कार्ड्स</li>
               <li>✓ सुपरफास्ट मोबाईल-फर्स्ट स्पीड</li>
             </ul>
-            <div class="template-actions">
-              <a href="v3-modern-bento/index.html" target="_blank" class="btn-action-primary" style="background:var(--amber-accent); color:#000;">फुल स्क्रीन उघडा ↗</a>
-              <button class="btn-action-preview" onclick="loadFrame('v3-modern-bento/index.html', 'card-v3')">येथे प्रिव्ह्यू पाहा</button>
+
+            <div class="lang-launch-row">
+              <a href="v3-modern-bento/index.html" target="_blank" class="btn-lang-launch btn-mr" style="border-color:rgba(255,120,0,0.4); color:#fed7aa;">
+                🇮🇳 मराठी व्हर्जन ↗
+              </a>
+              <a href="v3-modern-bento/index-en.html" target="_blank" class="btn-lang-launch btn-en">
+                🇬🇧 English Version ↗
+              </a>
             </div>
+            <button class="btn-action-preview" onclick="loadFrame('v3-modern-bento/index.html', 'card-v3', 'V3 Metro Bento (Marathi)')">
+              येथे लाइव्ह प्रिव्ह्यू पाहा
+            </button>
           </div>
         </div>
       </div>
@@ -569,14 +658,23 @@
       <div class="preview-workbench">
         <div class="workbench-header">
           <div class="workbench-title">
-            <h4 id="currentPreviewTitle">लाइव्ह प्रिव्ह्यू: V1 Cadet Dark (Tactical Navy & Gold)</h4>
-            <span>कोणत्याही डिव्हाइस आकारात वेबसाइट कशी दिसते ते तपासा:</span>
+            <h4 id="currentPreviewTitle">लाइव्ह प्रिव्ह्यू: V1 Cadet Dark (मराठी)</h4>
+            <span id="workbenchHint">डिव्हाइस आणि भाषा बदलून थेट अनुभव घ्या:</span>
           </div>
 
-          <div class="viewport-controls">
-            <button class="viewport-btn active" onclick="setViewport('100%', this)">🖥️ Desktop</button>
-            <button class="viewport-btn" onclick="setViewport('768px', this)">📱 Tablet</button>
-            <button class="viewport-btn" onclick="setViewport('390px', this)">📲 Mobile</button>
+          <div class="workbench-controls-group">
+            <!-- Language toggle for previewer -->
+            <div style="display:inline-flex; align-items:center; background:rgba(255,255,255,0.06); border:1px solid var(--border-line); border-radius:999px; padding:2px;">
+              <button class="viewport-btn active" id="btnPreviewMr" style="padding:4px 10px; font-size:0.75rem;" onclick="setPreviewLanguage('mr')">मराठी</button>
+              <button class="viewport-btn" id="btnPreviewEn" style="padding:4px 10px; font-size:0.75rem;" onclick="setPreviewLanguage('en')">English</button>
+            </div>
+
+            <!-- Viewport widths -->
+            <div class="viewport-controls">
+              <button class="viewport-btn active" onclick="setViewport('100%', this)">🖥️ Desktop</button>
+              <button class="viewport-btn" onclick="setViewport('768px', this)">📱 Tablet</button>
+              <button class="viewport-btn" onclick="setViewport('390px', this)">📲 Mobile</button>
+            </div>
           </div>
         </div>
 
@@ -587,28 +685,28 @@
 
       <!-- Client Implementation & Production Guide -->
       <div class="guide-box">
-        <h4>🚀 अंतिम उत्पादन (Production Deployment) मार्गदर्शक</h4>
-        <p style="color:#cbd5e1; font-size:0.95rem;">
+        <h4 id="guideTitle">🚀 अंतिम उत्पादन (Production Deployment) मार्गदर्शक</h4>
+        <p style="color:#cbd5e1; font-size:0.95rem;" id="guideSub">
           क्लायंटने वरील ३ पैकी कोणताही एक पर्याय निवडल्यानंतर खालीलप्रमाणे थेट <strong>www.sarkarpsiacademy.com</strong> वर लागू केला जाईल:
         </p>
 
         <div class="guide-checklist">
           <div class="guide-item">
-            <h5>१. डोमेन व DNS जोडणी</h5>
-            <p>
+            <h5 id="g1Title">१. डोमेन व DNS जोडणी</h5>
+            <p id="g1Desc">
               www.sarkarpsiacademy.com हे कस्टम डोमेन गिटहब पेजेस (GitHub Pages) किंवा Vercel / Cloudflare वर CNAME रेकॉर्डद्वारे १ क्लिकमध्ये लाइव्ह करता येईल.
             </p>
           </div>
           <div class="guide-item">
-            <h5>२. अधिकृत संपर्क व WhatsApp</h5>
-            <p>
-              सर्व फॉर्म्स थेट <strong>+91 88056 67100</strong> या अधिकृत व्हॉट्सॲप नंबरवर विद्यार्थ्‍याचे नाव, मोबाईल, परीक्षा व केंद्र या माहितीसह ऑटो-फॉरवर्ड होतात.
+            <h5 id="g2Title">२. द्विभाषिक (Bilingual) सुविधा</h5>
+            <p id="g2Desc">
+              मराठी आणि इंग्रजी दोन्ही माध्यमांच्या विद्यार्थ्यांसाठी प्रत्येक पानावर 1-क्लिक भाषा बदलण्याची सोय उपलब्ध आहे.
             </p>
           </div>
           <div class="guide-item">
-            <h5>३. दादर व नाशिक केंद्रे</h5>
-            <p>
-              प्रभादेवी मंदिर दादर, मिरा रोड ठाणे आणि नाशिक (अशोक स्तंभ / शालिमार) या सर्व शाखांचे अचूक पत्ते, फोन आणि गुगल मॅप्स समन्वित आहेत.
+            <h5 id="g3Title">३. दादर व नाशिक केंद्रे</h5>
+            <p id="g3Desc">
+              प्रभादेवी मंदिर दादर, मिरा रोड ठाणे आणि नाशिक (अशोक स्तंभ / शालिमार) या सर्व शाखांचे अचूक पत्ते, फोन आणि गुगल मॅप्स थेट व्हॉट्सॲपवर जोडलेले आहेत.
             </p>
           </div>
         </div>
@@ -618,7 +716,7 @@
 
   <footer class="showcase-footer">
     <div class="container">
-      <p>© 2026 Sarkar PSI Academy · Career Academy. सर्व हक्क सुरक्षित.</p>
+      <p>© 2026 Sarkar PSI Academy · Career Academy. सर्व हक्क सुरक्षित · All Rights Reserved.</p>
       <p style="font-size:0.8rem; margin-top:6px; color:#64748b;">
         Repository: snehanathani/sarkar-psi-academy · Domain: sarkarpsiacademy.com
       </p>
@@ -626,22 +724,87 @@
   </footer>
 
   <script>
-    function loadFrame(url, cardId) {
+    let currentTemplate = 'v1-cadet-dark';
+    let currentLang = 'mr';
+
+    function loadFrame(url, cardId, title) {
       document.getElementById('previewFrame').src = url;
       document.querySelectorAll('.template-card').forEach(c => c.classList.remove('active-preview'));
       if (cardId) document.getElementById(cardId).classList.add('active-preview');
 
-      let title = "V1 Cadet Dark";
-      if (url.includes('v2')) title = "V2 Prestige Editorial";
-      if (url.includes('v3')) title = "V3 Metro Bento";
-      document.getElementById('currentPreviewTitle').innerText = "लाइव्ह प्रिव्ह्यू: " + title;
+      if (url.includes('v1')) currentTemplate = 'v1-cadet-dark';
+      if (url.includes('v2')) currentTemplate = 'v2-prestige-editorial';
+      if (url.includes('v3')) currentTemplate = 'v3-modern-bento';
+      currentLang = url.includes('-en') ? 'en' : 'mr';
+      updatePreviewLangButtons();
+
+      document.getElementById('currentPreviewTitle').innerText = (currentLang === 'mr' ? 'लाइव्ह प्रिव्ह्यू: ' : 'Live Preview: ') + title;
       document.querySelector('.preview-workbench').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function setPreviewLanguage(lang) {
+      currentLang = lang;
+      updatePreviewLangButtons();
+
+      let targetUrl = currentTemplate + (lang === 'en' ? '/index-en.html' : '/index.html');
+      document.getElementById('previewFrame').src = targetUrl;
+
+      let name = "V1 Cadet Dark";
+      if (currentTemplate.includes('v2')) name = "V2 Prestige Editorial";
+      if (currentTemplate.includes('v3')) name = "V3 Metro Bento";
+      document.getElementById('currentPreviewTitle').innerText = (lang === 'mr' ? 'लाइव्ह प्रिव्ह्यू: ' : 'Live Preview: ') + name + ` (${lang === 'mr' ? 'मराठी' : 'English'})`;
+    }
+
+    function updatePreviewLangButtons() {
+      document.getElementById('btnPreviewMr').classList.toggle('active', currentLang === 'mr');
+      document.getElementById('btnPreviewEn').classList.toggle('active', currentLang === 'en');
     }
 
     function setViewport(width, btn) {
       document.getElementById('previewFrame').style.width = width;
       document.querySelectorAll('.viewport-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
+    }
+
+    function switchHubLang(lang) {
+      document.getElementById('btnHubMr').classList.toggle('active', lang === 'mr');
+      document.getElementById('btnHubEn').classList.toggle('active', lang === 'en');
+
+      if (lang === 'en') {
+        document.getElementById('hubSubtitle').innerText = "Client Review Hub for Prof. Ravindra Sarkar (25+ yrs experience, 7,500+ appointed officers) covering Nashik Headquarters and Mumbai (Dadar) expansion. Review all 3 aesthetic, dark-mode templates available in both Marathi & English.";
+        document.getElementById('sectionTitle').innerText = "3 Bespoke Design Directions · Marathi & English";
+        document.getElementById('sectionDesc').innerText = "Select any template below to explore either its Marathi or full English edition directly or in the live simulator.";
+        document.getElementById('chipDomain').innerText = "Official Domain:";
+        document.getElementById('chipNashik').innerText = "Headquarters:";
+        document.getElementById('chipDadar').innerText = "Mumbai Hub:";
+        document.getElementById('chipPhone').innerText = "Director Helpline:";
+        document.getElementById('guideTitle').innerText = "🚀 Production Deployment & Domain Routing Guide";
+        document.getElementById('guideSub').innerText = "Once the client finalizes their favorite option, it will be mapped directly to www.sarkarpsiacademy.com with the following features:";
+        document.getElementById('g1Title').innerText = "1. Custom Domain & DNS Mapping";
+        document.getElementById('g1Desc').innerText = "www.sarkarpsiacademy.com can be linked via CNAME record in 1 click with full HTTPS security.";
+        document.getElementById('g2Title').innerText = "2. Full Bilingual Support";
+        document.getElementById('g2Desc').innerText = "Both Marathi & English editions are ready to serve aspirants from all linguistic and educational backgrounds.";
+        document.getElementById('g3Title').innerText = "3. Integrated WhatsApp Lead Routing";
+        document.getElementById('g3Desc').innerText = "All inquiries route directly to +91 88056 67100 with student profile, preferred center, and target exam.";
+        setPreviewLanguage('en');
+      } else {
+        document.getElementById('hubSubtitle').innerText = "प्रा. रविंद्र सरकार (२५+ वर्षे अनुभव, ७,५००+ यशस्वी अधिकारी) यांच्या नाशिक व मुंबई (दादर) केंद्रांसाठी ३ उत्कृष्ट, डार्क मोड, सौंदर्यपूर्ण आणि अत्याधुनिक वेबसाइट डिझाईन पर्यायांचे पुनरावलोकन (मराठी आणि इंग्रजी दोन्ही माध्यमांमध्ये उपलब्ध).";
+        document.getElementById('sectionTitle').innerText = "३ वैशिष्ट्यपूर्ण डिझाईन पर्याय · मराठी व English";
+        document.getElementById('sectionDesc').innerText = "खालीलपैकी कोणत्याही टेम्प्लेटचे मराठी किंवा इंग्रजी व्हर्जन थेट उघडा अथवा खालील लाइव्ह प्रिव्ह्यूअरमध्ये पाहा.";
+        document.getElementById('chipDomain').innerText = "अधिकृत डोमेन:";
+        document.getElementById('chipNashik').innerText = "मुख्य केंद्र:";
+        document.getElementById('chipDadar').innerText = "नवीन केंद्र:";
+        document.getElementById('chipPhone').innerText = "संचालक हेल्पलाइन:";
+        document.getElementById('guideTitle').innerText = "🚀 अंतिम उत्पादन (Production Deployment) मार्गदर्शक";
+        document.getElementById('guideSub').innerText = "क्लायंटने वरील ३ पैकी कोणताही एक पर्याय निवडल्यानंतर खालीलप्रमाणे थेट www.sarkarpsiacademy.com वर लागू केला जाईल:";
+        document.getElementById('g1Title').innerText = "१. डोमेन व DNS जोडणी";
+        document.getElementById('g1Desc').innerText = "www.sarkarpsiacademy.com हे कस्टम डोमेन गिटहब पेजेस (GitHub Pages) किंवा Vercel / Cloudflare वर CNAME रेकॉर्डद्वारे १ क्लिकमध्ये लाइव्ह करता येईल.";
+        document.getElementById('g2Title').innerText = "२. द्विभाषिक (Bilingual) सुविधा";
+        document.getElementById('g2Desc').innerText = "मराठी आणि इंग्रजी दोन्ही माध्यमांच्या विद्यार्थ्यांसाठी प्रत्येक पानावर 1-क्लिक भाषा बदलण्याची सोय उपलब्ध आहे.";
+        document.getElementById('g3Title').innerText = "३. दादर व नाशिक केंद्रे";
+        document.getElementById('g3Desc').innerText = "प्रभादेवी मंदिर दादर, मिरा रोड ठाणे आणि नाशिक (अशोक स्तंभ / शालिमार) या सर्व शाखांचे अचूक पत्ते, फोन आणि गुगल मॅप्स थेट व्हॉट्सॲपवर जोडलेले आहेत.";
+        setPreviewLanguage('mr');
+      }
     }
   </script>
 </body>

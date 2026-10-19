@@ -18,7 +18,7 @@ The root of this project serves as an **Interactive Client Review Hub** allowing
 
 ```
 mpscAcademy/
-├── index.html                    # Master Client Showcase & Review Portal (with device frame simulator)
+├── index.html                    # Master Client Showcase Hub (with live language toggle & device frame)
 ├── assets/                       # High-resolution logos, optimized webp portraits, and graphics
 │   └── images/
 │       ├── logo.webp             # Official Sarkar Academy Emblem
@@ -27,11 +27,14 @@ mpscAcademy/
 │       ├── flex-board.webp
 │       └── psi-poster.webp
 ├── v1-cadet-dark/                # Option 1: Cadet Dark (Tactical Navy & Gold)
-│   └── index.html
+│   ├── index.html                # Marathi Edition
+│   └── index-en.html             # Full English Edition
 ├── v2-prestige-editorial/        # Option 2: Prestige Editorial (Obsidian & Emerald Bronze)
-│   └── index.html
+│   ├── index.html                # Marathi Edition
+│   └── index-en.html             # Full English Edition
 ├── v3-modern-bento/              # Option 3: Metro Bento (Cyber Slate & Electric Amber)
-│   └── index.html
+│   ├── index.html                # Marathi Edition
+│   └── index-en.html             # Full English Edition
 ├── .nojekyll                     # Ensures GitHub Pages static asset routing
 └── README.md
 ```

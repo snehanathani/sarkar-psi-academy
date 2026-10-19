@@ -1,0 +1,2194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarkar PSI Academy | Premier Police Sub-Inspector & MPSC Coaching - Dadar (Mumbai) & Nashik</title>
+  <meta name="description" content="Maharashtra's No. 1 Academy for Police Sub-Inspector (PSI) and MPSC exams. Directed by Prof. Ravindra Sarkar (25+ yrs experience, 7,500+ officers). Special batches & home tuitions in Dadar (Mumbai) & Nashik.">
+  <link rel="canonical" href="https://sarkarpsiacademy.com/v1-cadet-dark/index-en.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #060911;
+      --bg-surface: #0b1120;
+      --bg-card: #10182b;
+      --bg-card-hover: #16223d;
+      --border-subtle: rgba(212, 175, 55, 0.15);
+      --border-strong: rgba(212, 175, 55, 0.4);
+      --gold-primary: #d4af37;
+      --gold-bright: #f5c842;
+      --gold-glow: rgba(212, 175, 55, 0.25);
+      --gold-gradient: linear-gradient(135deg, #f5c842 0%, #d4af37 50%, #aa8214 100%);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --badge-bg: rgba(212, 175, 55, 0.12);
+      --badge-border: rgba(212, 175, 55, 0.35);
+      --khaki-accent: #c29d53;
+      --police-blue: #1e3a8a;
+      --success: #10b981;
+      --font-body: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      --font-display: 'Cinzel', serif;
+      --container-max: 1240px;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+      --shadow-glow: 0 0 40px -5px rgba(212, 175, 55, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .bg-grid-overlay {
+      position: fixed;
+      inset: 0;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 48px 48px, 48px 48px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Template Switcher Bar */
+    .template-bar {
+      background: #090e1a;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 10px 0;
+      font-size: 0.8rem;
+      position: relative;
+      z-index: 60;
+    }
+
+    .template-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .template-chips {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .chip {
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--text-muted);
+    }
+
+    .chip.active {
+      background: var(--gold-gradient);
+      color: #0b0f19;
+      border-color: transparent;
+      font-weight: 700;
+    }
+
+    /* Top Strip */
+    .top-strip {
+      background: linear-gradient(90deg, #111a33 0%, #1e293b 50%, #111a33 100%);
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 0.85rem;
+      padding: 8px 0;
+      position: relative;
+      z-index: 30;
+    }
+
+    .top-strip-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .top-strip-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid var(--border-strong);
+      color: var(--gold-bright);
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .top-strip-locations {
+      display: flex;
+      gap: 16px;
+      color: var(--text-muted);
+    }
+
+    .top-strip-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--gold-bright);
+      font-weight: 600;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(6, 9, 17, 0.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 50;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-logo-img {
+      height: 52px;
+      width: auto;
+      filter: drop-shadow(0 2px 8px rgba(212, 175, 55, 0.3));
+    }
+
+    .brand-text h1 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: var(--gold-bright);
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .brand-text span {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+      position: relative;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--gold-bright);
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--gold-bright);
+      border-radius: 2px;
+    }
+
+    /* Language Switcher Button */
+    .lang-switcher {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-subtle);
+      border-radius: 999px;
+      padding: 3px;
+      font-size: 0.78rem;
+    }
+
+    .lang-btn {
+      padding: 4px 10px;
+      border-radius: 999px;
+      color: var(--text-muted);
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--gold-gradient);
+      color: #000;
+      font-weight: 700;
+    }
+
+    .nav-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gold-gradient);
+      color: #0b0f19;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+      transition: all 0.2s ease;
+      font-size: 0.88rem;
+    }
+
+    .nav-cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      padding: 70px 0 90px;
+      z-index: 10;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .hero-badge-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--badge-bg);
+      border: 1px solid var(--badge-border);
+      padding: 6px 16px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+
+    .hero-badge-star {
+      color: var(--gold-bright);
+    }
+
+    .hero-badge-text {
+      color: var(--gold-bright);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-title {
+      font-size: 3.1rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .hero-title .highlight {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+
+    .hero-locations-box {
+      background: rgba(16, 24, 43, 0.7);
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid var(--gold-primary);
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .hero-locations-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+    }
+
+    .hero-locations-row strong {
+      color: var(--gold-bright);
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--gold-gradient);
+      color: #0b0f19;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 14px 28px;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35);
+      transition: all 0.25s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 14px 24px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-strong);
+      transition: all 0.25s ease;
+    }
+
+    .btn-outline:hover {
+      background: rgba(212, 175, 55, 0.1);
+      border-color: var(--gold-bright);
+      color: var(--gold-bright);
+      transform: translateY(-2px);
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .metric-item h3 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--gold-bright);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .metric-item p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.3;
+    }
+
+    /* Hero Visual Card */
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card-frame {
+      position: relative;
+      background: linear-gradient(145deg, #131c33 0%, #0d1424 100%);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      box-shadow: var(--shadow-card), var(--shadow-glow);
+      overflow: hidden;
+    }
+
+    .hero-card-img-wrap {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      position: relative;
+      background: #090e1a;
+      aspect-ratio: 4/5;
+    }
+
+    .hero-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .hero-card-overlay {
+      position: absolute;
+      bottom: 0;
+      inset-x: 0;
+      background: linear-gradient(to top, rgba(6, 9, 17, 0.95) 0%, rgba(6, 9, 17, 0.6) 60%, transparent 100%);
+      padding: 24px 20px;
+    }
+
+    .hero-card-name {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+
+    .hero-card-desc {
+      color: var(--gold-bright);
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .floating-pill {
+      position: absolute;
+      background: rgba(16, 24, 43, 0.95);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border-strong);
+      padding: 10px 16px;
+      border-radius: 999px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    .pill-top-left {
+      top: 30px;
+      left: -20px;
+    }
+
+    .pill-bottom-right {
+      bottom: 40px;
+      right: -20px;
+    }
+
+    .pill-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--gold-gradient);
+      color: #0b0f19;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+
+    .pill-text strong {
+      display: block;
+      font-size: 0.85rem;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .pill-text span {
+      font-size: 0.72rem;
+      color: var(--gold-bright);
+    }
+
+    /* Global Sections */
+    .section {
+      padding: 90px 0;
+      position: relative;
+      z-index: 10;
+    }
+
+    .section-alt {
+      background: #090e1a;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 56px;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--badge-bg);
+      border: 1px solid var(--badge-border);
+      color: var(--gold-bright);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .section-title span {
+      color: var(--gold-bright);
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Dadar Announcement Card */
+    .dadar-callout-card {
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.3) 0%, rgba(16, 24, 43, 0.85) 100%);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 60px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .dadar-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .dadar-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: #38bdf8;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    .dadar-heading {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+
+    .dadar-desc {
+      color: #cbd5e1;
+      font-size: 1.02rem;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .dadar-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .dadar-feat-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: #e2e8f0;
+    }
+
+    .dadar-feat-item svg {
+      color: #38bdf8;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .dadar-schedule-box {
+      background: rgba(11, 17, 32, 0.9);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      text-align: center;
+    }
+
+    .dadar-schedule-box h4 {
+      font-size: 1.1rem;
+      color: var(--gold-bright);
+      margin-bottom: 12px;
+    }
+
+    .dadar-time-badge {
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid var(--border-strong);
+      color: #ffffff;
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
+
+    .dadar-location-text {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    /* Course Cards Grid */
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .course-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 32px 28px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .course-card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-strong);
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5), 0 0 24px rgba(212, 175, 55, 0.1);
+    }
+
+    .course-card.featured {
+      border-color: var(--border-strong);
+      background: linear-gradient(160deg, #141f38 0%, #10182b 100%);
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+    }
+
+    .course-featured-ribbon {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--gold-gradient);
+      color: #090e1a;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    .course-icon-wrap {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-sm);
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--border-subtle);
+      color: var(--gold-bright);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .course-card-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .course-card-subtitle {
+      font-size: 0.85rem;
+      color: var(--gold-bright);
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .course-card-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+
+    .course-syllabus-list {
+      list-style: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 18px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .course-syllabus-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+    }
+
+    .course-syllabus-item svg {
+      color: var(--gold-bright);
+      flex-shrink: 0;
+    }
+
+    .course-btn {
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.9rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      transition: all 0.2s ease;
+      display: block;
+    }
+
+    .course-card:hover .course-btn, .course-card.featured .course-btn {
+      background: var(--gold-gradient);
+      color: #090e1a;
+      border-color: transparent;
+    }
+
+    /* Mentor Section */
+    .mentor-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .mentor-photo-card {
+      position: relative;
+      background: linear-gradient(145deg, #131c33 0%, #0d1424 100%);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .mentor-photo-wrap {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      background: #090e1a;
+    }
+
+    .mentor-credentials-badge {
+      position: absolute;
+      bottom: -15px;
+      right: 25px;
+      background: var(--gold-gradient);
+      color: #0b0f19;
+      font-weight: 800;
+      font-size: 0.85rem;
+      padding: 8px 18px;
+      border-radius: 999px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .mentor-info-tag {
+      color: var(--gold-bright);
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .mentor-name {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .mentor-role {
+      font-size: 1.1rem;
+      color: var(--gold-primary);
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .mentor-bio {
+      color: #cbd5e1;
+      font-size: 1.02rem;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .mentor-quote {
+      background: rgba(16, 24, 43, 0.7);
+      border-left: 4px solid var(--gold-bright);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.98rem;
+      color: #f1f5f9;
+      font-style: italic;
+      margin-bottom: 28px;
+    }
+
+    .mentor-badges-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .mentor-badge-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 14px 18px;
+      border-radius: var(--radius-sm);
+    }
+
+    .mentor-badge-card strong {
+      display: block;
+      color: var(--gold-bright);
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .mentor-badge-card span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Books Showcase */
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .book-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      text-align: center;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .book-card:hover {
+      border-color: var(--gold-bright);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+    }
+
+    .book-spine-mockup {
+      width: 100px;
+      height: 140px;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 2px solid var(--border-strong);
+      border-radius: 4px 10px 10px 4px;
+      box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.6);
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      position: relative;
+    }
+
+    .book-mock-title {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--gold-bright);
+      line-height: 1.2;
+    }
+
+    .book-mock-author {
+      font-size: 0.6rem;
+      color: #94a3b8;
+      margin-top: 6px;
+    }
+
+    .book-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .book-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin-bottom: 14px;
+    }
+
+    .book-tag {
+      font-size: 0.72rem;
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold-bright);
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    /* Centers */
+    .centers-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .center-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+    }
+
+    .center-type-badge {
+      display: inline-block;
+      align-self: flex-start;
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold-bright);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+    }
+
+    .center-city {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .center-address {
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+      margin-bottom: 18px;
+      flex-grow: 1;
+    }
+
+    .center-phones {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--gold-bright);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 14px;
+    }
+
+    /* Eligibility Box */
+    .eligibility-box {
+      background: linear-gradient(135deg, #10182b 0%, #0d1424 100%);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: var(--shadow-card);
+    }
+
+    .eligibility-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--gold-bright);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .eligibility-desc {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 30px;
+    }
+
+    .eligibility-form-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .form-control {
+      width: 100%;
+      background: #090e1a;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--gold-bright);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+    }
+
+    .check-btn {
+      width: 100%;
+      background: var(--gold-gradient);
+      color: #0b0f19;
+      font-weight: 800;
+      padding: 14px;
+      border-radius: var(--radius-sm);
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .eligibility-result {
+      margin-top: 24px;
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      display: none;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Contact & Form */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .contact-details h3 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .contact-details p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .contact-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .contact-point-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--border-subtle);
+      color: var(--gold-bright);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-point-info strong {
+      display: block;
+      color: #ffffff;
+      font-size: 0.95rem;
+    }
+
+    .contact-point-info span {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .submit-btn {
+      background: var(--gold-gradient);
+      color: #0b0f19;
+      font-weight: 800;
+      padding: 14px;
+      border-radius: var(--radius-sm);
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #04070d;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 60px 0 30px;
+      font-size: 0.9rem;
+      position: relative;
+      z-index: 20;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+
+    .footer-col h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gold-bright);
+      margin-bottom: 18px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-col ul a {
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--gold-bright);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-dim);
+      font-size: 0.82rem;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* Floating Actions */
+    .floating-actions {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 99;
+    }
+
+    .float-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .float-btn-wa {
+      background: #25d366;
+      color: #ffffff;
+    }
+
+    .float-btn-call {
+      background: var(--gold-gradient);
+      color: #0b0f19;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-grid, .dadar-grid, .mentor-grid, .contact-layout {
+        grid-template-columns: 1fr;
+      }
+      .courses-grid, .centers-grid, .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .hero-title {
+        font-size: 2.4rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta-btn {
+        display: none;
+      }
+      .courses-grid, .centers-grid, .books-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-metrics {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .eligibility-form-grid, .form-row, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Top Template Selector Hub Strip -->
+  <div class="template-bar">
+    <div class="container template-bar-inner">
+      <div style="display:flex; align-items:center; gap:8px;">
+        <span style="color:var(--gold-bright); font-weight:700;">🎨 Design Showcase:</span>
+        <span style="color:var(--text-muted);">Active Design:</span>
+      </div>
+      <div class="template-chips">
+        <a href="index-en.html" class="chip active">V1: Cadet Dark (English)</a>
+        <a href="../v2-prestige-editorial/index-en.html" class="chip">V2: Prestige Editorial</a>
+        <a href="../v3-modern-bento/index-en.html" class="chip">V3: Metro Bento</a>
+        <a href="../index.html" class="chip" style="background:rgba(212,175,55,0.2); color:#fff;">← All Versions Hub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Alert Bar -->
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+        <span class="top-strip-pill">🔴 ADMISSIONS OPEN</span>
+        <span style="color:#ffffff; font-weight:600;">Special Mumbai (Dadar) PSI Batches & Home Tuitions Now Live!</span>
+      </div>
+      <div class="top-strip-locations">
+        <span>📍 Flagship: Nashik (Ashok Stambh / Shalimar)</span>
+        <span>📍 Mumbai Hub: Prabhadevi Temple, Dadar (W)</span>
+      </div>
+      <a href="tel:+918805667100" class="top-strip-phone">
+        📞 +91 88056 67100
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index-en.html" class="brand-wrap">
+        <img src="../assets/images/logo.webp" alt="Sarkar PSI Academy" class="brand-logo-img" onerror="this.src='../assets/images/logo.png'">
+        <div class="brand-text">
+          <h1>SARKAR PSI ACADEMY</h1>
+          <span>SARKAR CAREER ACADEMY · ESTD 1995</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#dadar" class="nav-link">Dadar Batch</a></li>
+          <li><a href="#courses" class="nav-link">Courses</a></li>
+          <li><a href="#mentor" class="nav-link">Prof. Sarkar</a></li>
+          <li><a href="#books" class="nav-link">Books</a></li>
+          <li><a href="#centers" class="nav-link">Centers</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap:14px;">
+        <div class="lang-switcher">
+          <a href="index.html" class="lang-btn">मराठी</a>
+          <a href="index-en.html" class="lang-btn active">English</a>
+        </div>
+
+        <a href="#contact" class="nav-cta-btn">
+          <span>Apply Now</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="hero-badge-star">★</span>
+            <span class="hero-badge-text">Maharashtra's Premier Police & MPSC Academy</span>
+          </div>
+
+          <h2 class="hero-title">
+            Your Khaki Uniform Dream... <br>
+            Now a <span class="highlight">Definite Reality!</span>
+          </h2>
+
+          <p class="hero-subtitle">
+            Comprehensive preparation for Maharashtra Police Sub-Inspector (PSI), MPSC Rajyaseva, and Combined Group B & C exams. Guided directly by veteran author and mentor <strong>Prof. Ravindra Sarkar</strong> — 25+ years experience and 7,500+ appointed officers.
+          </p>
+
+          <div class="hero-locations-box">
+            <div class="hero-locations-row">
+              <span style="color:#38bdf8;">🎯 <strong>Mumbai (Dadar) Exclusive Batch:</strong></span>
+              <span>Near Prabhadevi Temple, Dadar (W) — Special Home Tuitions & Batches (2 hrs daily: Wed, Thu, Fri)</span>
+            </div>
+            <div class="hero-locations-row">
+              <span style="color:var(--gold-bright);">🏛️ <strong>Nashik Headquarters:</strong></span>
+              <span>Opp. Pethe Vidyalaya, R.K. Circle & Vico Circle, Near Ashok Stambh</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#dadar" class="btn-primary">
+              <span>Enroll for Dadar (Mumbai) Batch</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#courses" class="btn-outline">
+              <span>Explore Courses & Eligibility</span>
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <h3>7,500+</h3>
+              <p>Officers in Maharashtra Govt</p>
+            </div>
+            <div class="metric-item">
+              <h3>25+</h3>
+              <p>Years of Academic Excellence</p>
+            </div>
+            <div class="metric-item">
+              <h3>5+</h3>
+              <p>Bestselling MPSC "Thokla" Books</p>
+            </div>
+            <div class="metric-item">
+              <h3>100%</h3>
+              <p>Exam-Centric Practical Coaching</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-frame">
+            <div class="hero-card-img-wrap">
+              <img src="../assets/images/sarkar-sir-portrait.webp" alt="Prof. Ravindra Sarkar" class="hero-card-img" onerror="this.src='../assets/images/sarkar-sir-portrait.png'">
+              <div class="hero-card-overlay">
+                <div class="hero-card-name">Prof. Ravindra Sarkar</div>
+                <div class="hero-card-desc">
+                  <span>★ Author, Mentor & Founder</span>
+                  <span style="color:#ffffff;">· Sarkar Career Academy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-pill pill-top-left">
+            <div class="pill-icon">👮</div>
+            <div class="pill-text">
+              <strong>Highest PSI Selections</strong>
+              <span>Maharashtra Police Force</span>
+            </div>
+          </div>
+
+          <div class="floating-pill pill-bottom-right">
+            <div class="pill-icon">📚</div>
+            <div class="pill-text">
+              <strong>PSI Thokla Author</strong>
+              <span>Statewide Acclaimed Textbook</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dadar Special Section -->
+  <section id="dadar" class="section section-alt">
+    <div class="container">
+      <div class="dadar-callout-card">
+        <div class="dadar-grid">
+          <div>
+            <span class="dadar-badge">🏙️ MUMBAI EXPANSION · SPECIAL PSI HOME TUITIONS</span>
+            <h3 class="dadar-heading">Now in Mumbai: Sarkar PSI Academy</h3>
+            <p class="dadar-desc">
+              Following remarkable results in Nashik, we have established our dedicated Mumbai hub at Dadar (near Prabhadevi Temple) and Mira Road (Thane) for <strong>Special PSI Home Tuitions and Combined Group B & C</strong> aspirants.
+            </p>
+
+            <div class="dadar-features">
+              <div class="dadar-feat-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Personalized 1-on-1 focus & home tuition option</span>
+              </div>
+              <div class="dadar-feat-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>2 hours intensive session daily (Wed, Thu, Fri)</span>
+              </div>
+              <div class="dadar-feat-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Prelims + Mains + Physical + Interview coaching</span>
+              </div>
+              <div class="dadar-feat-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Free Sarkar Sir's proprietary Thokla study manuals</span>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:16px; flex-wrap:wrap;">
+              <a href="https://wa.me/918805667100?text=Hello%20Prof.%20Sarkar,%20I%20am%20interested%20in%20the%20Dadar%20Mumbai%20PSI%20Batch." target="_blank" class="btn-primary" style="background:#25d366; color:#fff;">
+                <span>WhatsApp Dadar Inquiry</span>
+              </a>
+              <a href="tel:+918805667100" class="btn-outline">
+                <span>Call Directly: +91 88056 67100</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="dadar-schedule-box">
+            <h4>📍 Dadar (Mumbai) Center Address</h4>
+            <p class="dadar-location-text">
+              <strong>Prabhadevi Temple, Dadar (West), Mumbai - 400025</strong><br>
+              Also: Distributer Building, Opp. Central Mall, Royal Western Express Highway Opp., Mira Road (E), Thane - 401107
+            </p>
+            <div class="dadar-time-badge">
+              ⏰ Schedule: 2 Hours Daily (Wed, Thu, Fri)
+            </div>
+            <div style="font-size:0.8rem; color:var(--text-muted);">
+              Limited Cohort Size · Individual Mentorship
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CURRICULUM & PROGRAMS</span>
+        <h3 class="section-title">Specialized Coaching for <span>Every Exam</span></h3>
+        <p class="section-subtitle">
+          Engineered syllabus coverage, high-speed problem solving, and rigorous test series for Maharashtra state recruitment exams.
+        </p>
+      </div>
+
+      <div class="courses-grid">
+        <!-- PSI Course -->
+        <div class="course-card featured">
+          <span class="course-featured-ribbon">FLAGSHIP PROGRAM</span>
+          <div class="course-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h4 class="course-card-title">PSI (Police Sub-Inspector)</h4>
+          <span class="course-card-subtitle">Maharashtra Police Department Batch</span>
+          <p class="course-card-desc">
+            4-Tier integration: Prelims, Mains, Law papers (IPC, CrPC, Evidence Act, Human Rights), Physical Efficiency Test (PET), and Mock Interview panels.
+          </p>
+          <ul class="course-syllabus-list">
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Exhaustive Law curriculum & caselaw analysis</span>
+            </li>
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Marathi & English grammar proficiency</span>
+            </li>
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>1600m & 100m sprint scientific pacing</span>
+            </li>
+          </ul>
+          <a href="#contact" class="course-btn">Inquire for PSI Batch</a>
+        </div>
+
+        <!-- MPSC Rajyaseva -->
+        <div class="course-card">
+          <div class="course-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7H3l2-4h14l2 4M5 21V10.85M19 21V10.85M9 21v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/></svg>
+          </div>
+          <h4 class="course-card-title">MPSC Rajyaseva</h4>
+          <span class="course-card-subtitle">Dy. Collector, Dy.SP, Tahsildar</span>
+          <p class="course-card-desc">
+            Complete foundation for Class 1 & 2 administrative posts. Extensive GS 1 to 4 coverage, descriptive answer evaluation, and qualifying CSAT mastery.
+          </p>
+          <ul class="course-syllabus-list">
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>In-depth General Studies Papers 1, 2, 3, 4</span>
+            </li>
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>CSAT logical reasoning & decision making</span>
+            </li>
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Weekly model answer writing & mentor grading</span>
+            </li>
+          </ul>
+          <a href="#contact" class="course-btn">Inquire for Rajyaseva</a>
+        </div>
+
+        <!-- Combined Group B & C -->
+        <div class="course-card">
+          <div class="course-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h4 class="course-card-title">Combined Group B & C</h4>
+          <span class="course-card-subtitle">STI, ASO, Sub-Registrar, Tax Asst</span>
+          <p class="course-card-desc">
+            High-yield preparation for State Tax Inspector (STI), Assistant Section Officer (ASO - Mantralaya), and Secretariat clerical posts.
+          </p>
+          <ul class="course-syllabus-list">
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Maharashtra Geography, Polity & Economics</span>
+            </li>
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Mental aptitude & speed arithmetic formulas</span>
+            </li>
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>15 years past-paper trend analysis</span>
+            </li>
+          </ul>
+          <a href="#contact" class="course-btn">Inquire for Combine Group</a>
+        </div>
+
+        <!-- Police Bharti -->
+        <div class="course-card">
+          <div class="course-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4 class="course-card-title">Maharashtra Police Bharti</h4>
+          <span class="course-card-subtitle">Constable, Driver, SRPF & Army</span>
+          <p class="course-card-desc">
+            Unified coaching for 50-marks Physical Fitness ground test and 100-marks written examination under one roof.
+          </p>
+          <ul class="course-syllabus-list">
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>1600m run, 100m sprint, shot-put coaching</span>
+            </li>
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Daily GK, current affairs and Marathi grammar</span>
+            </li>
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Weekly simulated Sunday OMR mock tests</span>
+            </li>
+          </ul>
+          <a href="#contact" class="course-btn">Inquire for Police Bharti</a>
+        </div>
+
+        <!-- Saral Seva -->
+        <div class="course-card">
+          <div class="course-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h4 class="course-card-title">Saral Seva Recruitment</h4>
+          <span class="course-card-subtitle">Talathi, Gramsevak, ZP, TET</span>
+          <p class="course-card-desc">
+            Tailored preparation strictly aligned with TCS and IBPS computer-based test formats for district and state vacancies.
+          </p>
+          <ul class="course-syllabus-list">
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>TCS / IBPS question pattern simulation</span>
+            </li>
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>High-speed computerized test drills</span>
+            </li>
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Up-to-date topicwise revision sheets</span>
+            </li>
+          </ul>
+          <a href="#contact" class="course-btn">Inquire for Saral Seva</a>
+        </div>
+
+        <!-- Foundation & Special Courses -->
+        <div class="course-card">
+          <div class="course-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h4 class="course-card-title">Specialized Programs</h4>
+          <span class="course-card-subtitle">CLAT & French Language</span>
+          <p class="course-card-desc">
+            Common Law Admission Test (CLAT) mentoring and French language certified foundational training. English and Hindi medium batches available.
+          </p>
+          <ul class="course-syllabus-list">
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Legal reasoning & constitutional fundamentals</span>
+            </li>
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>A1 to B2 level French conversational skills</span>
+            </li>
+            <li class="course-syllabus-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Dedicated English & Hindi instruction tracks</span>
+            </li>
+          </ul>
+          <a href="#contact" class="course-btn">Inquire for Special Courses</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Physical Eligibility Estimator -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="eligibility-box">
+        <h3 class="eligibility-title">🎯 PSI & Police Bharti Physical Eligibility Check</h3>
+        <p class="eligibility-desc">Select your criteria to instantly verify your physical standards for the Maharashtra Police Sub-Inspector recruitment exam.</p>
+        
+        <div class="eligibility-form-grid">
+          <div class="form-group">
+            <label>Gender</label>
+            <select id="calcGender" class="form-control">
+              <option value="male">Male Candidate</option>
+              <option value="female">Female Candidate</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Height (in Centimeters)</label>
+            <input type="number" id="calcHeight" class="form-control" placeholder="e.g. 165 or 157" value="168">
+          </div>
+          <div class="form-group">
+            <label>Chest Unexpanded (cm - Male)</label>
+            <input type="number" id="calcChest" class="form-control" placeholder="e.g. 80" value="82">
+          </div>
+        </div>
+
+        <button type="button" class="check-btn" onclick="checkEligibility()">
+          Check Physical Eligibility
+        </button>
+
+        <div id="eligibilityResult" class="eligibility-result">
+          <!-- Dynamic output -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mentor Profile Section -->
+  <section id="mentor" class="section">
+    <div class="container">
+      <div class="mentor-grid">
+        <div class="mentor-photo-card">
+          <div class="mentor-photo-wrap">
+            <img src="../assets/images/sarkar-sir-portrait.webp" alt="Prof. Ravindra Sarkar" onerror="this.src='../assets/images/sarkar-sir-portrait.png'">
+          </div>
+          <div class="mentor-credentials-badge">
+            25+ Yrs Exp · 7,500+ Officers
+          </div>
+        </div>
+
+        <div class="mentor-info">
+          <span class="mentor-info-tag">LEADERSHIP & MENTORSHIP</span>
+          <h3 class="mentor-name">Prof. Ravindra Sarkar</h3>
+          <p class="mentor-role">Founder, Eminent Author & Director · Sarkar PSI Academy</p>
+
+          <p class="mentor-bio">
+            A pillar of integrity and excellence in competitive examination coaching in Maharashtra. Over the past <strong>25+ years</strong>, Sarkar Sir's precision-oriented teaching and strategic guidance have paved the way for more than <strong>7,500 students</strong> to secure gazetted and non-gazetted government positions.
+          </p>
+
+          <div class="mentor-quote">
+            "When the willingness to work hard is paired with clarity of purpose and self-awareness... success is an inevitable outcome!"
+          </div>
+
+          <div class="mentor-badges-list">
+            <div class="mentor-badge-card">
+              <strong>Personal Examinations Cleared:</strong>
+              <span>MPSC Rajyaseva, Led PI Balsad, Wireless Inspector, etc.</span>
+            </div>
+            <div class="mentor-badge-card">
+              <strong>Subject Specialization:</strong>
+              <span>General Studies (GS), GK, Police Law, CSAT & Interview Dynamics</span>
+            </div>
+            <div class="mentor-badge-card">
+              <strong>Bestselling State Author:</strong>
+              <span>Author of the renowned MPSC & PSI "Thokla" reference manual series</span>
+            </div>
+            <div class="mentor-badge-card">
+              <strong>Tailored Roadmaps:</strong>
+              <span>Personalized study schedules based on each candidate's strengths</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary">
+            <span>Schedule a Personal Session with Sarkar Sir</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Books Section -->
+  <section id="books" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">AUTHORITATIVE STUDY MANUALS</span>
+        <h3 class="section-title">Published Books by <span>Prof. Ravindra Sarkar</span></h3>
+        <p class="section-subtitle">
+          Essential desk companions trusted by over 50,000 civil services aspirants across Maharashtra.
+        </p>
+      </div>
+
+      <div class="books-grid">
+        <div class="book-card">
+          <div class="book-spine-mockup">
+            <span class="book-mock-title">PSI<br>THOKLA</span>
+            <span class="book-mock-author">Prof. Sarkar</span>
+          </div>
+          <h4 class="book-name">PSI Thokla</h4>
+          <p class="book-desc">Complete handbook covering IPC, CrPC, Evidence Act, human rights, and General Studies.</p>
+          <span class="book-tag">State Bestseller</span>
+        </div>
+
+        <div class="book-card">
+          <div class="book-spine-mockup">
+            <span class="book-mock-title">RAJYASEVA<br>PRELIMS</span>
+            <span class="book-mock-author">Prof. Sarkar</span>
+          </div>
+          <h4 class="book-name">Rajyaseva Prelims Thokla</h4>
+          <p class="book-desc">All-in-one general studies manual with chapterwise MCQs and concise analytical notes.</p>
+          <span class="book-tag">Comprehensive</span>
+        </div>
+
+        <div class="book-card">
+          <div class="book-spine-mockup">
+            <span class="book-mock-title">C-SAT<br>THOKLA</span>
+            <span class="book-mock-author">Prof. Sarkar</span>
+          </div>
+          <h4 class="book-name">C-SAT Thokla</h4>
+          <p class="book-desc">Master guide for reading comprehension passages, logical deduction, and numerical speed tricks.</p>
+          <span class="book-tag">High-Yield CSAT</span>
+        </div>
+
+        <div class="book-card">
+          <div class="book-spine-mockup">
+            <span class="book-mock-title">GS ON<br>THE GO</span>
+            <span class="book-mock-author">Prof. Sarkar</span>
+          </div>
+          <h4 class="book-name">GS Parikshela Jata Jata</h4>
+          <p class="book-desc">Rapid last-minute revision primer covering eminent social reformers, polity, and key facts.</p>
+          <span class="book-tag">Rapid Revision</span>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:36px;">
+        <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:14px;">Available for direct pickup at our Dadar and Nashik centers, or via postal delivery statewide.</p>
+        <a href="https://wa.me/918805667100?text=Hello%20Prof.%20Sarkar,%20I%20would%20like%20to%20order%20books." target="_blank" class="btn-outline">
+          📦 Order Books via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Centers & Branches Section -->
+  <section id="centers" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">BRANCH NETWORK</span>
+        <h3 class="section-title">Our Academy Centers in <span>Nashik & Mumbai</span></h3>
+        <p class="section-subtitle">
+          Visit in person for offline counseling, batch scheduling, and curriculum briefing.
+        </p>
+      </div>
+
+      <div class="centers-grid">
+        <div class="center-card" style="border-color:rgba(56, 189, 248, 0.4); background:linear-gradient(160deg, #0e172a 0%, #10182b 100%);">
+          <span class="center-type-badge" style="background:rgba(56,189,248,0.2); color:#38bdf8;">NEW MUMBAI BRANCH</span>
+          <h4 class="center-city">Dadar (Mumbai) Hub</h4>
+          <p class="center-address">
+            <strong>Near Prabhadevi Temple, Dadar (West),</strong><br>
+            Mumbai - 400025<br>
+            <span style="color:var(--gold-bright); font-size:0.8rem;">(Special PSI Home Tuitions & Batches)</span>
+          </p>
+          <div class="center-phones">
+            <a href="tel:+918805667100">📞 +91 88056 67100</a>
+            <a href="https://wa.me/918805667100">💬 Chat on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="center-card">
+          <span class="center-type-badge">HEADQUARTERS</span>
+          <h4 class="center-city">Nashik (Ashok Stambh)</h4>
+          <p class="center-address">
+            <strong>Vico Circle, Near Ashok Stambh,</strong><br>
+            Also: Opp. Pethe Vidyalaya, R.K. Circle, Nashik - 422001.
+          </p>
+          <div class="center-phones">
+            <a href="tel:02532314166">☎ 0253-2314166</a>
+            <a href="tel:+918805667100">📞 88056 67100 / 83800 66080</a>
+          </div>
+        </div>
+
+        <div class="center-card">
+          <span class="center-type-badge">SUBURBAN HUBS</span>
+          <h4 class="center-city">Thane & Shalimar</h4>
+          <p class="center-address">
+            <strong>Shalimar: 1st Floor, Opp. P.S. Natyagruha, Nashik.</strong><br>
+            Thane: Distributer Bldg, Opp. Central Mall, Mira Road (E), Thane - 401107.
+          </p>
+          <div class="center-phones">
+            <a href="tel:+919850789322">📞 98507 89322</a>
+            <a href="tel:+918380064793">📞 83800 64793 / 83800 66963</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission & Contact Form Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-details">
+          <span class="section-tag">ADMISSION INQUIRY</span>
+          <h3>Discuss Your Preparation Strategy With Us</h3>
+          <p>
+            Share your educational background and target examination. Prof. Ravindra Sarkar and our senior mentors will guide you regarding batch timings, books, and study roadmaps.
+          </p>
+
+          <div class="contact-point">
+            <div class="contact-point-icon">📞</div>
+            <div class="contact-point-info">
+              <strong>Direct Phone Lines</strong>
+              <span>+91 88056 67100 / 9850789322 / 8380066080</span>
+            </div>
+          </div>
+
+          <div class="contact-point">
+            <div class="contact-point-icon">💬</div>
+            <div class="contact-point-info">
+              <strong>WhatsApp Helpline</strong>
+              <span>+91 88056 67100 (Instant Response)</span>
+            </div>
+          </div>
+
+          <div class="contact-point">
+            <div class="contact-point-icon">✉️</div>
+            <div class="contact-point-info">
+              <strong>Official Email</strong>
+              <span>careeracademy1995@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact-point">
+            <div class="contact-point-icon">🌐</div>
+            <div class="contact-point-info">
+              <strong>Official Domain</strong>
+              <span>www.sarkarpsiacademy.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" onsubmit="handleInquiry(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Candidate Full Name *</label>
+                <input type="text" id="leadName" class="form-control" placeholder="e.g. Rahul Shinde" required>
+              </div>
+              <div class="form-group">
+                <label>Mobile Number *</label>
+                <input type="tel" id="leadPhone" class="form-control" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Target Examination *</label>
+                <select id="leadExam" class="form-control" required>
+                  <option value="PSI (Police Sub-Inspector)">PSI (Police Sub-Inspector)</option>
+                  <option value="MPSC Rajyaseva">MPSC Rajyaseva (Dy. Collector / Dy.SP)</option>
+                  <option value="Combine Group B & C">Combine Group B & C (STI / ASO)</option>
+                  <option value="Police Bharti">Maharashtra Police Bharti</option>
+                  <option value="Saral Seva / Talathi">Saral Seva / Talathi / Gramsevak</option>
+                  <option value="Books / Literature">Study Materials / Books</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Preferred Center *</label>
+                <select id="leadLocation" class="form-control" required>
+                  <option value="Dadar (Mumbai) Hub">Dadar (Mumbai) Hub</option>
+                  <option value="Nashik Main Academy">Nashik Headquarters</option>
+                  <option value="Mira Road (Thane)">Mira Road (Thane)</option>
+                  <option value="Chhatrapati Sambhaji Nagar">Chhatrapati Sambhaji Nagar</option>
+                  <option value="Home Tuitions / Online">Home Tuition / Remote Guidance</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Message or Query (Optional)</label>
+              <textarea id="leadMsg" class="form-control" rows="3" placeholder="Tell us about your educational qualification or preferred timings..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span>Send Inquiry via WhatsApp</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <img src="../assets/images/logo.webp" alt="Sarkar PSI Academy" style="height:44px; width:auto;" onerror="this.src='../assets/images/logo.png'">
+            <strong style="color:var(--gold-bright); font-size:1.1rem;">SARKAR PSI ACADEMY</strong>
+          </div>
+          <p>
+            Competitive Examination Leadership Institute, Nashik & Mumbai. Dedicated to empowering aspiring officers with discipline, structured methodology, and 25+ years of verified results.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dadar">Dadar (Mumbai) Hub</a></li>
+            <li><a href="#courses">Courses & Syllabus</a></li>
+            <li><a href="#mentor">Prof. Ravindra Sarkar</a></li>
+            <li><a href="#books">Books & Publications</a></li>
+            <li><a href="#centers">Centers & Locations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Recruitment Streams</h4>
+          <ul>
+            <li><a href="#courses">Maharashtra PSI Specialized</a></li>
+            <li><a href="#courses">MPSC Rajyaseva (Class 1 & 2)</a></li>
+            <li><a href="#courses">Combined Group B (STI, ASO)</a></li>
+            <li><a href="#courses">Maharashtra Police Bharti</a></li>
+            <li><a href="#courses">Talathi & Saral Seva</a></li>
+            <li><a href="#courses">CLAT & French Language</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Contact</h4>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:8px;">
+            Mumbai Hub: Near Prabhadevi Temple, Dadar, Mumbai - 400025<br>
+            Nashik HQ: Opp. Pethe Vidyalaya, R.K. Circle
+          </p>
+          <p style="color:var(--gold-bright); font-weight:700;">
+            📞 +91 88056 67100 / 9850789322<br>
+            ☎ 0253-2314166
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Sarkar PSI Academy · Career Academy Nashik & Mumbai. All Rights Reserved.
+        </div>
+        <div>
+          Official Domain: <strong>www.sarkarpsiacademy.com</strong>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Call / WhatsApp Actions -->
+  <div class="floating-actions">
+    <a href="https://wa.me/918805667100?text=Hello%20Prof.%20Ravindra%20Sarkar%20Sir,%20I%20would%20like%20to%20inquire%20about%20Sarkar%20PSI%20Academy%20batches." target="_blank" class="float-btn float-btn-wa" title="Chat on WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.059-1.146-.069-.729-.206-1.587-.698-2.326-1.428-.921-.909-1.494-2.021-1.637-2.525-.143-.504.015-.758.158-.901.129-.129.288-.33.432-.473.144-.144.187-.245.287-.405.101-.158.043-.301-.014-.445-.058-.144-.504-1.224-.705-1.67-.197-.433-.404-.374-.562-.388-.144-.014-.302-.014-.46-.014-.158 0-.417.058-.633.288-.216.23-.834.807-.834 1.974 0 1.167.849 2.29 0 2.29.964 2.448 2.275 3.593 3.585 4.148 1.483.627 2.052.569 2.772.461.764-.115 1.743-.712 1.988-1.402.245-.691.245-1.282.173-1.403-.072-.116-.259-.187-.562-.331z"/></svg>
+    </a>
+    <a href="tel:+918805667100" class="float-btn float-btn-call" title="Call Directly">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    function checkEligibility() {
+      const gender = document.getElementById('calcGender').value;
+      const height = parseFloat(document.getElementById('calcHeight').value) || 0;
+      const chest = parseFloat(document.getElementById('calcChest').value) || 0;
+      const res = document.getElementById('eligibilityResult');
+
+      let isEligible = false;
+      let notes = [];
+
+      if (gender === 'male') {
+        if (height >= 165) {
+          notes.push('✓ Height criterion met (min 165 cm required).');
+        } else {
+          notes.push('✗ Height is below 165 cm (ineligible for PSI).');
+        }
+
+        if (chest >= 79) {
+          notes.push('✓ Chest criterion met (min 79 cm unexpanded, +5 cm expansion required).');
+        } else {
+          notes.push('✗ Chest measurement is below 79 cm.');
+        }
+
+        isEligible = (height >= 165 && chest >= 79);
+      } else {
+        if (height >= 157) {
+          notes.push('✓ Height criterion met for female candidates (min 157 cm required).');
+          isEligible = true;
+        } else {
+          notes.push('✗ Height is below the 157 cm requirement.');
+          isEligible = false;
+        }
+      }
+
+      res.style.display = 'block';
+      if (isEligible) {
+        res.style.background = 'rgba(16, 185, 129, 0.15)';
+        res.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+        res.style.color = '#6ee7b7';
+        res.innerHTML = `<strong>🎉 Congratulations! You meet Maharashtra PSI physical qualification standards.</strong><br>${notes.join('<br>')}<br><span style="font-size:0.85rem; color:#cbd5e1; display:inline-block; margin-top:8px;">Enroll now to begin written exam & ground training!</span>`;
+      } else {
+        res.style.background = 'rgba(239, 68, 68, 0.15)';
+        res.style.borderColor = 'rgba(239, 68, 68, 0.4)';
+        res.style.color = '#fca5a5';
+        res.innerHTML = `<strong>⚠️ Notice: Criteria needs improvement.</strong><br>${notes.join('<br>')}<br><span style="font-size:0.85rem; color:#cbd5e1; display:inline-block; margin-top:8px;">Note: Other MPSC / Clerical / Direct recruitments have relaxed physical requirements. Contact Sir for guidance.</span>`;
+      }
+    }
+
+    function handleInquiry(e) {
+      e.preventDefault();
+      const name = document.getElementById('leadName').value;
+      const phone = document.getElementById('leadPhone').value;
+      const exam = document.getElementById('leadExam').value;
+      const location = document.getElementById('leadLocation').value;
+      const msg = document.getElementById('leadMsg').value || 'Inquiry regarding batch admission';
+
+      const waText = encodeURIComponent(
+        `*New Admission Inquiry - Sarkar PSI Academy*\n` +
+        `👤 Candidate Name: ${name}\n` +
+        `📱 Mobile: ${phone}\n` +
+        `🎯 Target Exam: ${exam}\n` +
+        `📍 Preferred Center: ${location}\n` +
+        `📝 Note: ${msg}`
+      );
+
+      const waUrl = `https://wa.me/918805667100?text=${waText}`;
+      window.open(waUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
