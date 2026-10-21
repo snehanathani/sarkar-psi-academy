@@ -621,33 +621,37 @@
         </div>
 
         <!-- Template 3 -->
-        <div class="template-card" id="card-v3">
+        <div class="template-card active-preview" id="card-v3" style="border: 2px solid var(--amber-accent); box-shadow: 0 0 35px rgba(255, 120, 0, 0.25);">
           <div class="card-preview-thumb thumb-v3">
-            <span class="thumb-badge" style="border-color:rgba(255,120,0,0.4); color:#fed7aa;">नेक्स्ट-जेन EdTech</span>
+            <span class="thumb-badge" style="background:var(--amber-accent); color:#000; font-weight:800; border:none;">★ CLIENT'S PREFERRED (क्लायंटची पसंती)</span>
             <div class="thumb-logo-icon" style="color:var(--amber-accent);">⚡</div>
           </div>
           <div class="card-body">
-            <span class="template-num" style="color:var(--amber-bright);">पर्याय क्र. ३ (Option 3)</span>
+            <span class="template-num" style="color:var(--amber-bright); font-weight:800;">★ पर्याय क्र. ३ (Client's Choice)</span>
             <h4 class="template-title">Metro Bento (Cyber Slate & Amber)</h4>
             <p class="template-desc">
-              आधुनिक युवा पिढीसाठी बेन्टो-ग्रीड (Bento Layout) आधारित हाय-टेक रचना. लाइव्ह काऊंटर, परस्परसंवादी परीक्षा फिल्टर (PSI / MPSC / Police Bharti / Saral Seva) आणि त्वरित WhatsApp ॲडमिशन.
+              आधुनिक युवा पिढीसाठी बेन्टो-ग्रीड (Bento Layout) आधारित हाय-टेक रचना. ६ अधिकृत व्हिडिओ लेक्चर्स, लाइव्ह काऊंटर, परस्परसंवादी परीक्षा फिल्टर आणि त्वरित WhatsApp ॲडमिशन.
             </p>
             <ul class="template-features">
+              <li>✓ <strong>६ Google Drive व्हिडिओ लेक्चर्स</strong> व इन-पेज मॉडेल प्लेअर</li>
               <li>✓ ॲपल व लिनिअर स्टाईल मॉड्यूलर बेन्टो कार्ड्स</li>
               <li>✓ क्लिकवर बदलणारे परस्परसंवादी परीक्षा फिल्टर्स</li>
-              <li>✓ ७५००+ निकाल टेलिमेट्री काऊंटर कार्ड्स</li>
-              <li>✓ सुपरफास्ट मोबाईल-फर्स्ट स्पीड</li>
+              <li>✓ ७५००+ निकाल व प्रतिष्ठित पाहुण्यांची नामावली</li>
             </ul>
 
             <div class="lang-launch-row">
-              <a href="v3-modern-bento/index.html" target="_blank" class="btn-lang-launch btn-mr" style="border-color:rgba(255,120,0,0.4); color:#fed7aa;">
+              <a href="v3-modern-bento/index.html" target="_blank" class="btn-lang-launch btn-mr" style="border-color:rgba(255,120,0,0.4); color:#fed7aa; font-weight:700;">
                 🇮🇳 मराठी व्हर्जन ↗
               </a>
-              <a href="v3-modern-bento/index-en.html" target="_blank" class="btn-lang-launch btn-en">
+              <a href="v3-modern-bento/index-en.html" target="_blank" class="btn-lang-launch btn-en" style="font-weight:700;">
                 🇬🇧 English Version ↗
               </a>
             </div>
-            <button class="btn-action-preview" onclick="loadFrame('v3-modern-bento/index.html', 'card-v3', 'V3 Metro Bento (Marathi)')">
+            <button class="btn-action-preview" style="background:var(--amber-accent); color:#000; font-weight:700;" onclick="loadFrame('v3-modern-bento/index.html', 'card-v3', 'V3 Metro Bento (Marathi) ★ Client Choice')">
+              येथे लाइव्ह प्रिव्ह्यू पाहा ★
+            </button>
+          </div>
+        </div>
               येथे लाइव्ह प्रिव्ह्यू पाहा
             </button>
           </div>
@@ -658,7 +662,7 @@
       <div class="preview-workbench">
         <div class="workbench-header">
           <div class="workbench-title">
-            <h4 id="currentPreviewTitle">लाइव्ह प्रिव्ह्यू: V1 Cadet Dark (मराठी)</h4>
+            <h4 id="currentPreviewTitle">लाइव्ह प्रिव्ह्यू: V3 Metro Bento (मराठी) ★ क्लायंटची पसंती</h4>
             <span id="workbenchHint">डिव्हाइस आणि भाषा बदलून थेट अनुभव घ्या:</span>
           </div>
 
@@ -679,7 +683,7 @@
         </div>
 
         <div class="frame-wrapper">
-          <iframe id="previewFrame" src="v1-cadet-dark/index.html"></iframe>
+          <iframe id="previewFrame" src="v3-modern-bento/index.html"></iframe>
         </div>
       </div>
 
@@ -716,15 +720,15 @@
 
   <footer class="showcase-footer">
     <div class="container">
-      <p>© 2026 Sarkar PSI Academy · Career Academy. सर्व हक्क सुरक्षित · All Rights Reserved.</p>
+      <p>© 2026 सरकार करिअर अकॅडमी · Sarkar Career Academy & Sarkar PSI Academy. सर्व हक्क सुरक्षित · All Rights Reserved.</p>
       <p style="font-size:0.8rem; margin-top:6px; color:#64748b;">
-        Repository: snehanathani/sarkar-psi-academy · Domain: sarkarpsiacademy.com
+        Government of India Reg. A-117123/2017 · Repository: snehanathani/sarkar-psi-academy · Domain: sarkarpsiacademy.com
       </p>
     </div>
   </footer>
 
   <script>
-    let currentTemplate = 'v1-cadet-dark';
+    let currentTemplate = 'v3-modern-bento';
     let currentLang = 'mr';
 
     function loadFrame(url, cardId, title) {

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarkar PSI Academy | Metro Bento Edition - Mumbai & Nashik</title>
-  <meta name="description" content="Next-Gen MPSC & PSI Academy. Directed by Prof. Ravindra Sarkar. Special Home Tuitions & Batches in Dadar (Mumbai) & Nashik.">
+  <title>Sarkar Career Academy | Sarkar PSI Academy - Mumbai & Nashik (Govt. Reg. A-117123/2017)</title>
+  <meta name="description" content="Govt. of India Copyright Reg. A-117123/2017. Sarkar Career Academy & Sarkar PSI Academy. Mentorship by Prof. Ravindra Sarkar (25+ yrs experience, 7,500+ appointed officers). Special Home Tuitions & Batches in Dadar (Mumbai) & Nashik.">
   <link rel="canonical" href="https://sarkarpsiacademy.com/v3-modern-bento/index-en.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -587,6 +587,238 @@
       font-weight: 700;
     }
 
+    /* Video Showcase Section */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .video-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .video-card:hover {
+      border-color: var(--amber-bright);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+    }
+
+    .video-thumb-frame {
+      aspect-ratio: 16/9;
+      background: radial-gradient(circle at 50% 50%, #1e283d 0%, #0d121c 100%);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .video-play-btn {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--amber-primary);
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 25px var(--amber-glow);
+      transition: transform 0.2s ease;
+    }
+
+    .video-card:hover .video-play-btn {
+      transform: scale(1.15);
+      background: var(--amber-bright);
+    }
+
+    .video-badge-pill {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--amber-bright);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    .video-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .video-category {
+      font-size: 0.72rem;
+      color: var(--amber-bright);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .video-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+
+    .video-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 18px;
+      flex-grow: 1;
+    }
+
+    .video-actions {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 10px;
+    }
+
+    .btn-play-modal {
+      background: var(--amber-primary);
+      color: #000;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .btn-play-modal:hover {
+      background: var(--amber-bright);
+    }
+
+    .btn-drive-link {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      font-size: 0.8rem;
+      padding: 8px 10px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-drive-link:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Video Player Modal */
+    .video-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .video-modal-card {
+      background: #0f1523;
+      border: 1px solid var(--border-amber);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 900px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+      position: relative;
+    }
+
+    .modal-video-frame {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: #000;
+      border: none;
+    }
+
+    .modal-info-bar {
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.2rem;
+      z-index: 10;
+    }
+
+    /* Dignitaries / Guest VIPs */
+    .vip-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .vip-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      border-left: 3px solid var(--amber-primary);
+    }
+
+    .vip-card strong {
+      display: block;
+      color: #ffffff;
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .vip-card span {
+      font-size: 0.78rem;
+      color: var(--amber-bright);
+    }
+
     /* Centers Bento Strip */
     .centers-bento-grid {
       display: grid;
@@ -690,7 +922,7 @@
       .card-lead, .card-mentor-bento, .card-telemetry, .card-dadar, .card-books-bento {
         grid-column: span 1;
       }
-      .course-matrix-grid, .centers-bento-grid {
+      .course-matrix-grid, .video-grid, .centers-bento-grid, .vip-grid {
         grid-template-columns: repeat(2, 1fr);
       }
       .fast-form-card, .footer-bento-grid {
@@ -705,7 +937,7 @@
     }
 
     @media (max-width: 640px) {
-      .course-matrix-grid, .centers-bento-grid {
+      .course-matrix-grid, .video-grid, .centers-bento-grid, .vip-grid {
         grid-template-columns: 1fr;
       }
       .fast-form-inputs {
@@ -725,14 +957,14 @@
   <!-- Showcase Strip -->
   <div class="template-bar">
     <div class="container template-bar-inner">
-      <div>
-        <span style="color:var(--amber-bright); font-weight:700;">⚡ Design Showcase:</span>
-        <span style="color:var(--text-muted);">Template 3 (Modern Bento - English)</span>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <span style="color:var(--amber-bright); font-weight:700;">★ Client's Preferred Edition:</span>
+        <span style="color:#ffffff;">Sarkar Career Academy (V3 Metro Bento)</span>
       </div>
       <div style="display:flex; gap:6px;">
         <a href="../v1-cadet-dark/index-en.html" class="chip">V1: Cadet Dark</a>
         <a href="../v2-prestige-editorial/index-en.html" class="chip">V2: Prestige Editorial</a>
-        <a href="index-en.html" class="chip active">V3: Metro Bento</a>
+        <a href="index-en.html" class="chip active">V3: Metro Bento ★</a>
         <a href="../index.html" class="chip" style="background:rgba(255,120,0,0.2); color:#fff;">← All Versions Hub</a>
       </div>
     </div>
@@ -742,16 +974,17 @@
   <header class="bento-nav">
     <div class="container bento-nav-inner">
       <div class="brand-bento">
-        <img src="../assets/images/logo.webp" alt="Sarkar PSI Academy" class="brand-logo" onerror="this.src='../assets/images/logo.png'">
+        <img src="../assets/images/sca-logo.webp" alt="Sarkar Career Academy" class="brand-logo" onerror="this.src='../assets/images/logo.png'">
         <div class="brand-text-bento">
-          <h1>SARKAR PSI ACADEMY</h1>
-          <span>CAREER ACADEMY · MUMBAI & NASHIK</span>
+          <h1>Sarkar Career Academy</h1>
+          <span>SARKAR CAREER ACADEMY · SARKAR PSI ACADEMY</span>
         </div>
       </div>
 
       <ul class="nav-links-bento">
         <li><a href="#bento" class="active">Home</a></li>
         <li><a href="#courses">Courses</a></li>
+        <li><a href="#videos">Lectures</a></li>
         <li><a href="#dadar">Dadar Hub</a></li>
         <li><a href="#mentor">Mentor</a></li>
         <li><a href="#centers">Centers</a></li>
@@ -942,6 +1175,208 @@
     </div>
   </section>
 
+  <!-- Video Lectures & Strategy Sessions -->
+  <section id="videos" class="section-bento">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:36px; flex-wrap:wrap; gap:16px;">
+        <div>
+          <span style="color:var(--amber-bright); font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:1px;">★ EXCLUSIVE LECTURES & ROADMAPS</span>
+          <h3 class="section-title-bento" style="margin:6px 0 0; text-align:left;">Core Guidance <span>Video Sessions</span></h3>
+          <p class="section-sub-bento" style="margin:6px 0 0; text-align:left;">Masterclasses, exam strategy lectures, and law guidance recorded by Prof. Ravindra Sarkar.</p>
+        </div>
+        <div style="color:var(--text-dim); font-size:0.85rem;">
+          Govt. Reg. A-117123/2017 · 6 Official Sessions
+        </div>
+      </div>
+
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-card">
+          <div class="video-thumb-frame" onclick="openVideoModal('1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn', 'PSI & Police Bharti Master Preparation Strategy — Prof. Ravindra Sarkar', 'How to crack Police Sub-Inspector (PSI) and Maharashtra Police Bharti on your first attempt? Master study scheduling, time management, and scoring techniques in General Studies.')">
+            <span class="video-badge-pill">Video 01 · PSI Strategy</span>
+            <div class="video-play-btn">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Lecture & Strategy</span>
+            <h4 class="video-title">PSI & Police Bharti Master Strategy</h4>
+            <p class="video-desc">
+              How to crack Police Sub-Inspector (PSI) and Police Bharti on your first attempt. Study scheduling, time management, and scoring techniques in GS.
+            </p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn', 'PSI & Police Bharti Master Preparation Strategy — Prof. Ravindra Sarkar', 'How to crack Police Sub-Inspector (PSI) and Maharashtra Police Bharti on your first attempt? Master study scheduling, time management, and scoring techniques in General Studies.')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://drive.google.com/file/d/1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn/view" target="_blank" class="btn-drive-link">
+                Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+          <div class="video-thumb-frame" onclick="openVideoModal('1oGNF443P6OJw3T7W_KT366eJB7RuVR9c', 'MPSC Rajyaseva Prelims & Mains Comprehensive Blueprint', 'Crucial answer writing style for Dy. Collector, Dy.SP, and Tahsildar posts. CSAT qualifying hacks, analytical approach, and standard booklist recommendations.')">
+            <span class="video-badge-pill">Video 02 · Rajyaseva</span>
+            <div class="video-play-btn">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">State Civil Services Class 1 & 2</span>
+            <h4 class="video-title">MPSC Rajyaseva Prelims & Mains Blueprint</h4>
+            <p class="video-desc">
+              Crucial answer writing style for Dy. Collector, Dy.SP, and Tahsildar posts. CSAT qualifying hacks, analytical approach, and standard booklist.
+            </p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('1oGNF443P6OJw3T7W_KT366eJB7RuVR9c', 'MPSC Rajyaseva Prelims & Mains Comprehensive Blueprint', 'Crucial answer writing style for Dy. Collector, Dy.SP, and Tahsildar posts. CSAT qualifying hacks, analytical approach, and standard booklist recommendations.')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://drive.google.com/file/d/1oGNF443P6OJw3T7W_KT366eJB7RuVR9c/view" target="_blank" class="btn-drive-link">
+                Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+          <div class="video-thumb-frame" onclick="openVideoModal('1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3', 'Combined Group B & C (STI, ASO) Success Blueprint', 'Achieving speed and accuracy in objective multiple-choice exams. Micro-analysis of previous years question papers and success strategies of Sarkar Career Academy alumni.')">
+            <span class="video-badge-pill">Video 03 · Combine B & C</span>
+            <div class="video-play-btn">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Combine Cadre (STI, ASO)</span>
+            <h4 class="video-title">Combined Group B & C Success Blueprint</h4>
+            <p class="video-desc">
+              Achieving speed and accuracy in objective exams. Micro-analysis of previous years question papers (PYQs) and high-yield scoring topics.
+            </p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3', 'Combined Group B & C (STI, ASO) Success Blueprint', 'Achieving speed and accuracy in objective multiple-choice exams. Micro-analysis of previous years question papers and success strategies of Sarkar Career Academy alumni.')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://drive.google.com/file/d/1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3/view" target="_blank" class="btn-drive-link">
+                Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card">
+          <div class="video-thumb-frame" onclick="openVideoModal('1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj', 'Police Law Essentials (IPC, CrPC & Evidence Act) Classroom Lecture', 'Essential conceptual breakdown of IPC, CrPC, and Evidence Act for PSI Mains and interviews. Practical case laws and classroom teaching by Prof. Ravindra Sarkar.')">
+            <span class="video-badge-pill">Video 04 · Police Law</span>
+            <div class="video-play-btn">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Jurisprudence & Minor Acts</span>
+            <h4 class="video-title">Police Law (IPC, CrPC & Evidence Act)</h4>
+            <p class="video-desc">
+              Essential conceptual breakdown of IPC, CrPC, and Evidence Act for PSI Mains and interviews with practical case laws and exam illustrations.
+            </p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj', 'Police Law Essentials (IPC, CrPC & Evidence Act) Classroom Lecture', 'Essential conceptual breakdown of IPC, CrPC, and Evidence Act for PSI Mains and interviews. Practical case laws and classroom teaching by Prof. Ravindra Sarkar.')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://drive.google.com/file/d/1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj/view" target="_blank" class="btn-drive-link">
+                Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-card">
+          <div class="video-thumb-frame" onclick="openVideoModal('1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl', 'Dadar (Mumbai) Special Batches & Home Tuitions Orientation', 'Orientation regarding intensive 2-hour daily batches (Wed, Thu, Fri) and dedicated private home tuition modules near Prabhadevi Temple, Dadar, Mumbai.')">
+            <span class="video-badge-pill">Video 05 · Mumbai Hub</span>
+            <div class="video-play-btn">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Mumbai Center</span>
+            <h4 class="video-title">Dadar (Mumbai) Batches & Home Tuitions</h4>
+            <p class="video-desc">
+              Intensive 2-hour daily batches (Wed, Thu, Fri) and dedicated private home tuition modules near Prabhadevi Temple, Dadar, Mumbai.
+            </p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl', 'Dadar (Mumbai) Special Batches & Home Tuitions Orientation', 'Orientation regarding intensive 2-hour daily batches (Wed, Thu, Fri) and dedicated private home tuition modules near Prabhadevi Temple, Dadar, Mumbai.')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://drive.google.com/file/d/1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl/view" target="_blank" class="btn-drive-link">
+                Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="video-card">
+          <div class="video-thumb-frame" onclick="openVideoModal('1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7', 'Officers Felicitation Ceremony & Alumni Testimonials', 'Honoring appointed Police Sub-Inspectors (PSI) and State Civil Officers trained at Sarkar Career Academy, along with their inspirational success journeys.')">
+            <span class="video-badge-pill">Video 06 · Success Legacy</span>
+            <div class="video-play-btn">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Hall of Fame</span>
+            <h4 class="video-title">Officers Felicitation & Testimonials</h4>
+            <p class="video-desc">
+              Honoring appointed Police Sub-Inspectors (PSI) and State Civil Officers trained at Sarkar Career Academy, along with their inspirational journeys.
+            </p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7', 'Officers Felicitation Ceremony & Alumni Testimonials', 'Honoring appointed Police Sub-Inspectors (PSI) and State Civil Officers trained at Sarkar Career Academy, along with their inspirational success journeys.')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://drive.google.com/file/d/1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7/view" target="_blank" class="btn-drive-link">
+                Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Distinguished Guests & Mentors Section -->
+  <section class="section-bento" style="background:#0b0f17; border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle);">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:32px;">
+        <span style="color:var(--amber-bright); font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:1px;">★ DISTINGUISHED PATRONS & GUEST FACULTY</span>
+        <h3 class="section-title-bento">Eminent Leaders <span>Visiting Sarkar Career Academy</span></h3>
+        <p class="section-sub-bento">Distinguished IPS officers, senior bureaucrats, and academic scholars who have mentored our students.</p>
+      </div>
+
+      <div class="vip-grid">
+        <div class="vip-card">
+          <strong>Kulwant Kumar Sarangal (IPS)</strong>
+          <span>Addl. Director General of Police / Commissioner</span>
+        </div>
+        <div class="vip-card">
+          <strong>Prof. Hari Narke</strong>
+          <span>Eminent Author, Thinker & Professor, Pune University</span>
+        </div>
+        <div class="vip-card">
+          <strong>PSI Manish Pote</strong>
+          <span>Distinguished Alumni Officer, Maharashtra Police</span>
+        </div>
+        <div class="vip-card">
+          <strong>PSI Gayatri Jadhav</strong>
+          <span>Distinguished Alumni Officer, Maharashtra Police</span>
+        </div>
+        <div class="vip-card">
+          <strong>Chief Officer Nirmala Gaikwad</strong>
+          <span>Maharashtra Municipal Administrative Services (C.O.)</span>
+        </div>
+        <div class="vip-card">
+          <strong>Education Officer Andhale</strong>
+          <span>Maharashtra State Secondary & Higher Secondary Board</span>
+        </div>
+        <div class="vip-card">
+          <strong>Prof. Shashikant Chitalkar</strong>
+          <span>Senior Competitive Exam Strategist & Author</span>
+        </div>
+        <div class="vip-card" style="border-left-color:var(--indigo-accent);">
+          <strong>Government Registered Institute</strong>
+          <span>Govt. of India Copyright Reg. A-117123/2017</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Centers Bento Section -->
   <section id="centers" class="section-bento">
     <div class="container">
@@ -1034,15 +1469,15 @@
     <div class="container">
       <div class="footer-bento-grid">
         <div>
-          <h4 style="font-family:var(--font-display); font-size:1.2rem; color:#fff; margin-bottom:10px;">SARKAR PSI ACADEMY</h4>
-          <p style="color:var(--text-dim); line-height:1.6;">
-            Sarkar Career Academy · Premier State Civil Services & Police Mentorship Institution, Nashik & Mumbai.
+          <h4 style="font-family:var(--font-display); font-size:1.2rem; color:#fff; margin-bottom:8px;">Sarkar Career Academy</h4>
+          <p style="color:var(--text-dim); line-height:1.6; font-size:0.85rem;">
+            Govt. of India Copyright Reg. A-117123/2017. Sarkar Career Academy & Sarkar PSI Academy · Nashik & Mumbai. Leading Maharashtra police & civil services coaching institution.
           </p>
         </div>
         <div>
           <h5 style="color:#fff; margin-bottom:12px;">Quick Navigation</h5>
           <p style="color:var(--text-muted); font-size:0.85rem; line-height:1.8;">
-            <a href="#bento">Home</a> · <a href="#courses">Courses</a> · <a href="#dadar">Dadar Mumbai Hub</a> · <a href="#centers">Nashik Center</a>
+            <a href="#bento">Home</a> · <a href="#courses">Curriculum</a> · <a href="#videos">Video Sessions</a> · <a href="#dadar">Dadar Mumbai Hub</a> · <a href="#centers">Nashik Headquarters</a>
           </p>
         </div>
         <div>
@@ -1057,10 +1492,27 @@
 
       <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:20px; display:flex; justify-content:space-between; color:var(--text-dim); font-size:0.8rem; flex-wrap:wrap; gap:10px;">
         <div>© 2026 Sarkar Career Academy · All Rights Reserved.</div>
-        <div>Engineered for Sarkar PSI Academy</div>
+        <div>Official Govt. Registration: A-117123/2017 · Sarkar Career Academy</div>
       </div>
     </div>
   </footer>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal-backdrop" onclick="closeVideoModal(event)">
+    <div class="video-modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeVideoModal(null)">✕</button>
+      <iframe id="modalIframe" class="modal-video-frame" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div class="modal-info-bar">
+        <div>
+          <h4 id="modalVideoTitle" style="color:#ffffff; font-size:1.15rem; margin-bottom:4px;">Video Title</h4>
+          <p id="modalVideoDesc" style="color:var(--text-muted); font-size:0.85rem; max-width:650px;">Description</p>
+        </div>
+        <a id="modalDriveBtn" href="#" target="_blank" class="btn-bento-primary" style="padding:8px 16px; font-size:0.82rem;">
+          Open on Google Drive ↗
+        </a>
+      </div>
+    </div>
+  </div>
 
   <script>
     function filterCourses(cat, btn) {
@@ -1077,6 +1529,36 @@
       });
     }
 
+    function openVideoModal(driveId, title, desc) {
+      const modal = document.getElementById('videoModal');
+      const iframe = document.getElementById('modalIframe');
+      const titleElem = document.getElementById('modalVideoTitle');
+      const descElem = document.getElementById('modalVideoDesc');
+      const driveBtn = document.getElementById('modalDriveBtn');
+
+      iframe.src = `https://drive.google.com/file/d/${driveId}/preview`;
+      titleElem.innerText = title;
+      descElem.innerText = desc;
+      driveBtn.href = `https://drive.google.com/file/d/${driveId}/view`;
+
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideoModal(e) {
+      const modal = document.getElementById('videoModal');
+      const iframe = document.getElementById('modalIframe');
+      iframe.src = '';
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeVideoModal(null);
+      }
+    });
+
     function handleFastApply(e) {
       e.preventDefault();
       const name = document.getElementById('bentoName').value;
@@ -1085,7 +1567,7 @@
       const center = document.getElementById('bentoCenter').value;
 
       const msg = encodeURIComponent(
-        `*Sarkar PSI Academy - Fast Registration*\n` +
+        `*Sarkar Career Academy - Fast Inquiry*\n` +
         `Name: ${name}\n` +
         `Phone: ${phone}\n` +
         `Exam: ${exam}\n` +

@@ -1,8 +1,10 @@
-# 🏛️ Sarkar PSI Academy (सरकार PSI अकॅडमी) · Official Digital Platform Showcase
+# 🏛️ Sarkar Career Academy & Sarkar PSI Academy · Official Digital Platform Showcase
 
 > **Client:** प्रा. रविंद्र सरकार (Prof. Ravindra Sarkar)  
-> **Brand Names:** Sarkar PSI Academy (सरकार PSI अकॅडमी) / Sarkar Career Academy (सरकार करिअर अकॅडमी)  
+> **Official Brand Names:** Sarkar Career Academy (सरकार करिअर अकॅडमी) / Sarkar PSI Academy (सरकार PSI अकॅडमी)  
+> **Official Registration:** Govt. of India Copyright Reg. **A-117123/2017**  
 > **Production Domain:** `www.sarkarpsiacademy.com`  
+> **Client's Preferred Edition:** **Template 3 (Metro Bento - V3)** ★  
 > **Director & Mentor:** प्रा. रविंद्र सरकार (लेखक, मार्गदर्शक व संचालक — 25+ वर्षांचा अनुभव, 7,500+ शासकीय अधिकारी)  
 > **Official Contact:** +91 88056 67100 / 0253-2314166 / careeracademy1995@gmail.com  
 > **Headquarters:** नाशिक (अशोक स्तंभ / शालिमार / नाशिकरोड)  
@@ -12,16 +14,19 @@
 
 ## 🌟 Overview & Architecture
 
-This repository contains **3 bespoke, high-performance, aesthetic dark-mode website templates** designed specifically for **Sarkar PSI Academy** to showcase their coaching excellence in Maharashtra Police Sub-Inspector (PSI), MPSC Rajyaseva, Combine Group B & C, and competitive government examinations.
+This repository contains **3 bespoke, high-performance, aesthetic dark-mode website templates** designed specifically for **Sarkar Career Academy** & **Sarkar PSI Academy** to showcase their coaching excellence in Maharashtra Police Sub-Inspector (PSI), MPSC Rajyaseva, Combine Group B & C, and competitive government examinations.
+
+The client's preferred design direction is **Template 3 (V3 - Metro Bento)**, which features a modern bento grid, interactive course matrix, and an integrated **Google Drive Video Lecture Masterclass Showcase** with modal playback.
 
 The root of this project serves as an **Interactive Client Review Hub** allowing the client to test drive all three design directions across Desktop, Tablet, and Mobile viewports with live WhatsApp lead routing.
 
 ```
 mpscAcademy/
-├── index.html                    # Master Client Showcase Hub (with live language toggle & device frame)
+├── index.html                    # Master Client Showcase Hub (V3 Bento set as default preview)
 ├── assets/                       # High-resolution logos, optimized webp portraits, and graphics
 │   └── images/
-│       ├── logo.webp             # Official Sarkar Academy Emblem
+│       ├── sca-logo.webp         # Sarkar Career Academy Official Seal
+│       ├── logo.webp             # Sarkar Academy Emblem
 │       ├── sarkar-sir-portrait.webp # High-res portrait of Prof. Ravindra Sarkar
 │       ├── dadar-batch-flyer.webp
 │       ├── flex-board.webp
@@ -32,12 +37,25 @@ mpscAcademy/
 ├── v2-prestige-editorial/        # Option 2: Prestige Editorial (Obsidian & Emerald Bronze)
 │   ├── index.html                # Marathi Edition
 │   └── index-en.html             # Full English Edition
-├── v3-modern-bento/              # Option 3: Metro Bento (Cyber Slate & Electric Amber)
-│   ├── index.html                # Marathi Edition
-│   └── index-en.html             # Full English Edition
+├── v3-modern-bento/              # Option 3: Metro Bento ★ CLIENT PREFERRED EDITION
+│   ├── index.html                # Marathi Edition (with 6 Drive Videos & Modal Player)
+│   └── index-en.html             # English Edition (with 6 Drive Videos & Modal Player)
 ├── .nojekyll                     # Ensures GitHub Pages static asset routing
 └── README.md
 ```
+
+---
+
+## 📹 Integrated Video Masterclasses (Google Drive)
+
+Both the Marathi (`index.html`) and English (`index-en.html`) versions of the preferred V3 Bento edition feature 6 integrated Google Drive lecture streams with responsive modal playback:
+
+1. **PSI & Police Bharti Master Preparation Strategy:** `1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn`
+2. **MPSC Rajyaseva Prelims & Mains Blueprint:** `1oGNF443P6OJw3T7W_KT366eJB7RuVR9c`
+3. **Combine Group B & C (STI, ASO) Roadmap:** `1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3`
+4. **Police Law & Minor Acts (IPC, CrPC, Evidence Act):** `1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj`
+5. **Dadar (Mumbai) Special Batches & Home Tuitions Orientation:** `1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl`
+6. **Officers Felicitation & Alumni Testimonials:** `1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7`
 
 ---
 

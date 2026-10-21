@@ -6,3 +6,7 @@ scraped_routes.txt
 zip_contents/
 __pycache__/
 *.py
+*.pdf
+*.pptx
+assets/raw/
+

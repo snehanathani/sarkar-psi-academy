@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarkar PSI Academy | Metro Bento Edition - Mumbai & Nashik</title>
-  <meta name="description" content="Next-Gen MPSC & PSI Academy. Guided by Prof. Ravindra Sarkar. Special Home Tuitions & Batches in Dadar (Mumbai) & Nashik.">
-  <link rel="canonical" href="https://sarkarpsiacademy.com/">
+  <title>सरकार करिअर अकॅडमी | Sarkar Career Academy & Sarkar PSI Academy - Mumbai & Nashik</title>
+  <meta name="description" content="महाराष्ट्र शासन नोंदणीकृत (Reg. A-117123/2017) सरकार करिअर अकॅडमी. प्रा. रविंद्र सरकार (२५+ वर्षे अनुभव, ७,५००+ अधिकारी). नाशिक व दादर (मुंबई) येथे PSI, MPSC व पोलीस भरती मार्गदर्शन.">
+  <link rel="canonical" href="https://sarkarpsiacademy.com/v3-modern-bento/index.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -57,7 +57,6 @@
       padding: 0 24px;
     }
 
-    /* Radial Ambient Background Glows */
     .ambient-glow-1 {
       position: fixed;
       top: -150px;
@@ -119,7 +118,7 @@
     .bento-nav {
       position: sticky;
       top: 0;
-      background: rgba(9, 12, 18, 0.85);
+      background: rgba(9, 12, 18, 0.88);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border-subtle);
       z-index: 50;
@@ -139,8 +138,9 @@
     }
 
     .brand-logo {
-      height: 48px;
+      height: 50px;
       width: auto;
+      border-radius: 6px;
     }
 
     .brand-text-bento h1 {
@@ -152,20 +152,21 @@
     }
 
     .brand-text-bento span {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       color: var(--amber-bright);
       font-weight: 600;
       display: block;
+      letter-spacing: 0.5px;
     }
 
     .nav-links-bento {
       display: flex;
-      gap: 24px;
+      gap: 22px;
       list-style: none;
     }
 
     .nav-links-bento a {
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       font-weight: 500;
       color: var(--text-muted);
       transition: color 0.2s ease;
@@ -180,7 +181,7 @@
       color: #090c12;
       font-weight: 700;
       font-size: 0.88rem;
-      padding: 10px 20px;
+      padding: 10px 18px;
       border-radius: var(--radius-sm);
       display: inline-flex;
       align-items: center;
@@ -196,9 +197,9 @@
       box-shadow: 0 8px 24px var(--amber-glow);
     }
 
-    /* Bento Hero Grid */
+    /* Bento Hero */
     .bento-hero {
-      padding: 60px 0 80px;
+      padding: 50px 0 70px;
       position: relative;
       z-index: 10;
     }
@@ -209,12 +210,11 @@
       gap: 20px;
     }
 
-    /* Bento Card Base */
     .bento-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-lg);
-      padding: 32px;
+      padding: 30px;
       backdrop-filter: blur(12px);
       position: relative;
       overflow: hidden;
@@ -227,14 +227,13 @@
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
     }
 
-    /* Bento 1: Main Lead Card (8 cols) */
     .card-lead {
       grid-column: span 8;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       min-height: 440px;
-      background: linear-gradient(145deg, rgba(22, 31, 50, 0.85) 0%, rgba(15, 21, 35, 0.85) 100%);
+      background: linear-gradient(145deg, rgba(22, 31, 50, 0.9) 0%, rgba(15, 21, 35, 0.9) 100%);
     }
 
     .hero-tag-bento {
@@ -246,9 +245,9 @@
       color: var(--amber-bright);
       padding: 4px 14px;
       border-radius: 999px;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       align-self: flex-start;
     }
 
@@ -267,38 +266,30 @@
 
     .hero-desc-bento {
       color: #cbd5e1;
-      font-size: 1.1rem;
-      line-height: 1.6;
+      font-size: 1.05rem;
+      line-height: 1.65;
       max-width: 650px;
-      margin-bottom: 28px;
+      margin-bottom: 26px;
     }
 
-    .hero-lead-actions {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    /* Bento 2: Mentor Snapshot (4 cols) */
     .card-mentor-bento {
       grid-column: span 4;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 28px;
-      background: linear-gradient(160deg, rgba(26, 36, 58, 0.85) 0%, rgba(15, 21, 35, 0.85) 100%);
+      padding: 26px;
+      background: linear-gradient(160deg, rgba(26, 36, 58, 0.9) 0%, rgba(15, 21, 35, 0.9) 100%);
     }
 
     .mentor-bento-img-wrap {
-      width: 160px;
-      height: 160px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       overflow: hidden;
       border: 3px solid var(--amber-primary);
       box-shadow: 0 0 30px var(--amber-glow);
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     .mentor-bento-img-wrap img {
@@ -312,24 +303,23 @@
       font-size: 1.35rem;
       font-weight: 700;
       color: #ffffff;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
 
     .mentor-bento-title {
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       color: var(--amber-bright);
       font-weight: 600;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .mentor-bento-bio {
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
       line-height: 1.5;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
     }
 
-    /* Bento 3: Telemetry Counter (4 cols) */
     .card-telemetry {
       grid-column: span 4;
       background: linear-gradient(135deg, rgba(16, 24, 39, 0.85) 0%, rgba(20, 29, 48, 0.85) 100%);
@@ -344,71 +334,15 @@
       margin-bottom: 6px;
     }
 
-    .telemetry-label {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 4px;
-    }
-
-    .telemetry-desc {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-    }
-
-    /* Bento 4: Dadar Special Batch Pill Card (4 cols) */
     .card-dadar {
       grid-column: span 4;
       border-color: rgba(56, 189, 248, 0.3);
       background: linear-gradient(135deg, rgba(14, 30, 60, 0.85) 0%, rgba(12, 22, 42, 0.85) 100%);
     }
 
-    .dadar-pill-label {
-      font-size: 0.72rem;
-      font-weight: 800;
-      letter-spacing: 1px;
-      color: #38bdf8;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .dadar-card-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 8px;
-    }
-
-    .dadar-card-sub {
-      font-size: 0.85rem;
-      color: #cbd5e1;
-      line-height: 1.5;
-      margin-bottom: 16px;
-    }
-
-    .dadar-mini-badge {
-      display: inline-block;
-      background: rgba(56, 189, 248, 0.15);
-      color: #38bdf8;
-      padding: 4px 10px;
-      border-radius: 4px;
-      font-size: 0.78rem;
-      font-weight: 600;
-    }
-
-    /* Bento 5: Books & Publication (4 cols) */
     .card-books-bento {
       grid-column: span 4;
       background: linear-gradient(135deg, rgba(16, 24, 39, 0.85) 0%, rgba(20, 29, 48, 0.85) 100%);
-    }
-
-    .books-title-bento {
-      font-family: var(--font-display);
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 8px;
     }
 
     .books-bento-list {
@@ -432,9 +366,9 @@
       font-size: 0.8rem;
     }
 
-    /* Interactive Filterable Course Matrix */
+    /* Section Styles */
     .section-bento {
-      padding: 80px 0;
+      padding: 75px 0;
       position: relative;
       z-index: 10;
     }
@@ -460,6 +394,7 @@
       font-size: 1rem;
     }
 
+    /* Course Matrix */
     .filter-tabs {
       display: flex;
       justify-content: center;
@@ -566,7 +501,239 @@
       font-weight: 700;
     }
 
-    /* Centers Bento Strip */
+    /* Video Showcase Section */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .video-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .video-card:hover {
+      border-color: var(--amber-bright);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+    }
+
+    .video-thumb-frame {
+      aspect-ratio: 16/9;
+      background: radial-gradient(circle at 50% 50%, #1e283d 0%, #0d121c 100%);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .video-play-btn {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--amber-primary);
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 25px var(--amber-glow);
+      transition: transform 0.2s ease;
+    }
+
+    .video-card:hover .video-play-btn {
+      transform: scale(1.15);
+      background: var(--amber-bright);
+    }
+
+    .video-badge-pill {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--amber-bright);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    .video-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .video-category {
+      font-size: 0.72rem;
+      color: var(--amber-bright);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .video-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+
+    .video-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 18px;
+      flex-grow: 1;
+    }
+
+    .video-actions {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 10px;
+    }
+
+    .btn-play-modal {
+      background: var(--amber-primary);
+      color: #000;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .btn-play-modal:hover {
+      background: var(--amber-bright);
+    }
+
+    .btn-drive-link {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      font-size: 0.8rem;
+      padding: 8px 10px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-drive-link:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Video Player Modal */
+    .video-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .video-modal-card {
+      background: #0f1523;
+      border: 1px solid var(--border-amber);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 900px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+      position: relative;
+    }
+
+    .modal-video-frame {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: #000;
+      border: none;
+    }
+
+    .modal-info-bar {
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.2rem;
+      z-index: 10;
+    }
+
+    /* Dignitaries / Guest VIPs */
+    .vip-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .vip-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      border-left: 3px solid var(--amber-primary);
+    }
+
+    .vip-card strong {
+      display: block;
+      color: #ffffff;
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .vip-card span {
+      font-size: 0.78rem;
+      color: var(--amber-bright);
+    }
+
+    /* Centers */
     .centers-bento-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -578,39 +745,8 @@
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-md);
       padding: 28px;
-      transition: all 0.25s ease;
     }
 
-    .center-bento-card:hover {
-      border-color: var(--border-amber);
-    }
-
-    .center-badge-bento {
-      font-size: 0.72rem;
-      color: var(--amber-bright);
-      background: rgba(255, 120, 0, 0.12);
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-weight: 700;
-      display: inline-block;
-      margin-bottom: 12px;
-    }
-
-    .center-title-bento {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 8px;
-    }
-
-    .center-text-bento {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 16px;
-    }
-
-    /* Admission Fast Form */
     .fast-form-card {
       background: linear-gradient(135deg, rgba(20, 28, 45, 0.95) 0%, rgba(14, 20, 32, 0.95) 100%);
       border: 1px solid var(--border-amber);
@@ -620,7 +756,6 @@
       grid-template-columns: 1.2fr 0.8fr;
       gap: 40px;
       align-items: center;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     }
 
     .fast-form-inputs {
@@ -640,12 +775,6 @@
       font-size: 0.92rem;
     }
 
-    .input-bento:focus {
-      outline: none;
-      border-color: var(--amber-primary);
-    }
-
-    /* Footer Bento */
     .footer-bento {
       background: #05070a;
       border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -663,36 +792,18 @@
     }
 
     @media (max-width: 992px) {
-      .bento-grid {
-        grid-template-columns: 1fr;
-      }
-      .card-lead, .card-mentor-bento, .card-telemetry, .card-dadar, .card-books-bento {
-        grid-column: span 1;
-      }
-      .course-matrix-grid, .centers-bento-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .fast-form-card, .footer-bento-grid {
-        grid-template-columns: 1fr;
-      }
-      .nav-links-bento {
-        display: none;
-      }
-      .hero-title-bento {
-        font-size: 2.3rem;
-      }
+      .bento-grid { grid-template-columns: 1fr; }
+      .card-lead, .card-mentor-bento, .card-telemetry, .card-dadar, .card-books-bento { grid-column: span 1; }
+      .course-matrix-grid, .video-grid, .centers-bento-grid, .vip-grid { grid-template-columns: repeat(2, 1fr); }
+      .fast-form-card, .footer-bento-grid { grid-template-columns: 1fr; }
+      .nav-links-bento { display: none; }
+      .hero-title-bento { font-size: 2.3rem; }
     }
 
     @media (max-width: 640px) {
-      .course-matrix-grid, .centers-bento-grid {
-        grid-template-columns: 1fr;
-      }
-      .fast-form-inputs {
-        grid-template-columns: 1fr;
-      }
-      .hero-title-bento {
-        font-size: 1.9rem;
-      }
+      .course-matrix-grid, .video-grid, .centers-bento-grid, .vip-grid { grid-template-columns: 1fr; }
+      .fast-form-inputs { grid-template-columns: 1fr; }
+      .hero-title-bento { font-size: 1.9rem; }
     }
   </style>
 </head>
@@ -704,14 +815,14 @@
   <!-- Showcase Strip -->
   <div class="template-bar">
     <div class="container template-bar-inner">
-      <div>
-        <span style="color:var(--amber-bright); font-weight:700;">⚡ Design Showcase:</span>
-        <span style="color:var(--text-muted);">टेम्प्लेट ३ (Modern Bento & Cyber EdTech)</span>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <span style="color:var(--amber-bright); font-weight:700;">★ निवडक डिझाईन:</span>
+        <span style="color:#ffffff;">सरकार करिअर अकॅडमी (Sarkar Career Academy - V3 Bento)</span>
       </div>
       <div style="display:flex; gap:6px;">
         <a href="../v1-cadet-dark/index.html" class="chip">V1: Cadet Dark</a>
         <a href="../v2-prestige-editorial/index.html" class="chip">V2: Prestige Editorial</a>
-        <a href="index.html" class="chip active">V3: Metro Bento</a>
+        <a href="index.html" class="chip active">V3: Metro Bento ★</a>
         <a href="../index.html" class="chip" style="background:rgba(255,120,0,0.2); color:#fff;">← सर्व व्हर्जन्स हब</a>
       </div>
     </div>
@@ -721,16 +832,17 @@
   <header class="bento-nav">
     <div class="container bento-nav-inner">
       <div class="brand-bento">
-        <img src="../assets/images/logo.webp" alt="Sarkar PSI Academy" class="brand-logo" onerror="this.src='../assets/images/logo.png'">
+        <img src="../assets/images/sca-logo.webp" alt="Sarkar Career Academy" class="brand-logo" onerror="this.src='../assets/images/logo.png'">
         <div class="brand-text-bento">
-          <h1>SARKAR PSI ACADEMY</h1>
-          <span>CAREER ACADEMY · MUMBAI & NASHIK</span>
+          <h1>सरकार करिअर अकॅडमी</h1>
+          <span>SARKAR CAREER ACADEMY · SARKAR PSI ACADEMY</span>
         </div>
       </div>
 
       <ul class="nav-links-bento">
         <li><a href="#bento" class="active">मुख्यपृष्ठ</a></li>
         <li><a href="#courses">अभ्यासक्रम</a></li>
+        <li><a href="#videos">व्हिडिओ लेक्चर्स</a></li>
         <li><a href="#dadar">दादर हब</a></li>
         <li><a href="#mentor">मार्गदर्शक</a></li>
         <li><a href="#centers">शाखा</a></li>
@@ -758,23 +870,23 @@
         <div class="bento-card card-lead">
           <div>
             <div class="hero-tag-bento">
-              <span>★ MAHARASHTRA'S PREMIER POLICE & CIVIL SERVICES HUB</span>
+              <span>★ भारत सरकार नोंदणीकृत (REG. A-117123/2017) · सरकार करिअर अकॅडमी</span>
             </div>
             <h2 class="hero-title-bento">
               खाकी वर्दी आणि प्रशासकीय पदांची <span>नियोजनबद्ध तयारी</span>
             </h2>
             <p class="hero-desc-bento">
-              नाशिकमधील २५+ वर्षांचा सुवर्ण निकाल वारसा आता मुंबई (दादर) मध्ये! प्रा. रविंद्र सरकार यांच्या मार्गदर्शनाखाली स्पेशल PSI होम ट्युशन्स, कम्बाईन व राज्यसेवा बॅचेस.
+              नाशिकमधील २५+ वर्षांचा सुवर्ण निकाल वारसा आता मुंबई (दादर) मध्ये! <strong>सरकार करिअर अकॅडमी</strong> आणि <strong>सरकार PSI अकॅडमी</strong> अंतर्गत प्रा. रविंद्र सरकार यांच्या थेट मार्गदर्शनाखाली स्पेशल PSI होम ट्युशन्स, कम्बाईन व राज्यसेवा बॅचेस.
             </p>
           </div>
 
           <div class="hero-lead-actions">
-            <a href="https://wa.me/918805667100?text=Hello%20Prof.%20Ravindra%20Sarkar,%20I%20am%20interested%20in%20joining%20Sarkar%20PSI%20Academy." target="_blank" class="btn-bento-primary">
+            <a href="https://wa.me/918805667100?text=Hello%20Prof.%20Ravindra%20Sarkar,%20I%20am%20interested%20in%20joining%20Sarkar%20Career%20Academy." target="_blank" class="btn-bento-primary">
               <span>WhatsApp वर थेट बोला (8805667100)</span>
               →
             </a>
-            <a href="#courses" style="color:#ffffff; font-weight:600; font-size:0.92rem; padding:10px 18px; border:1px solid var(--border-subtle); border-radius:var(--radius-sm);">
-              अभ्यासक्रम पहा
+            <a href="#videos" style="color:#ffffff; font-weight:600; font-size:0.92rem; padding:10px 18px; border:1px solid var(--border-subtle); border-radius:var(--radius-sm); display:inline-flex; align-items:center; gap:6px;">
+              <span>व्हिडिओ सत्रे पहा</span> ▶
             </a>
           </div>
         </div>
@@ -785,7 +897,7 @@
             <img src="../assets/images/sarkar-sir-portrait.webp" alt="प्रा. रविंद्र सरकार" onerror="this.src='../assets/images/sarkar-sir-portrait.png'">
           </div>
           <h3 class="mentor-bento-name">प्रा. रविंद्र सरकार</h3>
-          <div class="mentor-bento-title">संस्थापक, लेखक व संचालक</div>
+          <div class="mentor-bento-title">संस्थापक, लेखक व संचालक · सरकार करिअर अकॅडमी</div>
           <p class="mentor-bento-bio">
             स्वतः MPSC राज्यसेवा, Led PI बलसाड, व वायरलेस इन्स्पेक्टर परीक्षा उत्तीर्ण. २५ वर्षांहून अधिक काळ स्पर्धा परीक्षा मार्गदर्शन.
           </p>
@@ -821,7 +933,7 @@
             <li>C-SAT ठोकळा (आकलन व गणित)</li>
             <li>GS परीक्षेला जाता जाता</li>
           </ul>
-          <a href="https://wa.me/918805667100?text=Hello%20Sir,%20I%20want%20to%20order%20books." target="_blank" style="font-size:0.8rem; color:var(--amber-bright); font-weight:700;">
+          <a href="https://wa.me/918805667100?text=Hello%20Sir,%20I%20want%20to%20order%20books%20from%20Sarkar%20Career%20Academy." target="_blank" style="font-size:0.8rem; color:var(--amber-bright); font-weight:700;">
             पुस्तकांसाठी ऑर्डर करा →
           </a>
         </div>
@@ -834,7 +946,7 @@
     <div class="container">
       <h3 class="section-title-bento">अभ्यासक्रम <span>आणि बॅचेस</span></h3>
       <p class="section-sub-bento">
-        तुमच्या ध्येयानुसार परीक्षा निवडा आणि थेट अभ्यासक्रम व तयारीची पद्धत जाणून घ्या.
+        सरकार करिअर अकॅडमीमध्ये तुमच्या ध्येयानुसार परीक्षा निवडा आणि थेट तयारीची पद्धत जाणून घ्या.
       </p>
 
       <div class="filter-tabs">
@@ -846,7 +958,6 @@
       </div>
 
       <div class="course-matrix-grid">
-        <!-- Card 1 -->
         <div class="matrix-card" data-cat="psi">
           <span class="matrix-tag">गृह विभाग · खाकी वर्दी</span>
           <h4 class="matrix-name">PSI (पोलीस उपनिरीक्षक)</h4>
@@ -859,7 +970,6 @@
           <a href="#apply" class="matrix-btn">प्रवेश चौकशी करा</a>
         </div>
 
-        <!-- Card 2 -->
         <div class="matrix-card" data-cat="mpsc">
           <span class="matrix-tag">वर्ग-१ व वर्ग-२ प्रशासन</span>
           <h4 class="matrix-name">MPSC राज्यसेवा</h4>
@@ -872,7 +982,6 @@
           <a href="#apply" class="matrix-btn">प्रवेश चौकशी करा</a>
         </div>
 
-        <!-- Card 3 -->
         <div class="matrix-card" data-cat="combine">
           <span class="matrix-tag">मंत्रालय व कर प्रशासन</span>
           <h4 class="matrix-name">संयुक्त गट ब व क (Combine)</h4>
@@ -885,7 +994,6 @@
           <a href="#apply" class="matrix-btn">प्रवेश चौकशी करा</a>
         </div>
 
-        <!-- Card 4 -->
         <div class="matrix-card" data-cat="psi">
           <span class="matrix-tag">ग्राउंड + लेखी समन्वय</span>
           <h4 class="matrix-name">महाराष्ट्र पोलीस भरती</h4>
@@ -898,7 +1006,6 @@
           <a href="#apply" class="matrix-btn">प्रवेश चौकशी करा</a>
         </div>
 
-        <!-- Card 5 -->
         <div class="matrix-card" data-cat="saral">
           <span class="matrix-tag">TCS / IBPS पॅटर्न</span>
           <h4 class="matrix-name">सरळ सेवा (तलाठी / ZP / TET)</h4>
@@ -911,9 +1018,8 @@
           <a href="#apply" class="matrix-btn">प्रवेश चौकशी करा</a>
         </div>
 
-        <!-- Card 6 -->
         <div class="matrix-card" data-cat="all">
-          <span class="matrix-tag">विशेष भाषा व प्रवेश</span>
+          <span class="matrix-tag">विशेष भाषा व विधी</span>
           <h4 class="matrix-name">CLAT व फ्रेंच भाषा (French)</h4>
           <p class="matrix-desc">कायदा प्रवेश परीक्षा (CLAT) आणि आंतरराष्ट्रीय फ्रेंच भाषेचे पायाभूत वर्ग. इंग्रजी व हिंदी माध्यम उपलब्ध.</p>
           <ul class="matrix-bullets">
@@ -927,17 +1033,218 @@
     </div>
   </section>
 
+  <!-- Video Gallery Section (Integrated Google Drive Video Links) -->
+  <section id="videos" class="section-bento">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:44px;">
+        <span style="color:var(--amber-bright); font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; display:inline-block; margin-bottom:8px;">
+          🎥 अधिकृत वर्ग व्याख्याने व रणनीती व्हिडिओ
+        </span>
+        <h3 class="section-title-bento">व्हिडिओ मार्गदर्शन <span>व क्लासरूम लेक्चर्स</span></h3>
+        <p class="section-sub-bento">
+          प्रा. रविंद्र सरकार यांची परीक्षा मार्गदर्शन सत्रे, कायदे विश्लेषण आणि सरकार करिअर अकॅडमीच्या यशस्वी विद्यार्थ्यांच्या मुलाखती.
+        </p>
+      </div>
+
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-card">
+          <div class="video-thumb-frame" onclick="openVideoModal('1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn', 'PSI व पोलीस भरती पूर्वतयारी रणनीती — प्रा. रविंद्र सरकार', 'पोलीस उपनिरीक्षक (PSI) आणि पोलीस भरती परीक्षेची पहिल्याच प्रयत्नात यशस्वी तयारी कशी करावी? अभ्यास नियोजन, वेळेचे व्यवस्थापन आणि सामान्य अध्ययन (GS) विषयांची गुणकेंद्रित मांडणी यावरील प्रा. रविंद्र सरकार यांचे मार्गदर्शन सत्र.')">
+            <span class="video-badge-pill">व्हिडिओ ०१ · PSI रणनीती</span>
+            <div class="video-play-btn">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">व्याख्यान व रणनीती</span>
+            <h4 class="video-title">PSI व पोलीस भरती पूर्वतयारी रणनीती</h4>
+            <p class="video-desc">
+              पोलीस उपनिरीक्षक (PSI) आणि पोलीस भरती परीक्षेची पहिल्याच प्रयत्नात यशस्वी तयारी कशी करावी? अभ्यास नियोजन, वेळेचे व्यवस्थापन आणि गुणकेंद्रित मांडणी.
+            </p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn', 'PSI व पोलीस भरती पूर्वतयारी रणनीती — प्रा. रविंद्र सरकार', 'पोलीस उपनिरीक्षक (PSI) आणि पोलीस भरती परीक्षेची पहिल्याच प्रयत्नात यशस्वी तयारी कशी करावी? अभ्यास नियोजन, वेळेचे व्यवस्थापन आणि सामान्य अध्ययन (GS) विषयांची गुणकेंद्रित मांडणी यावरील प्रा. रविंद्र सरकार यांचे मार्गदर्शन सत्र.')">
+                <span>येथे पहा</span> ▶
+              </button>
+              <a href="https://drive.google.com/file/d/1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn/view" target="_blank" class="btn-drive-link">
+                Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+          <div class="video-thumb-frame" onclick="openVideoModal('1oGNF443P6OJw3T7W_KT366eJB7RuVR9c', 'MPSC राज्यसेवा पूर्व व मुख्य परीक्षा समग्र मार्गदर्शन', 'उपजिल्हाधिकारी, Dy.SP आणि तहसिलदार पदांसाठी आवश्यक असणारी सखोल उत्तरलेखन शैली, C-SAT क्वालिफाईंग तंत्र आणि संदर्भ साहित्याची अचूक निवड याविषयी सविस्तर मार्गदर्शन व्याख्यान.')">
+            <span class="video-badge-pill">व्हिडिओ ०२ · राज्यसेवा</span>
+            <div class="video-play-btn">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">राज्यसेवा वर्ग १ व २</span>
+            <h4 class="video-title">MPSC राज्यसेवा पूर्व व मुख्य परीक्षा समग्र मार्गदर्शन</h4>
+            <p class="video-desc">
+              उपजिल्हाधिकारी, Dy.SP आणि तहसिलदार पदांसाठी आवश्यक असणारी सखोल उत्तरलेखन शैली, C-SAT क्वालिफाईंग तंत्र आणि संदर्भ साहित्याची अचूक निवड.
+            </p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('1oGNF443P6OJw3T7W_KT366eJB7RuVR9c', 'MPSC राज्यसेवा पूर्व व मुख्य परीक्षा समग्र मार्गदर्शन', 'उपजिल्हाधिकारी, Dy.SP आणि तहसिलदार पदांसाठी आवश्यक असणारी सखोल उत्तरलेखन शैली, C-SAT क्वालिफाईंग तंत्र आणि संदर्भ साहित्याची अचूक निवड याविषयी सविस्तर मार्गदर्शन व्याख्यान.')">
+                <span>येथे पहा</span> ▶
+              </button>
+              <a href="https://drive.google.com/file/d/1oGNF443P6OJw3T7W_KT366eJB7RuVR9c/view" target="_blank" class="btn-drive-link">
+                Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+          <div class="video-thumb-frame" onclick="openVideoModal('1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3', 'संयुक्त गट ब व क (STI, ASO) यशाची गुरुकिल्ली', 'वस्तुनिष्ठ बहुपर्यायी परीक्षांमध्ये वेग आणि अचूकता कशी साधावी? मागील वर्षांच्या प्रश्नपत्रिकांचे सूक्ष्म विश्लेषण आणि सरकार करिअर अकॅडमीच्या यशस्वी विद्यार्थ्यांचे अनुभव.')">
+            <span class="video-badge-pill">व्हिडिओ ०३ · कम्बाईन गट ब</span>
+            <div class="video-play-btn">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">संयुक्त गट ब व क</span>
+            <h4 class="video-title">संयुक्त गट ब व क (STI, ASO) यशाची गुरुकिल्ली</h4>
+            <p class="video-desc">
+              वस्तुनिष्ठ बहुपर्यायी परीक्षांमध्ये वेग आणि अचूकता (Speed & Accuracy) कशी साधावी? मागील वर्षांच्या प्रश्नपत्रिकांचे सूक्ष्म विश्लेषण.
+            </p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3', 'संयुक्त गट ब व क (STI, ASO) यशाची गुरुकिल्ली', 'वस्तुनिष्ठ बहुपर्यायी परीक्षांमध्ये वेग आणि अचूकता कशी साधावी? मागील वर्षांच्या प्रश्नपत्रिकांचे सूक्ष्म विश्लेषण आणि सरकार करिअर अकॅडमीच्या यशस्वी विद्यार्थ्यांचे अनुभव.')">
+                <span>येथे पहा</span> ▶
+              </button>
+              <a href="https://drive.google.com/file/d/1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3/view" target="_blank" class="btn-drive-link">
+                Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card">
+          <div class="video-thumb-frame" onclick="openVideoModal('1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj', 'पोलीस कायदे (IPC, CrPC व पुरावा कायदा) क्लासरूम सत्र', 'PSI मुख्य परीक्षेतील भारतीय दंड संहिता (IPC), फौजदारी प्रक्रिया संहिता (CrPC) आणि भारतीय पुरावा कायदा यांसारख्या तांत्रिक विषयांचे सोप्या व व्यावहारिक उदाहरणांसह प्रा. सरकार सरांचे वर्ग अध्यापन.')">
+            <span class="video-badge-pill">व्हिडिओ ०४ · कायदा सत्र</span>
+            <div class="video-play-btn">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">विधी व कायदे</span>
+            <h4 class="video-title">पोलीस कायदे (IPC, CrPC व पुरावा कायदा) क्लासरूम सत्र</h4>
+            <p class="video-desc">
+              PSI मुख्य परीक्षेतील भारतीय दंड संहिता (IPC), फौजदारी प्रक्रिया संहिता (CrPC) आणि भारतीय पुरावा कायदा या विषयांचे व्यावहारिक उदाहरणांसह अध्यापन.
+            </p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj', 'पोलीस कायदे (IPC, CrPC व पुरावा कायदा) क्लासरूम सत्र', 'PSI मुख्य परीक्षेतील भारतीय दंड संहिता (IPC), फौजदारी प्रक्रिया संहिता (CrPC) आणि भारतीय पुरावा कायदा यांसारख्या तांत्रिक विषयांचे सोप्या व व्यावहारिक उदाहरणांसह प्रा. सरकार सरांचे वर्ग अध्यापन.')">
+                <span>येथे पहा</span> ▶
+              </button>
+              <a href="https://drive.google.com/file/d/1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj/view" target="_blank" class="btn-drive-link">
+                Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-card">
+          <div class="video-thumb-frame" onclick="openVideoModal('1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl', 'दादर (मुंबई) विशेष बॅच व होम ट्युशन्स माहिती सत्र', 'मुंबई व उपनगरातील विद्यार्थ्यांसाठी दादर (प्रभादेवी मंदिर जवळ) सुरू करण्यात आलेल्या विशेष २ तासांच्या सखोल बॅचेस (बुध, गुरू, शुक्र) आणि वैयक्तिक होम ट्युशन्स पद्धतीची रूपरेषा.')">
+            <span class="video-badge-pill">व्हिडिओ ०५ · मुंबई हब</span>
+            <div class="video-play-btn">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">मुंबई केंद्र</span>
+            <h4 class="video-title">दादर (मुंबई) विशेष बॅच व होम ट्युशन्स माहिती सत्र</h4>
+            <p class="video-desc">
+              मुंबई व उपनगरातील विद्यार्थ्यांसाठी दादर (प्रभादेवी मंदिर जवळ) सुरू करण्यात आलेल्या विशेष २ तासांच्या सखोल बॅचेस आणि वैयक्तिक होम ट्युशन्स पद्धतीची रूपरेषा.
+            </p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl', 'दादर (मुंबई) विशेष बॅच व होम ट्युशन्स माहिती सत्र', 'मुंबई व उपनगरातील विद्यार्थ्यांसाठी दादर (प्रभादेवी मंदिर जवळ) सुरू करण्यात आलेल्या विशेष २ तासांच्या सखोल बॅचेस (बुध, गुरू, शुक्र) आणि वैयक्तिक होम ट्युशन्स पद्धतीची रूपरेषा.')">
+                <span>येथे पहा</span> ▶
+              </button>
+              <a href="https://drive.google.com/file/d/1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl/view" target="_blank" class="btn-drive-link">
+                Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="video-card">
+          <div class="video-thumb-frame" onclick="openVideoModal('1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7', 'अधिकारी सत्कार सोहळा व यशस्वी विद्यार्थ्यांचे मनोगत', 'सरकार करिअर अकॅडमीतून प्रशिक्षण घेऊन शासकीय सेवेत पोलीस उपनिरीक्षक (PSI) व प्रशासकीय अधिकारी पदांवर निवड झालेल्या विद्यार्थ्यांचा सत्कार आणि त्यांचा प्रेरणादायी प्रवास.')">
+            <span class="video-badge-pill">व्हिडिओ ०६ · यशोगाथा</span>
+            <div class="video-play-btn">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">यशोगाथा</span>
+            <h4 class="video-title">अधिकारी सत्कार सोहळा व यशस्वी विद्यार्थ्यांचे मनोगत</h4>
+            <p class="video-desc">
+              सरकार करिअर अकॅडमीतून प्रशिक्षण घेऊन शासकीय सेवेत पोलीस उपनिरीक्षक (PSI) व प्रशासकीय अधिकारी पदांवर निवड झालेल्या विद्यार्थ्यांचा सत्कार सोहळा.
+            </p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7', 'अधिकारी सत्कार सोहळा व यशस्वी विद्यार्थ्यांचे मनोगत', 'सरकार करिअर अकॅडमीतून प्रशिक्षण घेऊन शासकीय सेवेत पोलीस उपनिरीक्षक (PSI) व प्रशासकीय अधिकारी पदांवर निवड झालेल्या विद्यार्थ्यांचा सत्कार आणि त्यांचा प्रेरणादायी प्रवास.')">
+                <span>येथे पहा</span> ▶
+              </button>
+              <a href="https://drive.google.com/file/d/1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7/view" target="_blank" class="btn-drive-link">
+                Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Distinguished Guests & Mentors Section -->
+  <section class="section-bento" style="background:#0b0f17; border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle);">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:32px;">
+        <span style="color:var(--amber-bright); font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:1px;">★ प्रतिष्ठित पाहुणे व मार्गदर्शक</span>
+        <h3 class="section-title-bento">सरकार करिअर अकॅडमीला <span>भेट दिलेले मान्यवर</span></h3>
+        <p class="section-sub-bento">महाराष्ट्र पोलीस प्रशासन व शिक्षण क्षेत्रातील ज्येष्ठ अधिकाऱ्यांचे अकॅडमीतील विद्यार्थ्यांना सातत्यपूर्ण मार्गदर्शन.</p>
+      </div>
+
+      <div class="vip-grid">
+        <div class="vip-card">
+          <strong>कुलवंतकुमार सरंगल साहेब (IPS)</strong>
+          <span>अतिरिक्त पोलीस महासंचालक / पोलीस आयुक्त</span>
+        </div>
+        <div class="vip-card">
+          <strong>प्रा. हरी नरके</strong>
+          <span>ज्येष्ठ विचारवंत व प्राध्यापक, पुणे विद्यापीठ</span>
+        </div>
+        <div class="vip-card">
+          <strong>PSI मनिष पोटे</strong>
+          <span>यशस्वी माजी विद्यार्थी, महाराष्ट्र पोलीस</span>
+        </div>
+        <div class="vip-card">
+          <strong>PSI गायत्री जाधव</strong>
+          <span>यशस्वी माजी विद्यार्थिनी, महाराष्ट्र पोलीस</span>
+        </div>
+        <div class="vip-card">
+          <strong>मुख्याधिकारी निर्मला गायकवाड</strong>
+          <span>महाराष्ट्र नगरपरिषद प्रशासन सेवा (C.O.)</span>
+        </div>
+        <div class="vip-card">
+          <strong>शिक्षणाधिकारी अंधाळे साहेब</strong>
+          <span>महाराष्ट्र राज्य माध्यमिक व उच्च माध्यमिक शिक्षण मंडळ</span>
+        </div>
+        <div class="vip-card">
+          <strong>प्रा. शशिकांत चितळकर</strong>
+          <span>ज्येष्ठ स्पर्धा परीक्षा तज्ज्ञ व मार्गदर्शक</span>
+        </div>
+        <div class="vip-card" style="border-left-color:var(--indigo-accent);">
+          <strong>शासकीय नोंदणीकृत संस्था</strong>
+          <span>Govt. of India Copyright Reg. A-117123/2017</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Centers Bento Section -->
   <section id="centers" class="section-bento">
     <div class="container">
       <h3 class="section-title-bento">प्रशिक्षण केंद्रे <span>(नाशिक व मुंबई)</span></h3>
-      <p class="section-sub-bento">आमच्या कोणत्याही केंद्रावर प्रत्यक्ष भेट देऊन प्रवेश प्रक्रिया पूर्ण करा.</p>
+      <p class="section-sub-bento">सरकार करिअर अकॅडमीच्या कोणत्याही केंद्रावर प्रत्यक्ष भेट देऊन प्रवेश प्रक्रिया पूर्ण करा.</p>
 
       <div class="centers-bento-grid">
         <div class="center-bento-card" style="border-color:rgba(56, 189, 248, 0.4);">
-          <span class="center-badge-bento" style="color:#38bdf8; background:rgba(56,189,248,0.15);">मुंबई केंद्र (दादर)</span>
-          <h4 class="center-title-bento">दादर (पश्चिम)</h4>
-          <p class="center-text-bento">
+          <span style="color:#38bdf8; background:rgba(56,189,248,0.15); font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:700; display:inline-block; margin-bottom:12px;">मुंबई केंद्र (दादर)</span>
+          <h4 style="font-size:1.25rem; font-weight:700; color:#fff; margin-bottom:8px;">दादर (पश्चिम)</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6; margin-bottom:16px;">
             <strong>प्रभादेवी मंदिर जवळ, दादर, मुंबई - ४०००२५.</strong><br>
             विशेष PSI होम ट्युशन्स व बॅचेस.<br>
             फोन: 88056 67100
@@ -946,9 +1253,9 @@
         </div>
 
         <div class="center-bento-card">
-          <span class="center-badge-bento">नाशिक मुख्य केंद्र</span>
-          <h4 class="center-title-bento">अशोक स्तंभ (नाशिक)</h4>
-          <p class="center-text-bento">
+          <span style="color:var(--amber-bright); background:rgba(255,120,0,0.12); font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:700; display:inline-block; margin-bottom:12px;">नाशिक मुख्य केंद्र</span>
+          <h4 style="font-size:1.25rem; font-weight:700; color:#fff; margin-bottom:8px;">अशोक स्तंभ (नाशिक)</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6; margin-bottom:16px;">
             <strong>विको सर्कल, अशोक स्तंभा जवळ,</strong><br>
             आर. के. सर्कल, पेठे विद्यालयासमोर, नाशिक - ४२२००१.<br>
             फोन: 0253-2314166 / 88056 67100
@@ -957,11 +1264,11 @@
         </div>
 
         <div class="center-bento-card">
-          <span class="center-badge-bento">ठाणे व शालिमार</span>
-          <h4 class="center-title-bento">ठाणे व शालिमार शाखा</h4>
-          <p class="center-text-bento">
-            ठाणे: Distributer Bldg, Opp Central Mall, Mira Road.<br>
-            नाशिक: १ला मजला, प.सा. नाट्यगृहा समोर, शालिमार.<br>
+          <span style="color:var(--amber-bright); background:rgba(255,120,0,0.12); font-size:0.72rem; padding:2px 8px; border-radius:4px; font-weight:700; display:inline-block; margin-bottom:12px;">शालिमार व ठाणे केंद्र</span>
+          <h4 style="font-size:1.25rem; font-weight:700; color:#fff; margin-bottom:8px;">शालिमार (रजि. कार्यालय)</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6; margin-bottom:16px;">
+            १ ला मजला, राजे बहाद्दर कॉम्प्लेक्स, टिळक रोड, शालिमार, नाशिक.<br>
+            तसेच ठाणे: Distributer Bldg, Opp Central Mall, Mira Road.<br>
             फोन: 98507 89322 / 83800 66080
           </p>
           <a href="tel:9850789322" style="color:var(--amber-bright); font-weight:700; font-size:0.85rem;">थेट कॉल करा →</a>
@@ -1019,15 +1326,15 @@
     <div class="container">
       <div class="footer-bento-grid">
         <div>
-          <h4 style="font-family:var(--font-display); font-size:1.2rem; color:#fff; margin-bottom:10px;">SARKAR PSI ACADEMY</h4>
-          <p style="color:var(--text-dim); line-height:1.6;">
-            सरकार करिअर अकॅडमी · स्पर्धा परीक्षा मार्गदर्शन प्रबोधिनी, नाशिक व मुंबई. खाकी वर्दीचे स्वप्न साकार करणारी अग्रगण्य संस्था.
+          <h4 style="font-family:var(--font-display); font-size:1.2rem; color:#fff; margin-bottom:8px;">सरकार करिअर अकॅडमी</h4>
+          <p style="color:var(--text-dim); line-height:1.6; font-size:0.85rem;">
+            भारत सरकार नोंदणीकृत (Govt. of India Copyright Reg. A-117123/2017). सरकार करिअर अकॅडमी व सरकार PSI अकॅडमी · नाशिक व मुंबई. खाकी वर्दीचे स्वप्न साकार करणारी नंबर १ अग्रगण्य संस्था.
           </p>
         </div>
         <div>
           <h5 style="color:#fff; margin-bottom:12px;">महत्त्वाचे दुवे</h5>
           <p style="color:var(--text-muted); font-size:0.85rem; line-height:1.8;">
-            <a href="#bento">मुख्यपृष्ठ</a> · <a href="#courses">अभ्यासक्रम</a> · <a href="#dadar">दादर मुंबई शाखा</a> · <a href="#centers">नाशिक केंद्र</a>
+            <a href="#bento">मुख्यपृष्ठ</a> · <a href="#courses">अभ्यासक्रम</a> · <a href="#videos">व्हिडिओ लेक्चर्स</a> · <a href="#dadar">दादर मुंबई शाखा</a> · <a href="#centers">नाशिक केंद्र</a>
           </p>
         </div>
         <div>
@@ -1042,10 +1349,27 @@
 
       <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:20px; display:flex; justify-content:space-between; color:var(--text-dim); font-size:0.8rem; flex-wrap:wrap; gap:10px;">
         <div>© 2026 Sarkar Career Academy · All Rights Reserved.</div>
-        <div>Engineered for Sarkar PSI Academy</div>
+        <div>अधिकृत नोंदणी: A-117123/2017 · सरकार करिअर अकॅडमी</div>
       </div>
     </div>
   </footer>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal-backdrop" onclick="closeVideoModal(event)">
+    <div class="video-modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeVideoModal(null)">✕</button>
+      <iframe id="modalIframe" class="modal-video-frame" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div class="modal-info-bar">
+        <div>
+          <h4 id="modalVideoTitle" style="color:#ffffff; font-size:1.15rem; margin-bottom:4px;">व्हिडिओ शीर्षक</h4>
+          <p id="modalVideoDesc" style="color:var(--text-muted); font-size:0.85rem; max-width:650px;">वर्णन</p>
+        </div>
+        <a id="modalDriveBtn" href="#" target="_blank" class="btn-bento-primary" style="padding:8px 16px; font-size:0.82rem;">
+          Google Drive वर उघडा ↗
+        </a>
+      </div>
+    </div>
+  </div>
 
   <script>
     function filterCourses(cat, btn) {
@@ -1062,6 +1386,36 @@
       });
     }
 
+    function openVideoModal(driveId, title, desc) {
+      const modal = document.getElementById('videoModal');
+      const iframe = document.getElementById('modalIframe');
+      const titleElem = document.getElementById('modalVideoTitle');
+      const descElem = document.getElementById('modalVideoDesc');
+      const driveBtn = document.getElementById('modalDriveBtn');
+
+      iframe.src = `https://drive.google.com/file/d/${driveId}/preview`;
+      titleElem.innerText = title;
+      descElem.innerText = desc;
+      driveBtn.href = `https://drive.google.com/file/d/${driveId}/view`;
+
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideoModal(e) {
+      const modal = document.getElementById('videoModal');
+      const iframe = document.getElementById('modalIframe');
+      iframe.src = '';
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeVideoModal(null);
+      }
+    });
+
     function handleFastApply(e) {
       e.preventDefault();
       const name = document.getElementById('bentoName').value;
@@ -1070,7 +1424,7 @@
       const center = document.getElementById('bentoCenter').value;
 
       const msg = encodeURIComponent(
-        `*सरकार PSI अकॅडमी - जलद नोंदणी*\n` +
+        `*सरकार करिअर अकॅडमी - जलद नोंदणी*\n` +
         `नाव: ${name}\n` +
         `मोबाईल: ${phone}\n` +
         `परीक्षा: ${exam}\n` +
