@@ -4,9 +4,9 @@
 > **Official Brand Names:** Sarkar Career Academy (सरकार करिअर अकॅडमी) / Sarkar PSI Academy (सरकार PSI अकॅडमी)  
 > **Official Registration:** Govt. of India Copyright Reg. **A-117123/2017**  
 > **Production Domain:** `www.sarkarpsiacademy.com`  
-> **Client's Preferred Edition:** **Template 3 (Metro Bento - V3)** ★  
+> **Client's Selected Edition:** **Template 3 (Metro Bento - V3)** ★  
 > **Director & Mentor:** प्रा. रविंद्र सरकार (लेखक, मार्गदर्शक व संचालक — 25+ वर्षांचा अनुभव, 7,500+ शासकीय अधिकारी)  
-> **Official Contact:** +91 88056 67100 / 0253-2314166 / careeracademy1995@gmail.com  
+> **Official Single Helpline:** **+91 88056 67100** / careeracademy1995@gmail.com  
 > **Headquarters:** नाशिक (अशोक स्तंभ / शालिमार / नाशिकरोड)  
 > **Metropolitan Expansion:** मुंबई (प्रभादेवी मंदिर, दादर प.) व ठाणे (मिरा रोड)  
 
@@ -97,7 +97,7 @@ Both the Marathi (`index.html`) and English (`index-en.html`) versions of the pr
 2. **Thane - Mira Road Center:**
    - Distributer Building, opposite to Central Mall, opp. Royal Western Express Highway, Mira Road (E), Thane - 401107
 3. **Nashik - Flagship Headquarters:**
-   - विको सर्कल, अशोक स्तंभा जवळ, नाशिक - ४२२००१ (Ph: 0253-2314166)
+   - विको सर्कल, अशोक स्तंभा जवळ, नाशिक - ४२२००१
    - आर. के. सर्कल, पेठे विद्यालयासमोर, नाशिक - ४२२००१
 4. **Nashik - Shalimar & Nashik Road:**
    - १ ला मजला, प. सा. नाट्यगृहा समोर, शालिमार, नाशिक
@@ -108,8 +108,7 @@ Both the Marathi (`index.html`) and English (`index-en.html`) versions of the pr
 
 ## 📞 Verified Contact & Social Links
 
-- **Mobile Helpline:** `+91 88056 67100` / `+91 98507 89322` / `+91 83800 66080`
-- **Nashik Office Landline:** `0253-2314166`
+- **Official Helpline (Single Central Number):** `+91 88056 67100`
 - **WhatsApp Direct:** `https://wa.me/918805667100`
 - **Email:** `careeracademy1995@gmail.com`
 - **Official Domain:** `www.sarkarpsiacademy.com`
