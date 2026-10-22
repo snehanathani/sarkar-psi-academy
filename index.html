@@ -670,6 +670,140 @@
       z-index: 10;
     }
 
+    
+    /* Video Pagination Tabs & Controls */
+    .video-pagination-nav {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .video-page-tab {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .video-page-tab:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+    }
+
+    .video-page-tab.active {
+      background: var(--amber-primary);
+      color: #000;
+      border-color: var(--amber-primary);
+      box-shadow: 0 4px 20px var(--amber-glow);
+    }
+
+    .video-subfilters {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .video-subfilter-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .video-subfilter-btn:hover, .video-subfilter-btn.active {
+      background: rgba(255, 120, 0, 0.15);
+      color: var(--amber-bright);
+      border-color: var(--border-amber);
+    }
+
+    .video-thumb-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .video-card:hover .video-thumb-img {
+      transform: scale(1.06);
+    }
+
+    .video-page-controls {
+      margin-top: 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .page-nav-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .page-nav-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--amber-bright);
+    }
+
+    .page-numbers {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .page-num-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .page-num-btn.active {
+      background: var(--amber-primary);
+      color: #000;
+      border-color: var(--amber-primary);
+    }
+
+    .btn-dedicated-page {
+      color: var(--amber-bright);
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: underline;
+    }
+
     /* Dignitaries / Guest VIPs */
     .vip-grid {
       display: grid;
@@ -1337,21 +1471,114 @@
       });
     }
 
-    function openVideoModal(driveId, title, desc) {
+    
+    function switchVideoPage(pageNum) {
+      const p1Grid = document.getElementById('videoGridPage1');
+      const p2Grid = document.getElementById('videoGridPage2');
+      const tab1 = document.getElementById('tabBtnPage1');
+      const tab2 = document.getElementById('tabBtnPage2');
+      const num1 = document.getElementById('numBtn1');
+      const num2 = document.getElementById('numBtn2');
+      const prevBtn = document.getElementById('btnPrevPage');
+      const nextBtn = document.getElementById('btnNextPage');
+      const p1Filters = document.getElementById('page1Filters');
+
+      if (pageNum === 1) {
+        p1Grid.style.display = 'grid';
+        p2Grid.style.display = 'none';
+        tab1.classList.add('active');
+        tab2.classList.remove('active');
+        num1.classList.add('active');
+        num2.classList.remove('active');
+        if (prevBtn) prevBtn.style.display = 'none';
+        if (nextBtn) nextBtn.style.display = 'inline-flex';
+        if (p1Filters) p1Filters.style.display = 'flex';
+      } else {
+        p1Grid.style.display = 'none';
+        p2Grid.style.display = 'grid';
+        tab1.classList.remove('active');
+        tab2.classList.add('active');
+        num1.classList.remove('active');
+        num2.classList.add('active');
+        if (prevBtn) prevBtn.style.display = 'inline-flex';
+        if (nextBtn) nextBtn.style.display = 'none';
+        if (p1Filters) p1Filters.style.display = 'none';
+      }
+    }
+
+    function filterPage1Videos(filterType, btn) {
+      document.querySelectorAll('.video-subfilter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('#videoGridPage1 .video-card');
+      cards.forEach(card => {
+        const type = card.getAttribute('data-video-type');
+        if (filterType === 'all' || type === filterType) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function openVideoModal(typeOrId, idOrTitle, titleOrDesc, descOrUrl, directUrl) {
+      let type, id, title, desc, url;
+      if (arguments.length === 3) {
+        type = 'drive';
+        id = typeOrId;
+        title = idOrTitle;
+        desc = titleOrDesc;
+        url = `https://drive.google.com/file/d/${id}/view`;
+      } else {
+        type = typeOrId;
+        id = idOrTitle;
+        title = titleOrDesc;
+        desc = descOrUrl;
+        url = directUrl;
+      }
+
       const modal = document.getElementById('videoModal');
       const iframe = document.getElementById('modalIframe');
       const titleElem = document.getElementById('modalVideoTitle');
       const descElem = document.getElementById('modalVideoDesc');
-      const driveBtn = document.getElementById('modalDriveBtn');
+      const actionBtn = document.getElementById('modalDriveBtn');
 
-      iframe.src = `https://drive.google.com/file/d/${driveId}/preview`;
       titleElem.innerText = title;
       descElem.innerText = desc;
-      driveBtn.href = `https://drive.google.com/file/d/${driveId}/view`;
+
+      if (type === 'youtube') {
+        iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+        actionBtn.href = url || `https://youtu.be/${id}`;
+        actionBtn.innerText = 'YouTube वर उघडा ↗';
+        actionBtn.style.background = '#ff0000';
+        actionBtn.style.color = '#fff';
+      } else if (type === 'instagram') {
+        iframe.src = `https://www.instagram.com/p/${id}/embed/`;
+        actionBtn.href = url || `https://www.instagram.com/reel/${id}/`;
+        actionBtn.innerText = 'Instagram वर उघडा ↗';
+        actionBtn.style.background = 'linear-gradient(45deg, #f09433, #dc2743)';
+        actionBtn.style.color = '#fff';
+      } else {
+        iframe.src = `https://drive.google.com/file/d/${id}/preview`;
+        actionBtn.href = url || `https://drive.google.com/file/d/${id}/view`;
+        actionBtn.innerText = 'Google Drive वर उघडा ↗';
+        actionBtn.style.background = 'var(--amber-primary)';
+        actionBtn.style.color = '#000';
+      }
 
       modal.style.display = 'flex';
       document.body.style.overflow = 'hidden';
     }
+
+    // Check URL parameters or hash on load
+    window.addEventListener('DOMContentLoaded', function() {
+      const hash = window.location.hash;
+      const urlParams = new URLSearchParams(window.location.search);
+      if (hash === '#videos-page2' || urlParams.get('video_page') === '2') {
+        switchVideoPage(2);
+      }
+    });
+
 
     function closeVideoModal(e) {
       const modal = document.getElementById('videoModal');

@@ -755,6 +755,140 @@
       z-index: 10;
     }
 
+    
+    /* Video Pagination Tabs & Controls */
+    .video-pagination-nav {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .video-page-tab {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .video-page-tab:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+    }
+
+    .video-page-tab.active {
+      background: var(--amber-primary);
+      color: #000;
+      border-color: var(--amber-primary);
+      box-shadow: 0 4px 20px var(--amber-glow);
+    }
+
+    .video-subfilters {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .video-subfilter-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .video-subfilter-btn:hover, .video-subfilter-btn.active {
+      background: rgba(255, 120, 0, 0.15);
+      color: var(--amber-bright);
+      border-color: var(--border-amber);
+    }
+
+    .video-thumb-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .video-card:hover .video-thumb-img {
+      transform: scale(1.06);
+    }
+
+    .video-page-controls {
+      margin-top: 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .page-nav-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .page-nav-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--amber-bright);
+    }
+
+    .page-numbers {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .page-num-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .page-num-btn.active {
+      background: var(--amber-primary);
+      color: #000;
+      border-color: var(--amber-primary);
+    }
+
+    .btn-dedicated-page {
+      color: var(--amber-bright);
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: underline;
+    }
+
     /* Dignitaries / Guest VIPs */
     .vip-grid {
       display: grid;
@@ -1125,157 +1259,430 @@
     </div>
   </section>
 
-  <!-- Video Lectures & Strategy Sessions -->
+    <!-- Video Lectures & Strategy Sessions -->
   <section id="videos" class="section-bento">
     <div class="container">
-      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:36px; flex-wrap:wrap; gap:16px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:28px; flex-wrap:wrap; gap:16px;">
         <div>
-          <span style="color:var(--amber-bright); font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:1px;">★ EXCLUSIVE LECTURES & ROADMAPS</span>
-          <h3 class="section-title-bento" style="margin:6px 0 0; text-align:left;">Core Guidance <span>Video Sessions</span></h3>
-          <p class="section-sub-bento" style="margin:6px 0 0; text-align:left;">Masterclasses, exam strategy lectures, and law guidance recorded by Prof. Ravindra Sarkar.</p>
+          <span style="color:var(--amber-bright); font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:1px;">★ OFFICIAL VIDEO LECTURES & GUIDANCE</span>
+          <h3 class="section-title-bento" style="margin:6px 0 0; text-align:left;">Masterclass <span>Video Sessions</span></h3>
+          <p class="section-sub-bento" style="margin:6px 0 0; text-align:left;">Lectures by Prof. Ravindra Sarkar across YouTube, Instagram Constitution series & Google Drive.</p>
         </div>
-        <div style="color:var(--text-dim); font-size:0.85rem;">
-          Govt. Reg. A-117123/2017 · 6 Official Sessions
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="color:var(--text-dim); font-size:0.85rem;">20 Official Sessions · Govt. Reg. A-117123/2017</span>
         </div>
       </div>
 
-      <div class="video-grid">
-        <!-- Video 1 -->
-        <div class="video-card">
-          <div class="video-thumb-frame" onclick="openVideoModal('1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn', 'PSI & Police Bharti Master Preparation Strategy — Prof. Ravindra Sarkar', 'How to crack Police Sub-Inspector (PSI) and Maharashtra Police Bharti on your first attempt? Master study scheduling, time management, and scoring techniques in General Studies.')">
-            <span class="video-badge-pill">Video 01 · PSI Strategy</span>
+      <!-- Video Pagination Tabs -->
+      <div class="video-pagination-nav">
+        <button class="video-page-tab active" id="tabBtnPage1" onclick="switchVideoPage(1)">
+          <span>▶ Page 1: YouTube & Instagram Lectures (14 Videos)</span>
+        </button>
+        <button class="video-page-tab" id="tabBtnPage2" onclick="switchVideoPage(2)">
+          <span>📁 Page 2: Google Drive Masterclasses (6 Videos)</span>
+        </button>
+      </div>
+
+      <!-- Subfilters for Page 1 -->
+      <div class="video-subfilters" id="page1Filters">
+        <button class="video-subfilter-btn active" onclick="filterPage1Videos('all', this)">All Videos (14)</button>
+        <button class="video-subfilter-btn" onclick="filterPage1Videos('youtube', this)">YouTube Lectures (8)</button>
+        <button class="video-subfilter-btn" onclick="filterPage1Videos('instagram', this)">Constitution Series · Reels (6)</button>
+      </div>
+
+      <!-- Video Grid Container: Page 1 (YouTube + Instagram) -->
+      <div id="videoGridPage1" class="video-grid">
+        <div class="video-card" data-video-type="youtube">
+          <div class="video-thumb-frame" onclick="openVideoModal('youtube', 'Fxv77AbhV_E', 'India\'s Missile Program & Defense Tech — Prof. Ravindra Sarkar', 'Comprehensive analysis of India\'s Integrated Guided Missile Development Programme (IGMDP), Agni, Prithvi, Akash, and supersonic BrahMos systems.', 'https://youtu.be/Fxv77AbhV_E?si=x7dn1-HLoQNnlw1C')">
+            <img src="https://img.youtube.com/vi/Fxv77AbhV_E/hqdefault.jpg" alt="India's Missile Program & Defense Tech — Prof. Ravindra Sarkar" class="video-thumb-img" loading="lazy">
+            <span class="video-badge-pill" style="background:rgba(230,33,23,0.9); color:#fff; border-color:rgba(255,255,255,0.2);">▶ YouTube · Defense Tech</span>
+            <div class="video-play-btn" style="background:#ff0000; color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Science & Tech</span>
+            <h4 class="video-title">India's Missile Program & Defense Tech — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">Comprehensive analysis of India's Integrated Guided Missile Development Programme (IGMDP), Agni, Prithvi, Akash, and supersonic BrahMos systems.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('youtube', 'Fxv77AbhV_E', 'India\'s Missile Program & Defense Tech — Prof. Ravindra Sarkar', 'Comprehensive analysis of India\'s Integrated Guided Missile Development Programme (IGMDP), Agni, Prithvi, Akash, and supersonic BrahMos systems.', 'https://youtu.be/Fxv77AbhV_E?si=x7dn1-HLoQNnlw1C')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://youtu.be/Fxv77AbhV_E?si=x7dn1-HLoQNnlw1C" target="_blank" class="btn-drive-link" style="border-color:rgba(255,0,0,0.3); color:#ff6b6b;">YouTube ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="youtube">
+          <div class="video-thumb-frame" onclick="openVideoModal('youtube', 'IJzCQC2Lwi0', 'Indian Space Program & ISRO Missions — Prof. Ravindra Sarkar', 'Targeted lecture on Indian Space Research Organisation (ISRO) milestones, satellite launch vehicles, Chandrayaan, and Gaganyaan programs.', 'https://youtu.be/IJzCQC2Lwi0?si=1YZgG_Ilzig9vcPX')">
+            <img src="https://img.youtube.com/vi/IJzCQC2Lwi0/hqdefault.jpg" alt="Indian Space Program & ISRO Missions — Prof. Ravindra Sarkar" class="video-thumb-img" loading="lazy">
+            <span class="video-badge-pill" style="background:rgba(230,33,23,0.9); color:#fff; border-color:rgba(255,255,255,0.2);">▶ YouTube · ISRO Space</span>
+            <div class="video-play-btn" style="background:#ff0000; color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Space & ISRO</span>
+            <h4 class="video-title">Indian Space Program & ISRO Missions — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">Targeted lecture on Indian Space Research Organisation (ISRO) milestones, satellite launch vehicles, Chandrayaan, and Gaganyaan programs.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('youtube', 'IJzCQC2Lwi0', 'Indian Space Program & ISRO Missions — Prof. Ravindra Sarkar', 'Targeted lecture on Indian Space Research Organisation (ISRO) milestones, satellite launch vehicles, Chandrayaan, and Gaganyaan programs.', 'https://youtu.be/IJzCQC2Lwi0?si=1YZgG_Ilzig9vcPX')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://youtu.be/IJzCQC2Lwi0?si=1YZgG_Ilzig9vcPX" target="_blank" class="btn-drive-link" style="border-color:rgba(255,0,0,0.3); color:#ff6b6b;">YouTube ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="youtube">
+          <div class="video-thumb-frame" onclick="openVideoModal('youtube', 'Za3spkAfSHg', 'Indus Waters Treaty Detailed Analysis — Prof. Ravindra Sarkar', 'Historical context of the 1960 Indus Waters Treaty, 6 river allocations, arbitration mechanisms, and strategic geopolitical dynamics.', 'https://youtu.be/Za3spkAfSHg?si=CvWGDlFesNyu-UzX')">
+            <img src="https://img.youtube.com/vi/Za3spkAfSHg/hqdefault.jpg" alt="Indus Waters Treaty Detailed Analysis — Prof. Ravindra Sarkar" class="video-thumb-img" loading="lazy">
+            <span class="video-badge-pill" style="background:rgba(230,33,23,0.9); color:#fff; border-color:rgba(255,255,255,0.2);">▶ YouTube · Water Treaty</span>
+            <div class="video-play-btn" style="background:#ff0000; color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">International Relations</span>
+            <h4 class="video-title">Indus Waters Treaty Detailed Analysis — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">Historical context of the 1960 Indus Waters Treaty, 6 river allocations, arbitration mechanisms, and strategic geopolitical dynamics.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('youtube', 'Za3spkAfSHg', 'Indus Waters Treaty Detailed Analysis — Prof. Ravindra Sarkar', 'Historical context of the 1960 Indus Waters Treaty, 6 river allocations, arbitration mechanisms, and strategic geopolitical dynamics.', 'https://youtu.be/Za3spkAfSHg?si=CvWGDlFesNyu-UzX')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://youtu.be/Za3spkAfSHg?si=CvWGDlFesNyu-UzX" target="_blank" class="btn-drive-link" style="border-color:rgba(255,0,0,0.3); color:#ff6b6b;">YouTube ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="youtube">
+          <div class="video-thumb-frame" onclick="openVideoModal('youtube', '7ny_T_aEeGE', 'Maharashtra Social Reformers & Essential Books (Part 1) — Prof. Ravindra Sarkar', 'Pivotal social reform movements in Maharashtra, ideological contributions, and high-yield booklists recommended for MPSC aspirants.', 'https://youtu.be/7ny_T_aEeGE?si=1PdSq1ZiNNATFHee')">
+            <img src="https://img.youtube.com/vi/7ny_T_aEeGE/hqdefault.jpg" alt="Maharashtra Social Reformers & Essential Books (Part 1) — Prof. Ravindra Sarkar" class="video-thumb-img" loading="lazy">
+            <span class="video-badge-pill" style="background:rgba(230,33,23,0.9); color:#fff; border-color:rgba(255,255,255,0.2);">▶ YouTube · Reformers Part 1</span>
+            <div class="video-play-btn" style="background:#ff0000; color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">History & Reformers</span>
+            <h4 class="video-title">Maharashtra Social Reformers & Essential Books (Part 1) — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">Pivotal social reform movements in Maharashtra, ideological contributions, and high-yield booklists recommended for MPSC aspirants.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('youtube', '7ny_T_aEeGE', 'Maharashtra Social Reformers & Essential Books (Part 1) — Prof. Ravindra Sarkar', 'Pivotal social reform movements in Maharashtra, ideological contributions, and high-yield booklists recommended for MPSC aspirants.', 'https://youtu.be/7ny_T_aEeGE?si=1PdSq1ZiNNATFHee')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://youtu.be/7ny_T_aEeGE?si=1PdSq1ZiNNATFHee" target="_blank" class="btn-drive-link" style="border-color:rgba(255,0,0,0.3); color:#ff6b6b;">YouTube ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="youtube">
+          <div class="video-thumb-frame" onclick="openVideoModal('youtube', 'VnMyZjOGi-U', 'Maharashtra Social Reformers & Essential Books (Part 2) — Prof. Ravindra Sarkar', 'In-depth examination insights into pioneer social reformers of Maharashtra and targeted preparation strategies.', 'https://youtu.be/VnMyZjOGi-U?si=3Pfqyu7hHqhAr2DG')">
+            <img src="https://img.youtube.com/vi/VnMyZjOGi-U/hqdefault.jpg" alt="Maharashtra Social Reformers & Essential Books (Part 2) — Prof. Ravindra Sarkar" class="video-thumb-img" loading="lazy">
+            <span class="video-badge-pill" style="background:rgba(230,33,23,0.9); color:#fff; border-color:rgba(255,255,255,0.2);">▶ YouTube · Reformers Part 2</span>
+            <div class="video-play-btn" style="background:#ff0000; color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">History & Reformers</span>
+            <h4 class="video-title">Maharashtra Social Reformers & Essential Books (Part 2) — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">In-depth examination insights into pioneer social reformers of Maharashtra and targeted preparation strategies.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('youtube', 'VnMyZjOGi-U', 'Maharashtra Social Reformers & Essential Books (Part 2) — Prof. Ravindra Sarkar', 'In-depth examination insights into pioneer social reformers of Maharashtra and targeted preparation strategies.', 'https://youtu.be/VnMyZjOGi-U?si=3Pfqyu7hHqhAr2DG')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://youtu.be/VnMyZjOGi-U?si=3Pfqyu7hHqhAr2DG" target="_blank" class="btn-drive-link" style="border-color:rgba(255,0,0,0.3); color:#ff6b6b;">YouTube ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="youtube">
+          <div class="video-thumb-frame" onclick="openVideoModal('youtube', 'dgsr0VcoBdw', 'All India Marathi Sahitya Sammelan & Culture — Prof. Ravindra Sarkar', 'History of Marathi literary conventions, prominent presidents, cultural resolutions, and expected questions in MPSC/PSI.', 'https://youtu.be/dgsr0VcoBdw?si=Eb5v6pI610lRZ_JS')">
+            <img src="https://img.youtube.com/vi/dgsr0VcoBdw/hqdefault.jpg" alt="All India Marathi Sahitya Sammelan & Culture — Prof. Ravindra Sarkar" class="video-thumb-img" loading="lazy">
+            <span class="video-badge-pill" style="background:rgba(230,33,23,0.9); color:#fff; border-color:rgba(255,255,255,0.2);">▶ YouTube · Sahitya Sammelan</span>
+            <div class="video-play-btn" style="background:#ff0000; color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Literature & Culture</span>
+            <h4 class="video-title">All India Marathi Sahitya Sammelan & Culture — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">History of Marathi literary conventions, prominent presidents, cultural resolutions, and expected questions in MPSC/PSI.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('youtube', 'dgsr0VcoBdw', 'All India Marathi Sahitya Sammelan & Culture — Prof. Ravindra Sarkar', 'History of Marathi literary conventions, prominent presidents, cultural resolutions, and expected questions in MPSC/PSI.', 'https://youtu.be/dgsr0VcoBdw?si=Eb5v6pI610lRZ_JS')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://youtu.be/dgsr0VcoBdw?si=Eb5v6pI610lRZ_JS" target="_blank" class="btn-drive-link" style="border-color:rgba(255,0,0,0.3); color:#ff6b6b;">YouTube ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="youtube">
+          <div class="video-thumb-frame" onclick="openVideoModal('youtube', 'xftiVKMU4vU', 'Comprehensive Current Affairs Masterclass — Prof. Ravindra Sarkar', 'High-yield monthly current affairs review covering government welfare schemes, economy, awards, and national policies.', 'https://youtu.be/xftiVKMU4vU?si=2Ykhz0MFhxyg_Bo-')">
+            <img src="https://img.youtube.com/vi/xftiVKMU4vU/hqdefault.jpg" alt="Comprehensive Current Affairs Masterclass — Prof. Ravindra Sarkar" class="video-thumb-img" loading="lazy">
+            <span class="video-badge-pill" style="background:rgba(230,33,23,0.9); color:#fff; border-color:rgba(255,255,255,0.2);">▶ YouTube · Current Affairs</span>
+            <div class="video-play-btn" style="background:#ff0000; color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Current Affairs</span>
+            <h4 class="video-title">Comprehensive Current Affairs Masterclass — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">High-yield monthly current affairs review covering government welfare schemes, economy, awards, and national policies.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('youtube', 'xftiVKMU4vU', 'Comprehensive Current Affairs Masterclass — Prof. Ravindra Sarkar', 'High-yield monthly current affairs review covering government welfare schemes, economy, awards, and national policies.', 'https://youtu.be/xftiVKMU4vU?si=2Ykhz0MFhxyg_Bo-')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://youtu.be/xftiVKMU4vU?si=2Ykhz0MFhxyg_Bo-" target="_blank" class="btn-drive-link" style="border-color:rgba(255,0,0,0.3); color:#ff6b6b;">YouTube ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="youtube">
+          <div class="video-thumb-frame" onclick="openVideoModal('youtube', 'Uak3NGksL70', 'Author & Competitive Mentor Direct Interaction — Prof. Ravindra Sarkar', 'Overcoming preparation anxiety, disciplined time management, study scheduling, and achieving state government appointments.', 'https://youtu.be/Uak3NGksL70?si=6liRGWgVLgtk0qsm')">
+            <img src="https://img.youtube.com/vi/Uak3NGksL70/hqdefault.jpg" alt="Author & Competitive Mentor Direct Interaction — Prof. Ravindra Sarkar" class="video-thumb-img" loading="lazy">
+            <span class="video-badge-pill" style="background:rgba(230,33,23,0.9); color:#fff; border-color:rgba(255,255,255,0.2);">▶ YouTube · Author Talk</span>
+            <div class="video-play-btn" style="background:#ff0000; color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Mentor Interaction</span>
+            <h4 class="video-title">Author & Competitive Mentor Direct Interaction — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">Overcoming preparation anxiety, disciplined time management, study scheduling, and achieving state government appointments.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('youtube', 'Uak3NGksL70', 'Author & Competitive Mentor Direct Interaction — Prof. Ravindra Sarkar', 'Overcoming preparation anxiety, disciplined time management, study scheduling, and achieving state government appointments.', 'https://youtu.be/Uak3NGksL70?si=6liRGWgVLgtk0qsm')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://youtu.be/Uak3NGksL70?si=6liRGWgVLgtk0qsm" target="_blank" class="btn-drive-link" style="border-color:rgba(255,0,0,0.3); color:#ff6b6b;">YouTube ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="instagram">
+          <div class="video-thumb-frame ig-thumb" onclick="openVideoModal('instagram', 'DACn8lwiMqz', 'Constitution of India: Article 7 (Rights of Citizenship of Certain Migrants) — Prof. Ravindra Sarkar', 'Lucid explanation of Article 7 governing citizenship rights of individuals migrating to Pakistan and returning to India.', 'https://www.instagram.com/reel/DACn8lwiMqz/?obrf=dXUzdWs2NnBpMnox')" style="background:linear-gradient(135deg, #2b1338 0%, #0d121c 100%);">
+            <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:16px; text-align:center;">
+              <div style="font-size:2.2rem; margin-bottom:8px;">📸</div>
+              <span style="color:#ffffff; font-weight:700; font-size:0.88rem; line-height:1.4;">Constitution of India: Article 7 (Rights of Citizenship of Certain Migrants) — Prof. Ravindra Sarkar</span>
+            </div>
+            <span class="video-badge-pill" style="background:linear-gradient(45deg, #f09433, #dc2743); color:#fff; border-color:rgba(255,255,255,0.2);">📷 Instagram · Article 7</span>
+            <div class="video-play-btn" style="background:linear-gradient(45deg, #f09433, #dc2743); color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Indian Polity (Reel)</span>
+            <h4 class="video-title">Constitution of India: Article 7 (Rights of Citizenship of Certain Migrants) — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">Lucid explanation of Article 7 governing citizenship rights of individuals migrating to Pakistan and returning to India.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('instagram', 'DACn8lwiMqz', 'Constitution of India: Article 7 (Rights of Citizenship of Certain Migrants) — Prof. Ravindra Sarkar', 'Lucid explanation of Article 7 governing citizenship rights of individuals migrating to Pakistan and returning to India.', 'https://www.instagram.com/reel/DACn8lwiMqz/?obrf=dXUzdWs2NnBpMnox')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://www.instagram.com/reel/DACn8lwiMqz/?obrf=dXUzdWs2NnBpMnox" target="_blank" class="btn-drive-link" style="border-color:rgba(225,48,108,0.3); color:#f77737;">Instagram ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="instagram">
+          <div class="video-thumb-frame ig-thumb" onclick="openVideoModal('instagram', 'DAELoSmibGY', 'Constitution of India: Article 8 (Rights of Citizenship of Persons of Indian Origin Outside India) — Prof. Ravindra Sarkar', 'Comprehensive breakdown of Article 8 regarding citizenship for persons of Indian origin residing abroad.', 'https://www.instagram.com/reel/DAELoSmibGY/?xtok=NHF4anJheTZrNGFh')" style="background:linear-gradient(135deg, #2b1338 0%, #0d121c 100%);">
+            <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:16px; text-align:center;">
+              <div style="font-size:2.2rem; margin-bottom:8px;">📸</div>
+              <span style="color:#ffffff; font-weight:700; font-size:0.88rem; line-height:1.4;">Constitution of India: Article 8 (Rights of Citizenship of Persons of Indian Origin Outside India) — Prof. Ravindra Sarkar</span>
+            </div>
+            <span class="video-badge-pill" style="background:linear-gradient(45deg, #f09433, #dc2743); color:#fff; border-color:rgba(255,255,255,0.2);">📷 Instagram · Article 8</span>
+            <div class="video-play-btn" style="background:linear-gradient(45deg, #f09433, #dc2743); color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Indian Polity (Reel)</span>
+            <h4 class="video-title">Constitution of India: Article 8 (Rights of Citizenship of Persons of Indian Origin Outside India) — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">Comprehensive breakdown of Article 8 regarding citizenship for persons of Indian origin residing abroad.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('instagram', 'DAELoSmibGY', 'Constitution of India: Article 8 (Rights of Citizenship of Persons of Indian Origin Outside India) — Prof. Ravindra Sarkar', 'Comprehensive breakdown of Article 8 regarding citizenship for persons of Indian origin residing abroad.', 'https://www.instagram.com/reel/DAELoSmibGY/?xtok=NHF4anJheTZrNGFh')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://www.instagram.com/reel/DAELoSmibGY/?xtok=NHF4anJheTZrNGFh" target="_blank" class="btn-drive-link" style="border-color:rgba(225,48,108,0.3); color:#f77737;">Instagram ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="instagram">
+          <div class="video-thumb-frame ig-thumb" onclick="openVideoModal('instagram', 'DAFEF1wiroq', 'Constitution of India: Article 9 (Persons Voluntarily Acquiring Foreign Citizenship) — Prof. Ravindra Sarkar', 'Single citizenship doctrine and termination of Indian citizenship upon voluntarily acquiring foreign nationality.', 'https://www.instagram.com/p/DAFEF1wiroq/?exln=ZXZmMWRmNDc0ZTJ3')" style="background:linear-gradient(135deg, #2b1338 0%, #0d121c 100%);">
+            <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:16px; text-align:center;">
+              <div style="font-size:2.2rem; margin-bottom:8px;">📸</div>
+              <span style="color:#ffffff; font-weight:700; font-size:0.88rem; line-height:1.4;">Constitution of India: Article 9 (Persons Voluntarily Acquiring Foreign Citizenship) — Prof. Ravindra Sarkar</span>
+            </div>
+            <span class="video-badge-pill" style="background:linear-gradient(45deg, #f09433, #dc2743); color:#fff; border-color:rgba(255,255,255,0.2);">📷 Instagram · Article 9</span>
+            <div class="video-play-btn" style="background:linear-gradient(45deg, #f09433, #dc2743); color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Indian Polity (Reel)</span>
+            <h4 class="video-title">Constitution of India: Article 9 (Persons Voluntarily Acquiring Foreign Citizenship) — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">Single citizenship doctrine and termination of Indian citizenship upon voluntarily acquiring foreign nationality.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('instagram', 'DAFEF1wiroq', 'Constitution of India: Article 9 (Persons Voluntarily Acquiring Foreign Citizenship) — Prof. Ravindra Sarkar', 'Single citizenship doctrine and termination of Indian citizenship upon voluntarily acquiring foreign nationality.', 'https://www.instagram.com/p/DAFEF1wiroq/?exln=ZXZmMWRmNDc0ZTJ3')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://www.instagram.com/p/DAFEF1wiroq/?exln=ZXZmMWRmNDc0ZTJ3" target="_blank" class="btn-drive-link" style="border-color:rgba(225,48,108,0.3); color:#f77737;">Instagram ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="instagram">
+          <div class="video-thumb-frame ig-thumb" onclick="openVideoModal('instagram', 'DAIF6rwi0Hu', 'Story of Indian Constitution: Historical Milestones — Prof. Ravindra Sarkar', 'Historic narrative of the Constituent Assembly debates and Dr. B.R. Ambedkar\'s monumental leadership.', 'https://www.instagram.com/reel/DAIF6rwi0Hu/?exln=N3ZvMGwyaDR1aDNw')" style="background:linear-gradient(135deg, #2b1338 0%, #0d121c 100%);">
+            <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:16px; text-align:center;">
+              <div style="font-size:2.2rem; margin-bottom:8px;">📸</div>
+              <span style="color:#ffffff; font-weight:700; font-size:0.88rem; line-height:1.4;">Story of Indian Constitution: Historical Milestones — Prof. Ravindra Sarkar</span>
+            </div>
+            <span class="video-badge-pill" style="background:linear-gradient(45deg, #f09433, #dc2743); color:#fff; border-color:rgba(255,255,255,0.2);">📷 Instagram · Constitution Story</span>
+            <div class="video-play-btn" style="background:linear-gradient(45deg, #f09433, #dc2743); color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Indian Polity (Reel)</span>
+            <h4 class="video-title">Story of Indian Constitution: Historical Milestones — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">Historic narrative of the Constituent Assembly debates and Dr. B.R. Ambedkar's monumental leadership.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('instagram', 'DAIF6rwi0Hu', 'Story of Indian Constitution: Historical Milestones — Prof. Ravindra Sarkar', 'Historic narrative of the Constituent Assembly debates and Dr. B.R. Ambedkar\'s monumental leadership.', 'https://www.instagram.com/reel/DAIF6rwi0Hu/?exln=N3ZvMGwyaDR1aDNw')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://www.instagram.com/reel/DAIF6rwi0Hu/?exln=N3ZvMGwyaDR1aDNw" target="_blank" class="btn-drive-link" style="border-color:rgba(225,48,108,0.3); color:#f77737;">Instagram ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="instagram">
+          <div class="video-thumb-frame ig-thumb" onclick="openVideoModal('instagram', 'DAKIQcoCei-', 'Constitution of India: Article 10 (Continuance of the Rights of Citizenship) — Prof. Ravindra Sarkar', 'Constitutional guarantee protecting existing citizenship rights subject to parliamentary legislation.', 'https://www.instagram.com/p/DAKIQcoCei-/?psln=a2M1MzAxYnNrMGdp')" style="background:linear-gradient(135deg, #2b1338 0%, #0d121c 100%);">
+            <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:16px; text-align:center;">
+              <div style="font-size:2.2rem; margin-bottom:8px;">📸</div>
+              <span style="color:#ffffff; font-weight:700; font-size:0.88rem; line-height:1.4;">Constitution of India: Article 10 (Continuance of the Rights of Citizenship) — Prof. Ravindra Sarkar</span>
+            </div>
+            <span class="video-badge-pill" style="background:linear-gradient(45deg, #f09433, #dc2743); color:#fff; border-color:rgba(255,255,255,0.2);">📷 Instagram · Article 10</span>
+            <div class="video-play-btn" style="background:linear-gradient(45deg, #f09433, #dc2743); color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Indian Polity (Reel)</span>
+            <h4 class="video-title">Constitution of India: Article 10 (Continuance of the Rights of Citizenship) — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">Constitutional guarantee protecting existing citizenship rights subject to parliamentary legislation.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('instagram', 'DAKIQcoCei-', 'Constitution of India: Article 10 (Continuance of the Rights of Citizenship) — Prof. Ravindra Sarkar', 'Constitutional guarantee protecting existing citizenship rights subject to parliamentary legislation.', 'https://www.instagram.com/p/DAKIQcoCei-/?psln=a2M1MzAxYnNrMGdp')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://www.instagram.com/p/DAKIQcoCei-/?psln=a2M1MzAxYnNrMGdp" target="_blank" class="btn-drive-link" style="border-color:rgba(225,48,108,0.3); color:#f77737;">Instagram ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="video-card" data-video-type="instagram">
+          <div class="video-thumb-frame ig-thumb" onclick="openVideoModal('instagram', 'DBHVgTtitJ-', 'Story of Indian Constitution for Aspirants & Citizens — Prof. Ravindra Sarkar', 'The vital importance of constitutional awareness for civil service candidates and active democratic citizens.', 'https://www.instagram.com/reel/DBHVgTtitJ-/?mdxt=eWJ2eDYwbDBoZ2d4')" style="background:linear-gradient(135deg, #2b1338 0%, #0d121c 100%);">
+            <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:16px; text-align:center;">
+              <div style="font-size:2.2rem; margin-bottom:8px;">📸</div>
+              <span style="color:#ffffff; font-weight:700; font-size:0.88rem; line-height:1.4;">Story of Indian Constitution for Aspirants & Citizens — Prof. Ravindra Sarkar</span>
+            </div>
+            <span class="video-badge-pill" style="background:linear-gradient(45deg, #f09433, #dc2743); color:#fff; border-color:rgba(255,255,255,0.2);">📷 Instagram · Constitution Awareness</span>
+            <div class="video-play-btn" style="background:linear-gradient(45deg, #f09433, #dc2743); color:#fff;">▶</div>
+          </div>
+          <div class="video-body">
+            <span class="video-category">Indian Polity (Reel)</span>
+            <h4 class="video-title">Story of Indian Constitution for Aspirants & Citizens — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">The vital importance of constitutional awareness for civil service candidates and active democratic citizens.</p>
+            <div class="video-actions">
+              <button class="btn-play-modal" onclick="openVideoModal('instagram', 'DBHVgTtitJ-', 'Story of Indian Constitution for Aspirants & Citizens — Prof. Ravindra Sarkar', 'The vital importance of constitutional awareness for civil service candidates and active democratic citizens.', 'https://www.instagram.com/reel/DBHVgTtitJ-/?mdxt=eWJ2eDYwbDBoZ2d4')">
+                <span>Watch Here</span> ▶
+              </button>
+              <a href="https://www.instagram.com/reel/DBHVgTtitJ-/?mdxt=eWJ2eDYwbDBoZ2d4" target="_blank" class="btn-drive-link" style="border-color:rgba(225,48,108,0.3); color:#f77737;">Instagram ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Grid Container: Page 2 (Google Drive Masterclasses) -->
+      <div id="videoGridPage2" class="video-grid" style="display:none;">
+        <div class="video-card" data-video-type="drive">
+          <div class="video-thumb-frame" onclick="openVideoModal('drive', '1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn', 'PSI & Police Bharti Master Strategy — Prof. Ravindra Sarkar', 'How to crack Police Sub-Inspector (PSI) and Police Bharti on your first attempt. Study scheduling, time management, and scoring techniques in GS.', 'https://drive.google.com/file/d/1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn/view')">
+            <span class="video-badge-pill">📁 Drive · PSI Strategy</span>
             <div class="video-play-btn">▶</div>
           </div>
           <div class="video-body">
             <span class="video-category">Lecture & Strategy</span>
-            <h4 class="video-title">PSI & Police Bharti Master Strategy</h4>
-            <p class="video-desc">
-              How to crack Police Sub-Inspector (PSI) and Police Bharti on your first attempt. Study scheduling, time management, and scoring techniques in GS.
-            </p>
+            <h4 class="video-title">PSI & Police Bharti Master Strategy — Prof. Ravindra Sarkar</h4>
+            <p class="video-desc">How to crack Police Sub-Inspector (PSI) and Police Bharti on your first attempt. Study scheduling, time management, and scoring techniques in GS.</p>
             <div class="video-actions">
-              <button class="btn-play-modal" onclick="openVideoModal('1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn', 'PSI & Police Bharti Master Preparation Strategy — Prof. Ravindra Sarkar', 'How to crack Police Sub-Inspector (PSI) and Maharashtra Police Bharti on your first attempt? Master study scheduling, time management, and scoring techniques in General Studies.')">
+              <button class="btn-play-modal" onclick="openVideoModal('drive', '1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn', 'PSI & Police Bharti Master Strategy — Prof. Ravindra Sarkar', 'How to crack Police Sub-Inspector (PSI) and Police Bharti on your first attempt. Study scheduling, time management, and scoring techniques in GS.', 'https://drive.google.com/file/d/1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn/view')">
                 <span>Watch Here</span> ▶
               </button>
-              <a href="https://drive.google.com/file/d/1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn/view" target="_blank" class="btn-drive-link">
-                Drive ↗
-              </a>
+              <a href="https://drive.google.com/file/d/1yPNMpegG0-_81iSJ34wkPHBG1F-QuCpn/view" target="_blank" class="btn-drive-link">Drive ↗</a>
             </div>
           </div>
         </div>
-
-        <!-- Video 2 -->
-        <div class="video-card">
-          <div class="video-thumb-frame" onclick="openVideoModal('1oGNF443P6OJw3T7W_KT366eJB7RuVR9c', 'MPSC Rajyaseva Prelims & Mains Comprehensive Blueprint', 'Crucial answer writing style for Dy. Collector, Dy.SP, and Tahsildar posts. CSAT qualifying hacks, analytical approach, and standard booklist recommendations.')">
-            <span class="video-badge-pill">Video 02 · Rajyaseva</span>
+        <div class="video-card" data-video-type="drive">
+          <div class="video-thumb-frame" onclick="openVideoModal('drive', '1oGNF443P6OJw3T7W_KT366eJB7RuVR9c', 'MPSC Rajyaseva Prelims & Mains Blueprint', 'Crucial answer writing style for Dy. Collector, Dy.SP, and Tahsildar posts. CSAT qualifying hacks, analytical approach, and standard booklist.', 'https://drive.google.com/file/d/1oGNF443P6OJw3T7W_KT366eJB7RuVR9c/view')">
+            <span class="video-badge-pill">📁 Drive · Rajyaseva</span>
             <div class="video-play-btn">▶</div>
           </div>
           <div class="video-body">
             <span class="video-category">State Civil Services Class 1 & 2</span>
             <h4 class="video-title">MPSC Rajyaseva Prelims & Mains Blueprint</h4>
-            <p class="video-desc">
-              Crucial answer writing style for Dy. Collector, Dy.SP, and Tahsildar posts. CSAT qualifying hacks, analytical approach, and standard booklist.
-            </p>
+            <p class="video-desc">Crucial answer writing style for Dy. Collector, Dy.SP, and Tahsildar posts. CSAT qualifying hacks, analytical approach, and standard booklist.</p>
             <div class="video-actions">
-              <button class="btn-play-modal" onclick="openVideoModal('1oGNF443P6OJw3T7W_KT366eJB7RuVR9c', 'MPSC Rajyaseva Prelims & Mains Comprehensive Blueprint', 'Crucial answer writing style for Dy. Collector, Dy.SP, and Tahsildar posts. CSAT qualifying hacks, analytical approach, and standard booklist recommendations.')">
+              <button class="btn-play-modal" onclick="openVideoModal('drive', '1oGNF443P6OJw3T7W_KT366eJB7RuVR9c', 'MPSC Rajyaseva Prelims & Mains Blueprint', 'Crucial answer writing style for Dy. Collector, Dy.SP, and Tahsildar posts. CSAT qualifying hacks, analytical approach, and standard booklist.', 'https://drive.google.com/file/d/1oGNF443P6OJw3T7W_KT366eJB7RuVR9c/view')">
                 <span>Watch Here</span> ▶
               </button>
-              <a href="https://drive.google.com/file/d/1oGNF443P6OJw3T7W_KT366eJB7RuVR9c/view" target="_blank" class="btn-drive-link">
-                Drive ↗
-              </a>
+              <a href="https://drive.google.com/file/d/1oGNF443P6OJw3T7W_KT366eJB7RuVR9c/view" target="_blank" class="btn-drive-link">Drive ↗</a>
             </div>
           </div>
         </div>
-
-        <!-- Video 3 -->
-        <div class="video-card">
-          <div class="video-thumb-frame" onclick="openVideoModal('1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3', 'Combined Group B & C (STI, ASO) Success Blueprint', 'Achieving speed and accuracy in objective multiple-choice exams. Micro-analysis of previous years question papers and success strategies of Sarkar Career Academy alumni.')">
-            <span class="video-badge-pill">Video 03 · Combine B & C</span>
+        <div class="video-card" data-video-type="drive">
+          <div class="video-thumb-frame" onclick="openVideoModal('drive', '1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3', 'Combined Group B & C Success Blueprint', 'Achieving speed and accuracy in objective exams. Micro-analysis of previous years question papers (PYQs) and high-yield scoring topics.', 'https://drive.google.com/file/d/1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3/view')">
+            <span class="video-badge-pill">📁 Drive · Combine B & C</span>
             <div class="video-play-btn">▶</div>
           </div>
           <div class="video-body">
             <span class="video-category">Combine Cadre (STI, ASO)</span>
             <h4 class="video-title">Combined Group B & C Success Blueprint</h4>
-            <p class="video-desc">
-              Achieving speed and accuracy in objective exams. Micro-analysis of previous years question papers (PYQs) and high-yield scoring topics.
-            </p>
+            <p class="video-desc">Achieving speed and accuracy in objective exams. Micro-analysis of previous years question papers (PYQs) and high-yield scoring topics.</p>
             <div class="video-actions">
-              <button class="btn-play-modal" onclick="openVideoModal('1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3', 'Combined Group B & C (STI, ASO) Success Blueprint', 'Achieving speed and accuracy in objective multiple-choice exams. Micro-analysis of previous years question papers and success strategies of Sarkar Career Academy alumni.')">
+              <button class="btn-play-modal" onclick="openVideoModal('drive', '1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3', 'Combined Group B & C Success Blueprint', 'Achieving speed and accuracy in objective exams. Micro-analysis of previous years question papers (PYQs) and high-yield scoring topics.', 'https://drive.google.com/file/d/1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3/view')">
                 <span>Watch Here</span> ▶
               </button>
-              <a href="https://drive.google.com/file/d/1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3/view" target="_blank" class="btn-drive-link">
-                Drive ↗
-              </a>
+              <a href="https://drive.google.com/file/d/1ePrURmmM4l1-YpH7w2drjhO1SML5rHL3/view" target="_blank" class="btn-drive-link">Drive ↗</a>
             </div>
           </div>
         </div>
-
-        <!-- Video 4 -->
-        <div class="video-card">
-          <div class="video-thumb-frame" onclick="openVideoModal('1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj', 'Police Law Essentials (IPC, CrPC & Evidence Act) Classroom Lecture', 'Essential conceptual breakdown of IPC, CrPC, and Evidence Act for PSI Mains and interviews. Practical case laws and classroom teaching by Prof. Ravindra Sarkar.')">
-            <span class="video-badge-pill">Video 04 · Police Law</span>
+        <div class="video-card" data-video-type="drive">
+          <div class="video-thumb-frame" onclick="openVideoModal('drive', '1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj', 'Police Law (IPC, CrPC & Evidence Act)', 'Essential conceptual breakdown of IPC, CrPC, and Evidence Act for PSI Mains and interviews with practical case laws and exam illustrations.', 'https://drive.google.com/file/d/1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj/view')">
+            <span class="video-badge-pill">📁 Drive · Police Law</span>
             <div class="video-play-btn">▶</div>
           </div>
           <div class="video-body">
             <span class="video-category">Jurisprudence & Minor Acts</span>
             <h4 class="video-title">Police Law (IPC, CrPC & Evidence Act)</h4>
-            <p class="video-desc">
-              Essential conceptual breakdown of IPC, CrPC, and Evidence Act for PSI Mains and interviews with practical case laws and exam illustrations.
-            </p>
+            <p class="video-desc">Essential conceptual breakdown of IPC, CrPC, and Evidence Act for PSI Mains and interviews with practical case laws and exam illustrations.</p>
             <div class="video-actions">
-              <button class="btn-play-modal" onclick="openVideoModal('1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj', 'Police Law Essentials (IPC, CrPC & Evidence Act) Classroom Lecture', 'Essential conceptual breakdown of IPC, CrPC, and Evidence Act for PSI Mains and interviews. Practical case laws and classroom teaching by Prof. Ravindra Sarkar.')">
+              <button class="btn-play-modal" onclick="openVideoModal('drive', '1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj', 'Police Law (IPC, CrPC & Evidence Act)', 'Essential conceptual breakdown of IPC, CrPC, and Evidence Act for PSI Mains and interviews with practical case laws and exam illustrations.', 'https://drive.google.com/file/d/1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj/view')">
                 <span>Watch Here</span> ▶
               </button>
-              <a href="https://drive.google.com/file/d/1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj/view" target="_blank" class="btn-drive-link">
-                Drive ↗
-              </a>
+              <a href="https://drive.google.com/file/d/1X2vr0fDXj2MV_zT4pR9jnQOKvo4Ooxkj/view" target="_blank" class="btn-drive-link">Drive ↗</a>
             </div>
           </div>
         </div>
-
-        <!-- Video 5 -->
-        <div class="video-card">
-          <div class="video-thumb-frame" onclick="openVideoModal('1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl', 'Dadar (Mumbai) Special Batches & Home Tuitions Orientation', 'Orientation regarding intensive 2-hour daily batches (Wed, Thu, Fri) and dedicated private home tuition modules near Prabhadevi Temple, Dadar, Mumbai.')">
-            <span class="video-badge-pill">Video 05 · Mumbai Hub</span>
+        <div class="video-card" data-video-type="drive">
+          <div class="video-thumb-frame" onclick="openVideoModal('drive', '1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl', 'Dadar (Mumbai) Batches & Home Tuitions', 'Intensive 2-hour daily batches (Wed, Thu, Fri) and dedicated private home tuition modules near Prabhadevi Temple, Dadar, Mumbai.', 'https://drive.google.com/file/d/1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl/view')">
+            <span class="video-badge-pill">📁 Drive · Mumbai Hub</span>
             <div class="video-play-btn">▶</div>
           </div>
           <div class="video-body">
             <span class="video-category">Mumbai Center</span>
             <h4 class="video-title">Dadar (Mumbai) Batches & Home Tuitions</h4>
-            <p class="video-desc">
-              Intensive 2-hour daily batches (Wed, Thu, Fri) and dedicated private home tuition modules near Prabhadevi Temple, Dadar, Mumbai.
-            </p>
+            <p class="video-desc">Intensive 2-hour daily batches (Wed, Thu, Fri) and dedicated private home tuition modules near Prabhadevi Temple, Dadar, Mumbai.</p>
             <div class="video-actions">
-              <button class="btn-play-modal" onclick="openVideoModal('1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl', 'Dadar (Mumbai) Special Batches & Home Tuitions Orientation', 'Orientation regarding intensive 2-hour daily batches (Wed, Thu, Fri) and dedicated private home tuition modules near Prabhadevi Temple, Dadar, Mumbai.')">
+              <button class="btn-play-modal" onclick="openVideoModal('drive', '1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl', 'Dadar (Mumbai) Batches & Home Tuitions', 'Intensive 2-hour daily batches (Wed, Thu, Fri) and dedicated private home tuition modules near Prabhadevi Temple, Dadar, Mumbai.', 'https://drive.google.com/file/d/1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl/view')">
                 <span>Watch Here</span> ▶
               </button>
-              <a href="https://drive.google.com/file/d/1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl/view" target="_blank" class="btn-drive-link">
-                Drive ↗
-              </a>
+              <a href="https://drive.google.com/file/d/1CPtaZ2tn2jKe1RolzouSCP1_qIOOyXVl/view" target="_blank" class="btn-drive-link">Drive ↗</a>
             </div>
           </div>
         </div>
-
-        <!-- Video 6 -->
-        <div class="video-card">
-          <div class="video-thumb-frame" onclick="openVideoModal('1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7', 'Officers Felicitation Ceremony & Alumni Testimonials', 'Honoring appointed Police Sub-Inspectors (PSI) and State Civil Officers trained at Sarkar Career Academy, along with their inspirational success journeys.')">
-            <span class="video-badge-pill">Video 06 · Success Legacy</span>
+        <div class="video-card" data-video-type="drive">
+          <div class="video-thumb-frame" onclick="openVideoModal('drive', '1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7', 'Officers Felicitation & Testimonials', 'Honoring appointed Police Sub-Inspectors (PSI) and State Civil Officers trained at Sarkar Career Academy, along with their inspirational journeys.', 'https://drive.google.com/file/d/1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7/view')">
+            <span class="video-badge-pill">📁 Drive · Success Legacy</span>
             <div class="video-play-btn">▶</div>
           </div>
           <div class="video-body">
             <span class="video-category">Hall of Fame</span>
             <h4 class="video-title">Officers Felicitation & Testimonials</h4>
-            <p class="video-desc">
-              Honoring appointed Police Sub-Inspectors (PSI) and State Civil Officers trained at Sarkar Career Academy, along with their inspirational journeys.
-            </p>
+            <p class="video-desc">Honoring appointed Police Sub-Inspectors (PSI) and State Civil Officers trained at Sarkar Career Academy, along with their inspirational journeys.</p>
             <div class="video-actions">
-              <button class="btn-play-modal" onclick="openVideoModal('1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7', 'Officers Felicitation Ceremony & Alumni Testimonials', 'Honoring appointed Police Sub-Inspectors (PSI) and State Civil Officers trained at Sarkar Career Academy, along with their inspirational success journeys.')">
+              <button class="btn-play-modal" onclick="openVideoModal('drive', '1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7', 'Officers Felicitation & Testimonials', 'Honoring appointed Police Sub-Inspectors (PSI) and State Civil Officers trained at Sarkar Career Academy, along with their inspirational journeys.', 'https://drive.google.com/file/d/1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7/view')">
                 <span>Watch Here</span> ▶
               </button>
-              <a href="https://drive.google.com/file/d/1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7/view" target="_blank" class="btn-drive-link">
-                Drive ↗
-              </a>
+              <a href="https://drive.google.com/file/d/1V_nb6aj6gPRcy_k7cGLoL4UFloAV6pY7/view" target="_blank" class="btn-drive-link">Drive ↗</a>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Bottom Pagination Bar -->
+      <div class="video-page-controls">
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+          <button class="page-nav-btn" id="btnPrevPage" onclick="switchVideoPage(1)" style="display:none;">◀ Previous (Page 1)</button>
+          <div class="page-numbers">
+            <button class="page-num-btn active" id="numBtn1" onclick="switchVideoPage(1)">Page 1 (YouTube & IG)</button>
+            <button class="page-num-btn" id="numBtn2" onclick="switchVideoPage(2)">Page 2 (Google Drive)</button>
+          </div>
+          <button class="page-nav-btn" id="btnNextPage" onclick="switchVideoPage(2)">Next Page (Page 2) ▶</button>
+        </div>
+        <div style="font-size:0.85rem; color:var(--text-muted);">
+          <span>Dedicated View: </span>
+          <a href="videos-page2-en.html" class="btn-dedicated-page">Open Page 2 (Drive Sessions) Separately ↗</a>
         </div>
       </div>
     </div>
@@ -1479,21 +1886,114 @@
       });
     }
 
-    function openVideoModal(driveId, title, desc) {
+    
+    function switchVideoPage(pageNum) {
+      const p1Grid = document.getElementById('videoGridPage1');
+      const p2Grid = document.getElementById('videoGridPage2');
+      const tab1 = document.getElementById('tabBtnPage1');
+      const tab2 = document.getElementById('tabBtnPage2');
+      const num1 = document.getElementById('numBtn1');
+      const num2 = document.getElementById('numBtn2');
+      const prevBtn = document.getElementById('btnPrevPage');
+      const nextBtn = document.getElementById('btnNextPage');
+      const p1Filters = document.getElementById('page1Filters');
+
+      if (pageNum === 1) {
+        p1Grid.style.display = 'grid';
+        p2Grid.style.display = 'none';
+        tab1.classList.add('active');
+        tab2.classList.remove('active');
+        num1.classList.add('active');
+        num2.classList.remove('active');
+        if (prevBtn) prevBtn.style.display = 'none';
+        if (nextBtn) nextBtn.style.display = 'inline-flex';
+        if (p1Filters) p1Filters.style.display = 'flex';
+      } else {
+        p1Grid.style.display = 'none';
+        p2Grid.style.display = 'grid';
+        tab1.classList.remove('active');
+        tab2.classList.add('active');
+        num1.classList.remove('active');
+        num2.classList.add('active');
+        if (prevBtn) prevBtn.style.display = 'inline-flex';
+        if (nextBtn) nextBtn.style.display = 'none';
+        if (p1Filters) p1Filters.style.display = 'none';
+      }
+    }
+
+    function filterPage1Videos(filterType, btn) {
+      document.querySelectorAll('.video-subfilter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('#videoGridPage1 .video-card');
+      cards.forEach(card => {
+        const type = card.getAttribute('data-video-type');
+        if (filterType === 'all' || type === filterType) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function openVideoModal(typeOrId, idOrTitle, titleOrDesc, descOrUrl, directUrl) {
+      let type, id, title, desc, url;
+      if (arguments.length === 3) {
+        type = 'drive';
+        id = typeOrId;
+        title = idOrTitle;
+        desc = titleOrDesc;
+        url = `https://drive.google.com/file/d/${id}/view`;
+      } else {
+        type = typeOrId;
+        id = idOrTitle;
+        title = titleOrDesc;
+        desc = descOrUrl;
+        url = directUrl;
+      }
+
       const modal = document.getElementById('videoModal');
       const iframe = document.getElementById('modalIframe');
       const titleElem = document.getElementById('modalVideoTitle');
       const descElem = document.getElementById('modalVideoDesc');
-      const driveBtn = document.getElementById('modalDriveBtn');
+      const actionBtn = document.getElementById('modalDriveBtn');
 
-      iframe.src = `https://drive.google.com/file/d/${driveId}/preview`;
       titleElem.innerText = title;
       descElem.innerText = desc;
-      driveBtn.href = `https://drive.google.com/file/d/${driveId}/view`;
+
+      if (type === 'youtube') {
+        iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+        actionBtn.href = url || `https://youtu.be/${id}`;
+        actionBtn.innerText = 'YouTube वर उघडा ↗';
+        actionBtn.style.background = '#ff0000';
+        actionBtn.style.color = '#fff';
+      } else if (type === 'instagram') {
+        iframe.src = `https://www.instagram.com/p/${id}/embed/`;
+        actionBtn.href = url || `https://www.instagram.com/reel/${id}/`;
+        actionBtn.innerText = 'Instagram वर उघडा ↗';
+        actionBtn.style.background = 'linear-gradient(45deg, #f09433, #dc2743)';
+        actionBtn.style.color = '#fff';
+      } else {
+        iframe.src = `https://drive.google.com/file/d/${id}/preview`;
+        actionBtn.href = url || `https://drive.google.com/file/d/${id}/view`;
+        actionBtn.innerText = 'Google Drive वर उघडा ↗';
+        actionBtn.style.background = 'var(--amber-primary)';
+        actionBtn.style.color = '#000';
+      }
 
       modal.style.display = 'flex';
       document.body.style.overflow = 'hidden';
     }
+
+    // Check URL parameters or hash on load
+    window.addEventListener('DOMContentLoaded', function() {
+      const hash = window.location.hash;
+      const urlParams = new URLSearchParams(window.location.search);
+      if (hash === '#videos-page2' || urlParams.get('video_page') === '2') {
+        switchVideoPage(2);
+      }
+    });
+
 
     function closeVideoModal(e) {
       const modal = document.getElementById('videoModal');
